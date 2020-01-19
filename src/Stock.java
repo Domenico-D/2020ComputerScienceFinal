@@ -75,6 +75,18 @@ public class Stock {
         sharesOwned -= sell;
     }
 
+    public void ddyes()
+    {
+
+    }
+
+    // dd is yes
+
+    public void pizzatime()
+    {
+        System.out.println("goog pizza");
+    }
+
     public void test(){
         System.out.println("hello");
     }
