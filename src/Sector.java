@@ -43,7 +43,9 @@ public class Sector {
         }
     }
 
-    public void getProfit()
+    public double getProfit(){
+
+    }
 
     public double getSectorProfitLoss() {
         return sectorProfitLoss;
