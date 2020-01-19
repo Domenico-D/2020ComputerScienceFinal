@@ -4,7 +4,7 @@
  */
 
 public class Stock {
-//Jimmy is fried
+
     private String name;
     private char region;
     private int sharesOwned;
@@ -15,7 +15,6 @@ public class Stock {
 
     public Stock(String nm, char location, double goingPrice, double risk, boolean openMarket)
     {
-        //dwfafwafsafwafs
         name = nm;
         region = location;
         currentPrice = goingPrice;
@@ -76,20 +75,4 @@ public class Stock {
         sharesOwned -= sell;
     }
 
-    public void ddyes()
-    {
-
-    }
-
-    // dd is yes
-
-    public void pizzatime()
-    {
-        System.out.println("goog pizza");
-    }
-
-    public void test(){
-        System.out.println("hello");
-        System.out.println("JIMMY WAS HERE");
-    }
 }
