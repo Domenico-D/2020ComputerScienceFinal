@@ -20,11 +20,11 @@ public class Sector {
         final double low = 30;
 
         //For loop to add up all of the volatility of each stock in the sector
-        int volatilityTotal = 0;
+        double volatilityTotal = 0;
 
         for(int i = 0; i < instruments.length; i++){
 
-            volatilityTotal += instruments[i].getVolability;
+            volatilityTotal += instruments[i].getVolatility();
 
         }
 
@@ -43,7 +43,16 @@ public class Sector {
         }
     }
 
-    public double getProfit(){
+    public double getSectorProfit(){
+
+        double profitTotal = 0;
+
+
+        for(int i = 0; i < instruments.length; i++ ){
+
+            profitTotal += instruments[i].getProfit;
+
+        }
 
     }
 
