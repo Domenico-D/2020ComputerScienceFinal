@@ -7,7 +7,8 @@ public class Stock {
 
     private String name;
     private char region;
-    private int sharesOwned;
+    private int daysOwned;
+    private double sharesOwned;
     private double currentPrice;
     private double priceWhenBought;
     private double volatility;
@@ -30,7 +31,11 @@ public class Stock {
     {
         return region;
     }
-    public int getSharesOwned()
+    public int getDaysOwned()
+    {
+        return daysOwned;
+    }
+    public double getSharesOwned()
     {
         return sharesOwned;
     }
@@ -64,6 +69,15 @@ public class Stock {
         volatility = risk;
     }
 
+    public double getProfit()
+    {
+        return (currentPrice - priceWhenBought) * sharesOwned;
+    }
+
+    public void updateDays()
+    {
+        daysOwned++;
+    }
 
     public void buyShares(double purchase)
     {
