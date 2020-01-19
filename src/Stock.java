@@ -74,4 +74,8 @@ public class Stock {
     {
         sharesOwned -= sell;
     }
+
+    public void test(){
+        System.out.println("hello");
+    }
 }
