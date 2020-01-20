@@ -8,6 +8,7 @@ public class Stock {
     private char region;
     private int daysOwned;
     private double sharesOwned;
+    private double beginDayPrice;
     private double currentPrice;
     private double priceWhenBought;
     private double volatility;
@@ -89,6 +90,16 @@ public class Stock {
     {
         sharesOwned -= sell;
     }
+
+    public double getDayProfit()
+    {
+        double dayProfit = 0;
+
+        dayProfit += (currentPrice-beginDayPrice)*sharesOwned;
+
+        return dayProfit;
+    }
+
 
     //NEED TO IMPLEMENT TOSTRING.
 

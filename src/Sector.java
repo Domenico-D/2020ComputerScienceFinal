@@ -74,6 +74,16 @@ public class Sector {
         instruments[choice] = null;
 
     }
+    public double getDailyProfit()
+    {
+        double dailyProfit = 0;
+
+        for(int i = 0; i<instruments.length; i++)
+        {
+            dailyProfit += instruments[i].getDayProfit();
+        }
+        return dailyProfit;
+    }
 
     //NEED TO ADD getDailyProfit();
 
