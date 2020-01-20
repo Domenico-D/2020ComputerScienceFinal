@@ -8,8 +8,7 @@ public class Portfolio {
     private String name;
     private double totalProfitLoss;
     private double moneyInvested;
-    private double cashLeftover;     //cold hard cash.
-    private double dailyProfit;      //printed at the end of each day.
+    public double cashLeftover;     //cold hard cash. changed in main.
     private double capital;
     private int trades;
 
@@ -25,7 +24,6 @@ public class Portfolio {
         totalProfitLoss = 0;
         moneyInvested = 0;
         cashLeftover = 10000;
-        dailyProfit = 0;
         capital = moneyInvested + cashLeftover;
         trades = 8;
     }
@@ -44,6 +42,18 @@ public class Portfolio {
         totalProfitLoss = tempTotalProfit;
         return totalProfitLoss;
     }
+    public double getDailyProfit()
+    {
+        //printed at the end of each day.
+        double dailyProfit = 0;
+
+        for(int i = 0; i<chosenDivisions.length; i++)
+        {
+            dailyProfit += chosenDivisions[i].getDailyProfit();
+        }
+
+        return dailyProfit;
+    }
     public double getMoneyInvested()
     {
         return moneyInvested;
@@ -51,10 +61,6 @@ public class Portfolio {
     public double getCashLeftover()
     {
         return cashLeftover;
-    }
-    public double getDailyProfit()
-    {
-        return dailyProfit;
     }
     public double getCapital()
     {

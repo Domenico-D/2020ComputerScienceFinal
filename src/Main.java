@@ -7,7 +7,8 @@ public class Main {
         /**
          * WHEN YOU END THE DAY, DO THE FOLLOWING:
          * 1. clear dailyProfit.
-         *
+         * 2. change price with volatility.
+         * 3. update new price;
          */
     }
 
