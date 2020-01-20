@@ -16,6 +16,10 @@ public class Portfolio {
     // the number of elements is open to change.
     private Sector[] availableDivisions; //rest of divisions, not chosen in temp array.
 
+    public Portfolio(){
+
+    }
+
     public Portfolio(String nm, Sector[]chosen, Sector[]available)
     {
         name = nm;

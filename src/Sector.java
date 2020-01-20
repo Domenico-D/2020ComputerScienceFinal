@@ -82,8 +82,8 @@ public class Sector {
         organize();
 
     }
-    public double getDailyProfit()
-    {
+
+    public double getDailyProfit(){
         double dailyProfit = 0;
 
         for(int i = 0; i<instruments.length; i++)
@@ -180,6 +180,8 @@ public class Sector {
         organize();
 
     }
+
+
 
     //Needs toString
 
