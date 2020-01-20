@@ -7,6 +7,10 @@ public class Sector {
     private char sectorVolatality;
     private Stock[] instruments;
 
+    public Sector(String nm){
+        name = nm;
+    }
+
     public Sector(String nm, Stock[] stocks){
 
         name = nm;

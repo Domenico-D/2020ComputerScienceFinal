@@ -11,21 +11,52 @@ import java.lang.*;
 
 public class Main {
 
-    public static Scanner inputStr = new Scanner(System.in);
-    public static Scanner inputNum = new Scanner(System.in);
+    private static Scanner inputStr = new Scanner(System.in);
+    private static Scanner inputNum = new Scanner(System.in);
 
 
 
-    public static Portfolio portfolio1 = new Portfolio();
-    public static Sector[] userSectors1 = new Sector[5];
-    public static Portfolio portfolio2 = new Portfolio();
-    public static Sector[] userSectors2 = new Sector[5];
-    public static Portfolio portfolio3 = new Portfolio();
-    public static Sector[] userSectors3 = new Sector[5];
+    private static Portfolio portfolio1 = new Portfolio();
+    //Initialize user Sectors for portfolio 1
+    private static Sector userTechnology1 = new Sector("Technology");
+    private static Sector userCrypto1 = new Sector("Crypto Currency");
+    private static Sector userRetail1 = new Sector("Retail");
+    private static Sector userAuto1 = new Sector("Auto");
+    private static Sector userAerospace1 = new Sector("Aerospace");
+    private static Sector userFinancial1 = new Sector("Financial");
+    private static Sector userFood1 = new Sector("Food");
 
-    public static Portfolio[] portfolios = {portfolio1, portfolio2, portfolio3};
+    private static Sector[] userSectors1 = new Sector[5];
 
-    public static int numPortfolios = 0;
+
+    private static Portfolio portfolio2 = new Portfolio();
+    //Initialize user Sectors for portfolio 2
+    private static Sector userTechnology2 = new Sector("Technology");
+    private static Sector userCrypto2 = new Sector("Crypto Currency");
+    private static Sector userRetail2 = new Sector("Retail");
+    private static Sector userAuto2 = new Sector("Auto");
+    private static Sector userAerospace2 = new Sector("Aerospace");
+    private static Sector userFinancial2 = new Sector("Financial");
+    private static Sector userFood2 = new Sector("Food");
+
+    private static Sector[] userSectors2 = new Sector[5];
+
+
+    private static Portfolio portfolio3 = new Portfolio();
+    //Initialize user Sectors for portfolio 3
+    private static Sector userTechnology3 = new Sector("Technology");
+    private static Sector userCrypto3 = new Sector("Crypto Currency");
+    private static Sector userRetail3 = new Sector("Retail");
+    private static Sector userAuto3 = new Sector("Auto");
+    private static Sector userAerospace3 = new Sector("Aerospace");
+    private static Sector userFinancial3 = new Sector("Financial");
+    private static Sector userFood3 = new Sector("Food");
+
+    private static Sector[] userSectors3 = new Sector[5];
+
+    private static Portfolio[] portfolios = {portfolio1, portfolio2, portfolio3};
+
+    private static int numPortfolios = 0;
 
 
     public static void main(String[]args){
@@ -198,6 +229,9 @@ public class Main {
 
     static void createPortfolio(){
 
+        int choice = 0;
+        Boolean[] chosen = {true, true, true, true, true, true, true};
+
         if(numPortfolios == 1){
 
             System.out.print("Enter the name of your first portfolio: ");
@@ -205,10 +239,44 @@ public class Main {
 
             for (int i = 0; i < userSectors1.length; i++){
 
-                System.out.println("Please choose what sectors you want in your portfolio");
-                System.out.print("1. Technology, 2. Crypto Currency, 3. Retail, 4. Auto, 5. Aerospace and Defence, 6. Financial, 7. Food: ");
+                do{
+                    System.out.println("Please choose what sectors you want in your portfolio");
+                    System.out.print("1. Technology, 2. Crypto Currency, 3. Retail, 4. Auto, 5. Aerospace and Defence, 6. Financial, 7. Food: ");
+                    choice = inputNum.nextInt();
+                    
 
-                userSectors1
+                    if (choice == 1 && chosen[0]) {
+                        userSectors1[i] = userTechnology1;
+                        chosen[0] = false;
+                    }
+                    else if (choice == 2 && chosen[1]) {
+                        userSectors1[i] = userCrypto1;
+                        chosen[1] = false;
+                    }
+                    else if (choice == 3 && chosen[2]) {
+                        userSectors1[i] = userRetail1;
+                        chosen[2] = false;
+                    }
+                    else if (choice == 4 && chosen[3]) {
+                        userSectors1[i] = userAuto1;
+                        chosen[3] = false;
+                    }
+                    else if (choice == 5 && chosen[4]) {
+                        userSectors1[i] = userAerospace1;
+                        chosen[4] = false;
+                    }
+                    else if (choice == 6 && chosen[5]) {
+                        userSectors1[i] = userFinancial1;
+                        chosen[5] = false;
+                    }
+                    else if (choice == 7 && chosen[6]) {
+                        userSectors1[i] = userFood1;
+                        chosen[6] = false;
+                    }
+                    else {
+                        System.out.println("Please enter a number from 1-7");
+                    }
+                }while(userSectors1[i] == null);
             }
 
         }
