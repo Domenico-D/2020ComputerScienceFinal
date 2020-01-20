@@ -9,6 +9,7 @@ public class Main {
          * 1. clear dailyProfit.
          * 2. change price with volatility.
          * 3. update new price;
+         * 4. set beginDayPrice.
          */
     }
 
