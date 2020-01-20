@@ -343,7 +343,7 @@ public class Main {
                             System.out.println("Your options are: ");
                             System.out.println(technologySector.toString());
 
-                            
+
 
 
                         } else {
