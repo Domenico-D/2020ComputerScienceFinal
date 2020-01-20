@@ -16,7 +16,7 @@ public class Sector {
     public double getSectorProfitLoss() {
 
         for(int i = 0; i < instruments.length; i++ ){
-            sectorProfitLoss += instruments[i].getProfit();
+            sectorProfitLoss += instruments[i].getProfitLoss();
         }
 
         return sectorProfitLoss;

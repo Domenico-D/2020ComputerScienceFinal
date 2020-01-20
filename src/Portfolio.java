@@ -36,11 +36,12 @@ public class Portfolio {
     }
     public double getTotalProfitLoss()
     {
+        double tempTotalProfit=0;
         for(int i=0; i<chosenDivisions.length; i++)
         {
-            chosenDivisions[i].getSectorProfitLoss();
+            tempTotalProfit += chosenDivisions[i].getSectorProfitLoss();
         }
-
+        totalProfitLoss = tempTotalProfit;
         return totalProfitLoss;
     }
     public double getMoneyInvested()
@@ -70,11 +71,5 @@ public class Portfolio {
     {
         name = nm;
     }
-
-
-
-
-
-
 
 }
