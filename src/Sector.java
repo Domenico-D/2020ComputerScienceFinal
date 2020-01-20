@@ -79,8 +79,15 @@ public class Sector {
 
     public void organize(){
 
+        Stock[] tempArray = new Stock[5];
+        int counter = 0;
+
         for(int i = 0; i < instruments.length; i++){
-            instruments[i]
+
+            if(instruments[i] != null){
+                tempArray[counter] = instruments[i];
+                counter++;
+            }
         }
     }
 
