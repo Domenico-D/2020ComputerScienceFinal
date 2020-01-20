@@ -185,8 +185,17 @@ public class Sector {
 
     }
 
+    public String getName(){
+        return name;
+    }
+
+    //finish toString
+    public String toString(){
+        return "test";
+    }
 
 
-    //Needs toString
+
+
 
 }

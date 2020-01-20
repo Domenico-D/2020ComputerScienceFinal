@@ -32,6 +32,10 @@ public class Portfolio {
         trades = 8;
     }
 
+    public void setSectors(Sector[] sectorArray){
+        chosenDivisions = sectorArray;
+    }
+
     public String getName()
     {
         return name;
