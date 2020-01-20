@@ -255,11 +255,15 @@ public class Main {
     }
 
     private static void createPortfolio(){
-
+        //User menu selection
         int choice;
-
-        //Prevents user from adding the same sector twice
+        //Prevents user from adding the same sector or Stock twice
         Boolean[] chosen = {true, true, true, true, true, true, true};
+        Boolean[] chosenStock = {true, true, true, true, true, true, true, true};
+        //Temp stock array to fill sectors
+        Stock[] tempStocks = new Stock[5];
+        //user stock choice
+        int stockChoice;
 
         if(numPortfolios == 1){
 
@@ -274,42 +278,119 @@ public class Main {
                     System.out.print("1. Technology, 2. Crypto Currency, 3. Retail, 4. Auto, 5. Aerospace and Defence, 6. Financial, 7. Food: ");
                     choice = inputNum.nextInt();
 
+                    //User chooses technology sector and stocks within.
                     if (choice == 1 && chosen[0]) {
+                        //Set the chosen sector
                         userSectors1[i] = userTechnology1;
+
+                        //Fill Stocks with user choices
+                        for(int o = 0; o < tempStocks.length; o++){
+
+                            do{
+
+                                System.out.println("Please choose the Stocks you want in the technology Sector");
+                                System.out.println("1. Choose Stock");
+                                System.out.println("2. Create Stock");
+                                choice = inputNum.nextInt();
+
+                                //Check if they want to create or choose a stock
+                                if(choice ==1){
+                                    System.out.println(technologySector.toString());
+                                    System.out.print("Which stock would you like to add: ");
+                                    stockChoice = inputNum.nextInt();
+
+                                    if(stockChoice == 1){
+                                        tempStocks[o] = technologyArray[stockChoice-1];
+                                        chosenStock[stockChoice-1] = false;
+                                        break;
+                                    }
+                                    else if(stockChoice == 2){
+                                        tempStocks[o] = technologyArray[stockChoice-1];
+                                        chosenStock[stockChoice-1] = false;
+                                        break;
+                                    }
+                                    else if(stockChoice == 3){
+                                        tempStocks[o] = technologyArray[stockChoice-1];
+                                        chosenStock[stockChoice-1] = false;
+                                        break;
+                                    }
+                                    else if(stockChoice == 4){
+                                        tempStocks[o] = technologyArray[stockChoice-1];
+                                        chosenStock[stockChoice-1] = false;
+                                        break;
+                                    }
+                                    else if(stockChoice == 5){
+                                        tempStocks[o] = technologyArray[stockChoice-1];
+                                        chosenStock[stockChoice-1] = false;
+                                        break;
+                                    }
+                                    else if(stockChoice == 6){
+                                        tempStocks[o] = technologyArray[stockChoice-1];
+                                        chosenStock[stockChoice-1] = false;
+                                        break;
+                                    }
+                                    else if(stockChoice == 7){
+                                        tempStocks[o] = technologyArray[stockChoice-1];
+                                        chosenStock[stockChoice-1] = false;
+                                        break;
+                                    }
+                                    else if(stockChoice == 8){
+                                        tempStocks[o] = technologyArray[stockChoice-1];
+                                        chosenStock[stockChoice-1] = false;
+                                        break;
+                                    }
+
+                                }
+                                else if(choice == 2){
+
+                                }
+
+                            }while(tempStocks[o] ==null);
+
+                        }
+
+
                         //Prevents user from adding the same sector twice
                         chosen[0] = false;
                         break;
                     }
+                    //User chooses Crypto sector and stocks within.
                     else if (choice == 2 && chosen[1]) {
                         userSectors1[i] = userCrypto1;
                         chosen[1] = false;
                         break;
                     }
+                    //User chooses Retail sector and stocks within.
                     else if (choice == 3 && chosen[2]) {
                         userSectors1[i] = userRetail1;
                         chosen[2] = false;
                         break;
                     }
+                    //User chooses Auto sector and stocks within.
                     else if (choice == 4 && chosen[3]) {
                         userSectors1[i] = userAuto1;
                         chosen[3] = false;
                         break;
                     }
+                    //User chooses Aerospace sector and stocks within.
                     else if (choice == 5 && chosen[4]) {
                         userSectors1[i] = userAerospace1;
                         chosen[4] = false;
                         break;
                     }
+                    //User chooses Financial sector and stocks within.
                     else if (choice == 6 && chosen[5]) {
                         userSectors1[i] = userFinancial1;
                         chosen[5] = false;
                         break;
                     }
+                    //User chooses Food sector and stocks within.
                     else if (choice == 7 && chosen[6]) {
                         userSectors1[i] = userFood1;
                         chosen[6] = false;
                         break;
                     }
+
                     else {
                         System.out.println("Please enter a number from 1-7");
                     }
@@ -319,41 +400,7 @@ public class Main {
             //Add the sectors to the current portfolio
             portfolio1.setSectors(userSectors1);
 
-            for (int i = 0; i < userSectors1.length; i++){
 
-                for(int j = 0; j < userPortfolio1Sector1Stocks.length; j++){
-
-                    do
-                    {
-                        System.out.println("Please choose or create the stocks you want in your " + userSectors1[0].getName() + " Sector");
-                        System.out.println("1. Create Stock");
-                        System.out.println("2. Choose Stock");
-                        choice = inputNum.nextInt();
-
-                        //Create Stock
-                        if (choice == 1)
-                        {
-
-
-
-                        //Choose stock
-                        } else if (choice == 2) {
-
-                            //List stocks and info for the current sector using toString
-                            System.out.println("Your options are: ");
-                            System.out.println(technologySector.toString());
-
-
-
-
-                        } else {
-                            System.out.println("Please enter a valid number");
-                        }
-                    }while(userPortfolio1Sector1Stocks == null);
-
-
-                }
-            }
 
         }
         else if(numPortfolios == 2){

@@ -18,6 +18,11 @@ public class Sector {
 
     }
 
+    public void setInstruments(Stock[] stocks){
+        instruments = stocks;
+        organize();
+    }
+
     //Add up profit from each of the Stocks and return
     public double getSectorProfitLoss() {
 
