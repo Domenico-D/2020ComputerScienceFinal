@@ -12,12 +12,21 @@ public class Sector {
 
     }
 
-    public void sectorVolatility(){
+    //Add up profit from each of the Stocks and return
+    public double getSectorProfitLoss() {
+
+        for(int i = 0; i < instruments.length; i++ ){
+            sectorProfitLoss += instruments[i].getProfit();
+        }
+
+        return sectorProfitLoss;
+    }
+
+    public char getSectorVolatality() {
 
         //Constants to store volatility levels to determine char
         final double high = 10;
         final double medium = 20;
-        final double low = 30;
 
         //For loop to add up all of the volatility of each stock in the sector
         double volatilityTotal = 0;
@@ -41,26 +50,33 @@ public class Sector {
         else{
             sectorVolatality = 'L';
         }
-    }
 
-    public double getSectorProfit(){
-
-        double profitTotal = 0;
-
-
-        for(int i = 0; i < instruments.length; i++ ){
-
-            profitTotal += instruments[i].getProfit;
-
-        }
-
-    }
-
-    public double getSectorProfitLoss() {
-        return sectorProfitLoss;
-    }
-
-    public char getSectorVolatality() {
         return sectorVolatality;
     }
+
+    public void addStock(Stock newStock){
+
+        for(int i = 0; i < instruments.length; i++){
+
+            if(instruments[i] == null){
+                instruments[i] = newStock;
+                break;
+            }
+        }
+    }
+
+    public void removeStock(int choice){
+
+        instruments[choice] = null;
+
+    }
+
+    public void organize(){
+
+
+
+    }
+
+    //Needs toString
+
 }
