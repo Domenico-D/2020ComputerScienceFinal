@@ -1,5 +1,5 @@
 /**
- * Last Updated: January 19, 2020
+ * Last Updated: January 20, 2020
  * A class that defines what a portfolio is and how it works.
  */
 
@@ -14,17 +14,12 @@ public class Portfolio {
 
     private Sector[] chosenDivisions; //chosen in main file, taken from a temp array that stores all possible choices.
     // the number of elements is open to change.
-    private Sector[] availableDivisions; //rest of divisions, not chosen in temp array.
 
-    public Portfolio(){
 
-    }
-
-    public Portfolio(String nm, Sector[]chosen, Sector[]available)
+    public Portfolio(String nm, Sector[]chosen)
     {
         name = nm;
         chosenDivisions = chosen;
-        availableDivisions = available;
         totalProfitLoss = 0;
         moneyInvested = 0;
         cashLeftover = 10000;

@@ -1,3 +1,8 @@
+/**
+ * Last Updated: January 20, 2020
+ * Defines what a sector is, holding stocks that are then placed within a portfolio.
+ */
+
 import java.util.Arrays;
 
 public class Sector {
@@ -178,11 +183,8 @@ public class Sector {
                 instruments[i] = newStock;
                 instruments[i].buyShares(newShares);
             }
-
         }
-
         organize();
-
     }
 
     public String getName(){
