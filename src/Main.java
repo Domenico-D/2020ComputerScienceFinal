@@ -11,11 +11,27 @@ import java.lang.*;
 
 public class Main {
 
+    public static Scanner inputStr = new Scanner(System.in);
+    public static Scanner inputNum = new Scanner(System.in);
+
+
+
+    public static Portfolio portfolio1 = new Portfolio();
+    public static Sector[] userSectors1 = new Sector[5];
+    public static Portfolio portfolio2 = new Portfolio();
+    public static Sector[] userSectors2 = new Sector[5];
+    public static Portfolio portfolio3 = new Portfolio();
+    public static Sector[] userSectors3 = new Sector[5];
+
+    public static Portfolio[] portfolios = {portfolio1, portfolio2, portfolio3};
+
+    public static int numPortfolios = 0;
+
+
     public static void main(String[]args){
 
-        Scanner inputStr = new Scanner(System.in);
-        Scanner inputNum = new Scanner(System.in);
-        int choice, gameChoice, numPortfolios = 0;
+
+        int choice, gameChoice;
 
         //All Technology Sector Stocks
         Stock intelStock = new Stock("Intel", 'A', 59.41, 8.8, true);
@@ -152,10 +168,7 @@ public class Main {
                     if(gameChoice == 1){
                         numPortfolios++;
 
-                        Portfolio portfolio1 = new Portfolio();
-                        System.out.print("What would you like to name your portfolio");
-                        portfolio1.setName(inputStr.nextLine());
-                        System.out.println();
+                        createPortfolio();
 
                     }
                     else if(gameChoice == 2){
@@ -181,6 +194,34 @@ public class Main {
          * 3. update new price;
          * 4. set beginDayPrice.
          */
+    }
+
+    static void createPortfolio(){
+
+        if(numPortfolios == 1){
+
+            System.out.print("Enter the name of your first portfolio: ");
+            portfolio1.setName(inputStr.nextLine());
+
+            for (int i = 0; i < userSectors1.length; i++){
+
+                System.out.println("Please choose what sectors you want in your portfolio");
+                System.out.print("1. Technology, 2. Crypto Currency, 3. Retail, 4. Auto, 5. Aerospace and Defence, 6. Financial, 7. Food: ");
+
+                userSectors1
+            }
+
+        }
+        else if(numPortfolios == 2){
+
+
+
+        }
+        else if(numPortfolios == 3){
+
+
+
+        }
     }
 
 }
