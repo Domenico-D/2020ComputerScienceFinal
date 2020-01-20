@@ -127,8 +127,10 @@ public class Main {
     //Food Sector
     private static Sector foodSector = new Sector("Food", foodArray);
 
+    //initialize sector array for first portfolio.
+    private static Sector[] userSectors1 = new Sector[5];
+    private static Portfolio portfolio1 = new Portfolio("",userSectors1);
 
-    private static Portfolio portfolio1 = new Portfolio();
     //Initialize user Sectors for portfolio 1
     private static Sector userTechnology1 = new Sector("Technology");
     private static Sector userCrypto1 = new Sector("Crypto Currency");
@@ -138,8 +140,6 @@ public class Main {
     private static Sector userFinancial1 = new Sector("Financial");
     private static Sector userFood1 = new Sector("Food");
 
-    private static Sector[] userSectors1 = new Sector[5];
-
     //Initialize Stock arrays for portfolio one and each sector within
     private static Stock[] userPortfolio1Sector1Stocks = new Stock[5];
     private static Stock[] userPortfolio1Sector2Stocks = new Stock[5];
@@ -148,7 +148,10 @@ public class Main {
     private static Stock[] userPortfolio1Sector5Stocks = new Stock[5];
 
 
-    private static Portfolio portfolio2 = new Portfolio();
+    //initialize sector array for second portfolio.
+    private static Sector[] userSectors2 = new Sector[5];
+    private static Portfolio portfolio2 = new Portfolio("",userSectors2);
+
     //Initialize user Sectors for portfolio 2
     private static Sector userTechnology2 = new Sector("Technology");
     private static Sector userCrypto2 = new Sector("Crypto Currency");
@@ -158,7 +161,6 @@ public class Main {
     private static Sector userFinancial2 = new Sector("Financial");
     private static Sector userFood2 = new Sector("Food");
 
-    private static Sector[] userSectors2 = new Sector[5];
 
     //Initialize Stock arrays for portfolio two and each sector within
     private static Stock[] userPortfolio2Sector1Stocks = new Stock[5];
@@ -168,7 +170,10 @@ public class Main {
     private static Stock[] userPortfolio2Sector5Stocks = new Stock[5];
 
 
-    private static Portfolio portfolio3 = new Portfolio();
+    //Initialize sector array for third portfolio.
+    private static Sector[] userSectors3 = new Sector[5];
+    private static Portfolio portfolio3 = new Portfolio("",userSectors3);
+
     //Initialize user Sectors for portfolio 3
     private static Sector userTechnology3 = new Sector("Technology");
     private static Sector userCrypto3 = new Sector("Crypto Currency");
@@ -178,7 +183,6 @@ public class Main {
     private static Sector userFinancial3 = new Sector("Financial");
     private static Sector userFood3 = new Sector("Food");
 
-    private static Sector[] userSectors3 = new Sector[5];
 
     //Initialize Stock arrays for portfolio three and each sector within
     private static Stock[] userPortfolio3Sector1Stocks = new Stock[5];
@@ -390,9 +394,12 @@ public class Main {
                         chosen[6] = false;
                         break;
                     }
-
-                    else {
+                    else if(choice<1 || choice>7) {
                         System.out.println("Please enter a number from 1-7");
+                    }
+                    else if(!chosen[choice-1])
+                    {
+                        System.out.println("Sector already selected. Pick something else.");
                     }
                 }while(userSectors1[i] == null);
             }
