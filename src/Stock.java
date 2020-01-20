@@ -3,6 +3,8 @@
  * Defines what a stock is, and how it can be manipulated within a sector.
  */
 
+import java.text.NumberFormat;
+
 public class Stock {
     private String name;
     private char region;
@@ -100,7 +102,19 @@ public class Stock {
         return dayProfit;
     }
 
+    public String toString()
+    {
 
-    //NEED TO IMPLEMENT TOSTRING.
+        String str;
+
+        NumberFormat nfMoney = NumberFormat.getCurrencyInstance();
+        NumberFormat nfRound = NumberFormat.getInstance();
+
+        //price, risk, open market
+        str = String.format("%25s %4s %8s %4s %6s",name,region,nfMoney.format(currentPrice),nfRound.format(volatility),active+"\n");
+
+        return str;
+    }
+
 
 }

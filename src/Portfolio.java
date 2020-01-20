@@ -74,11 +74,22 @@ public class Portfolio {
         return trades;
     }
 
-    //NEED TO IMPLEMENT A PRINT FOR THE SECTORS.
 
     public void setName(String nm)
     {
         name = nm;
     }
 
+    public String toString()
+    {
+        String str="";
+
+        for(int i = 0; i<chosenDivisions.length;i++)
+        {
+            str+=chosenDivisions[i].toString();
+        }
+
+        return str;
+
+    }
 }

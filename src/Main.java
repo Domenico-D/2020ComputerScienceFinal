@@ -209,7 +209,7 @@ public class Main {
 
         int choice, gameChoice;
 
-
+        System.out.println(technologySector.toString());
 
 
         do{

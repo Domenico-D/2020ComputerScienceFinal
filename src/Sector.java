@@ -193,7 +193,14 @@ public class Sector {
 
     //finish toString
     public String toString(){
-        return "test";
+        String str = "";
+
+        for(int i=0;i<instruments.length;i++)
+        {
+            str += instruments[i].toString();
+        }
+
+        return str;
     }
 
 
