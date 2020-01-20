@@ -157,8 +157,27 @@ public class Sector {
     public void tradeStock(Stock newStock, Stock oldStock){
 
         for(int i = 0; i < instruments.length; i++){
-            
+            if(instruments[i] == oldStock){
+
+                //Get Price and number of shares of New Stock
+                double newStockPrice = newStock.getCurrentPrice();
+
+                //Get Price and number of shares of old stock
+                double oldStockPrice = instruments[i].getCurrentPrice();
+                double oldNumShares = instruments[i].getCurrentPrice();
+
+                //Calculate amount of new Stock Shares
+                double newShares = (oldStockPrice * oldNumShares) / newStockPrice;
+
+                //Wipe old stock from user sector and add new stock
+                instruments[i] = null;
+                instruments[i] = newStock;
+                instruments[i].buyShares(newShares);
+            }
+
         }
+
+        organize();
 
     }
 
