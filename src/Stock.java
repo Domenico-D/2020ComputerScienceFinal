@@ -13,6 +13,8 @@ public class Stock {
     private double volatility;
     private boolean active;
 
+    //track daily price profit with a variable at the start of each day.
+
     public Stock(String nm, char location, double goingPrice, double risk, boolean openMarket)
     {
         name = nm;

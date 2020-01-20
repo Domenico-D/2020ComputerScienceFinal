@@ -75,6 +75,8 @@ public class Sector {
 
     }
 
+    //NEED TO ADD getDailyProfit();
+
     public void organize(){
 
         for(int i = 0; i < instruments.length; i++){
