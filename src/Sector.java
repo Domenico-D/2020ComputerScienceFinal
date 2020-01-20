@@ -15,9 +15,13 @@ public class Sector {
     //Add up profit from each of the Stocks and return
     public double getSectorProfitLoss() {
 
+        double profitLoss = 0;
+
         for(int i = 0; i < instruments.length; i++ ){
-            sectorProfitLoss += instruments[i].getProfit();
+            profitLoss += instruments[i].getProfitLoss();
         }
+
+        sectorProfitLoss = profitLoss;
 
         return sectorProfitLoss;
     }
@@ -73,8 +77,9 @@ public class Sector {
 
     public void organize(){
 
-
-
+        for(int i = 0; i < instruments.length; i++){
+            instruments[i]
+        }
     }
 
     //Needs toString
