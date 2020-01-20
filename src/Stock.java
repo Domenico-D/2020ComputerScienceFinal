@@ -68,7 +68,7 @@ public class Stock {
         volatility = risk;
     }
 
-    public double getProfit()
+    public double getProfitLoss()
     {
         return (currentPrice - priceWhenBought) * sharesOwned;
     }
@@ -87,5 +87,7 @@ public class Stock {
     {
         sharesOwned -= sell;
     }
+
+    //NEED TO IMPLEMENT TOSTRING.
 
 }
