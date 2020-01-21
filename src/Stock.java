@@ -17,6 +17,9 @@ public class Stock {
     private boolean active;
 
     //track daily price profit with a variable at the start of each day.
+    public Stock(){
+
+    }
 
     public Stock(String nm, char location, double goingPrice, double risk, boolean openMarket)
     {
@@ -114,6 +117,14 @@ public class Stock {
         str = String.format("%25s %4s %8s %4s %6s",name,region,nfMoney.format(currentPrice),nfRound.format(volatility),active+"\n");
 
         return str;
+    }
+
+    public void updateStockPriceConstant(){
+
+    }
+
+    public void updateStockPriceDay(){
+        
     }
 
 

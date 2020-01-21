@@ -14,6 +14,98 @@ public class Main {
     private static Scanner inputStr = new Scanner(System.in);
     private static Scanner inputNum = new Scanner(System.in);
 
+    //Initialize Stocks for the user to fill in portfolio 1
+    private static Stock userPortfolio1Sector1Stock1 = new Stock();
+    private static Stock userPortfolio1Sector1Stock2 = new Stock();
+    private static Stock userPortfolio1Sector1Stock3 = new Stock();
+    private static Stock userPortfolio1Sector1Stock4 = new Stock();
+    private static Stock userPortfolio1Sector1Stock5 = new Stock();
+
+    private static Stock userPortfolio1Sector2Stock1 = new Stock();
+    private static Stock userPortfolio1Sector2Stock2 = new Stock();
+    private static Stock userPortfolio1Sector2Stock3 = new Stock();
+    private static Stock userPortfolio1Sector2Stock4 = new Stock();
+    private static Stock userPortfolio1Sector2Stock5 = new Stock();
+
+    private static Stock userPortfolio1Sector3Stock1 = new Stock();
+    private static Stock userPortfolio1Sector3Stock2 = new Stock();
+    private static Stock userPortfolio1Sector3Stock3 = new Stock();
+    private static Stock userPortfolio1Sector3Stock4 = new Stock();
+    private static Stock userPortfolio1Sector3Stock5 = new Stock();
+
+    private static Stock userPortfolio1Sector4Stock1 = new Stock();
+    private static Stock userPortfolio1Sector4Stock2 = new Stock();
+    private static Stock userPortfolio1Sector4Stock3 = new Stock();
+    private static Stock userPortfolio1Sector4Stock4 = new Stock();
+    private static Stock userPortfolio1Sector4Stock5 = new Stock();
+
+    private static Stock userPortfolio1Sector5Stock1 = new Stock();
+    private static Stock userPortfolio1Sector5Stock2 = new Stock();
+    private static Stock userPortfolio1Sector5Stock3 = new Stock();
+    private static Stock userPortfolio1Sector5Stock4 = new Stock();
+    private static Stock userPortfolio1Sector5Stock5 = new Stock();
+
+    //Initialize Stocks for the user to fill in portfolio 2
+    private static Stock userPortfolio2Sector1Stock1 = new Stock();
+    private static Stock userPortfolio2Sector1Stock2 = new Stock();
+    private static Stock userPortfolio2Sector1Stock3 = new Stock();
+    private static Stock userPortfolio2Sector1Stock4 = new Stock();
+    private static Stock userPortfolio2Sector1Stock5 = new Stock();
+
+    private static Stock userPortfolio2Sector2Stock1 = new Stock();
+    private static Stock userPortfolio2Sector2Stock2 = new Stock();
+    private static Stock userPortfolio2Sector2Stock3 = new Stock();
+    private static Stock userPortfolio2Sector2Stock4 = new Stock();
+    private static Stock userPortfolio2Sector2Stock5 = new Stock();
+
+    private static Stock userPortfolio2Sector3Stock1 = new Stock();
+    private static Stock userPortfolio2Sector3Stock2 = new Stock();
+    private static Stock userPortfolio2Sector3Stock3 = new Stock();
+    private static Stock userPortfolio2Sector3Stock4 = new Stock();
+    private static Stock userPortfolio2Sector3Stock5 = new Stock();
+
+    private static Stock userPortfolio2Sector4Stock1 = new Stock();
+    private static Stock userPortfolio2Sector4Stock2 = new Stock();
+    private static Stock userPortfolio2Sector4Stock3 = new Stock();
+    private static Stock userPortfolio2Sector4Stock4 = new Stock();
+    private static Stock userPortfolio2Sector4Stock5 = new Stock();
+
+    private static Stock userPortfolio2Sector5Stock1 = new Stock();
+    private static Stock userPortfolio2Sector5Stock2 = new Stock();
+    private static Stock userPortfolio2Sector5Stock3 = new Stock();
+    private static Stock userPortfolio2Sector5Stock4 = new Stock();
+    private static Stock userPortfolio2Sector5Stock5 = new Stock();
+
+    //Initialize Stocks for the user to fill in portfolio 3
+    private static Stock userPortfolio3Sector1Stock1 = new Stock();
+    private static Stock userPortfolio3Sector1Stock2 = new Stock();
+    private static Stock userPortfolio3Sector1Stock3 = new Stock();
+    private static Stock userPortfolio3Sector1Stock4 = new Stock();
+    private static Stock userPortfolio3Sector1Stock5 = new Stock();
+
+    private static Stock userPortfolio3Sector2Stock1 = new Stock();
+    private static Stock userPortfolio3Sector2Stock2 = new Stock();
+    private static Stock userPortfolio3Sector2Stock3 = new Stock();
+    private static Stock userPortfolio3Sector2Stock4 = new Stock();
+    private static Stock userPortfolio3Sector2Stock5 = new Stock();
+
+    private static Stock userPortfolio3Sector3Stock1 = new Stock();
+    private static Stock userPortfolio3Sector3Stock2 = new Stock();
+    private static Stock userPortfolio3Sector3Stock3 = new Stock();
+    private static Stock userPortfolio3Sector3Stock4 = new Stock();
+    private static Stock userPortfolio3Sector3Stock5 = new Stock();
+
+    private static Stock userPortfolio3Sector4Stock1 = new Stock();
+    private static Stock userPortfolio3Sector4Stock2 = new Stock();
+    private static Stock userPortfolio3Sector4Stock3 = new Stock();
+    private static Stock userPortfolio3Sector4Stock4 = new Stock();
+    private static Stock userPortfolio3Sector4Stock5 = new Stock();
+
+    private static Stock userPortfolio3Sector5Stock1 = new Stock();
+    private static Stock userPortfolio3Sector5Stock2 = new Stock();
+    private static Stock userPortfolio3Sector5Stock3 = new Stock();
+    private static Stock userPortfolio3Sector5Stock4 = new Stock();
+    private static Stock userPortfolio3Sector5Stock5 = new Stock();
 
     //All Technology Sector Stocks
     private static Stock intelStock = new Stock("Intel", 'A', 59.41, 8.8, true);
@@ -140,12 +232,7 @@ public class Main {
     private static Sector userFinancial1 = new Sector("Financial");
     private static Sector userFood1 = new Sector("Food");
 
-    //Initialize Stock arrays for portfolio one and each sector within
-    private static Stock[] userPortfolio1Sector1Stocks = new Stock[5];
-    private static Stock[] userPortfolio1Sector2Stocks = new Stock[5];
-    private static Stock[] userPortfolio1Sector3Stocks = new Stock[5];
-    private static Stock[] userPortfolio1Sector4Stocks = new Stock[5];
-    private static Stock[] userPortfolio1Sector5Stocks = new Stock[5];
+
 
 
     //initialize sector array for second portfolio.
@@ -161,15 +248,6 @@ public class Main {
     private static Sector userFinancial2 = new Sector("Financial");
     private static Sector userFood2 = new Sector("Food");
 
-
-    //Initialize Stock arrays for portfolio two and each sector within
-    private static Stock[] userPortfolio2Sector1Stocks = new Stock[5];
-    private static Stock[] userPortfolio2Sector2Stocks = new Stock[5];
-    private static Stock[] userPortfolio2Sector3Stocks = new Stock[5];
-    private static Stock[] userPortfolio2Sector4Stocks = new Stock[5];
-    private static Stock[] userPortfolio2Sector5Stocks = new Stock[5];
-
-
     //Initialize sector array for third portfolio.
     private static Sector[] userSectors3 = new Sector[5];
     private static Portfolio portfolio3 = new Portfolio("",userSectors3);
@@ -182,14 +260,6 @@ public class Main {
     private static Sector userAerospace3 = new Sector("Aerospace");
     private static Sector userFinancial3 = new Sector("Financial");
     private static Sector userFood3 = new Sector("Food");
-
-
-    //Initialize Stock arrays for portfolio three and each sector within
-    private static Stock[] userPortfolio3Sector1Stocks = new Stock[5];
-    private static Stock[] userPortfolio3Sector2Stocks = new Stock[5];
-    private static Stock[] userPortfolio3Sector3Stocks = new Stock[5];
-    private static Stock[] userPortfolio3Sector4Stocks = new Stock[5];
-    private static Stock[] userPortfolio3Sector5Stocks = new Stock[5];
 
     private static Portfolio[] portfolios = {portfolio1, portfolio2, portfolio3};
 
@@ -223,9 +293,10 @@ public class Main {
 
                 do{
 
+
                     System.out.println("1. Create a Portfolio");
                     //Only allow user to select Portfolios if they have more then one
-                    if(numPortfolios > 1){
+                    if(numPortfolios >= 1){
                         System.out.println("2. Select Portfolio");
                     }
 
@@ -354,11 +425,42 @@ public class Main {
                                 }
                                 else if(choice == 2){
 
-                                    System.out.println("Tuff");
+                                    //See what pa
+                                    if(o == 0){
+                                        System.out.print("Enter the name of your stock");
+                                        userPortfolio1Sector1Stock1.setName(inputStr.nextLine());
+
+                                        System.out.print("Enter the region as a single letter");
+                                        userPortfolio1Sector1Stock1.setRegion(inputStr.next().charAt(0));
+
+                                        System.out.println("Enter the current price");
+                                        userPortfolio1Sector1Stock1.setCurrentPrice(inputNum.nextDouble());
+
+                                        System.out.println("Enter the stocks volatility");
+                                        userPortfolio1Sector1Stock1.setVolatility(inputNum.nextDouble());
+
+                                        tempStocks[o] = userPortfolio1Sector1Stock1;
+
+                                    }
+                                    else if(o == 1){
+
+                                        //paste o == 0 here and change stock 1 to 2
+
+                                    }
+                                    else if(o == 2){
+                                        //paste o == 0 here and change stock 1 to 3
+                                    }
+                                    else if(o == 3){
+                                        //paste o == 0 here and change stock 1 to 4
+                                    }
+                                    else if(o == 4){
+                                        //paste o == 0 here and change stock 1 to 5
+                                    }
+
 
                                 }
 
-                            }while(tempStocks[o] ==null);
+                            }while(tempStocks[o] == null);
 
                         }
 
