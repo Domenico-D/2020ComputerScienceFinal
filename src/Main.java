@@ -303,49 +303,58 @@ public class Main {
                                     System.out.print("Which stock would you like to add: ");
                                     stockChoice = inputNum.nextInt();
 
-                                    if(stockChoice == 1){
+                                    if(stockChoice == 1 && chosenStock[0]){
                                         tempStocks[o] = technologyArray[stockChoice-1];
                                         chosenStock[stockChoice-1] = false;
                                         break;
                                     }
-                                    else if(stockChoice == 2){
+                                    else if(stockChoice == 2 && chosenStock[1]){
+                                        tempStocks[o] = cryptoArray[stockChoice-1];
+                                        chosenStock[stockChoice-1] = false;
+                                        break;
+                                    }
+                                    else if(stockChoice == 3 && chosenStock[2]){
                                         tempStocks[o] = technologyArray[stockChoice-1];
                                         chosenStock[stockChoice-1] = false;
                                         break;
                                     }
-                                    else if(stockChoice == 3){
+                                    else if(stockChoice == 4 && chosenStock[3]){
                                         tempStocks[o] = technologyArray[stockChoice-1];
                                         chosenStock[stockChoice-1] = false;
                                         break;
                                     }
-                                    else if(stockChoice == 4){
+                                    else if(stockChoice == 5 && chosenStock[4]){
                                         tempStocks[o] = technologyArray[stockChoice-1];
                                         chosenStock[stockChoice-1] = false;
                                         break;
                                     }
-                                    else if(stockChoice == 5){
+                                    else if(stockChoice == 6 && chosenStock[5]){
                                         tempStocks[o] = technologyArray[stockChoice-1];
                                         chosenStock[stockChoice-1] = false;
                                         break;
                                     }
-                                    else if(stockChoice == 6){
+                                    else if(stockChoice == 7 && chosenStock[6]){
                                         tempStocks[o] = technologyArray[stockChoice-1];
                                         chosenStock[stockChoice-1] = false;
                                         break;
                                     }
-                                    else if(stockChoice == 7){
+                                    else if(stockChoice == 8 && chosenStock[7]){
                                         tempStocks[o] = technologyArray[stockChoice-1];
                                         chosenStock[stockChoice-1] = false;
                                         break;
                                     }
-                                    else if(stockChoice == 8){
-                                        tempStocks[o] = technologyArray[stockChoice-1];
-                                        chosenStock[stockChoice-1] = false;
-                                        break;
+                                    else if(!chosenStock[stockChoice-1])
+                                    {
+                                        System.out.println("Stock already selected. Pick something else.");
+                                    }
+                                    else{
+                                        System.out.println("Please enter a number between 1 and 8");
                                     }
 
                                 }
                                 else if(choice == 2){
+
+                                    System.out.println("Tuff");
 
                                 }
 
