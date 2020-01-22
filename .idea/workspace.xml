@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/Main.java" line="270" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac32eea0-aa4a-44bc-ac29-7a833c37da63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f703a34a-ef1f-4181-af6a-7f0ea3e7c0a6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Portfolio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stock.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,13 +16,29 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="290" column="29" selection-start-line="290" selection-start-column="29" selection-end-line="290" selection-end-column="29" />
+            <state relative-caret-position="611">
+              <caret line="442" column="33" selection-start-line="442" selection-start-column="33" selection-end-line="442" selection-end-column="33" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#22532#30521#0" />
+                <element signature="e#28072#48056#0" />
+                <element signature="e#22765#26589#1" />
+                <element signature="e#48062#68018#0" />
+                <element signature="e#68024#87974#0" />
+                <element signature="e#87980#107911#0" />
+                <element signature="e#107917#127853#0" />
+                <element signature="e#127859#147834#0" />
+                <element signature="e#147840#167772#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -26,13 +46,93 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="200" column="18" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
+            <state relative-caret-position="271">
+              <caret line="203" column="9" lean-forward="true" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#5672#5673#0" expanded="true" />
+                <element signature="e#5699#5700#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Stock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="27" column="95" selection-start-line="27" selection-start-column="95" selection-end-line="27" selection-end-column="95" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#updateStockPrice#1;class#Stock#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Portfolio.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <folding>
+                <element signature="e#836#837#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>intel</find>
+      <find>public</find>
+      <find>1</find>
+      <find>Stock</find>
+      <find>userPortfolio1Sector1Stock1</find>
+      <find>Sector2</find>
+      <find>Sector5</find>
+      <find>crypto</find>
+      <find>inputStr.next().charAt(0);</find>
+      <find>userTechnology1</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Chipotle</replace>
+      <replace>dominoes</replace>
+      <replace>Dominoes</replace>
+      <replace>beyondMeat</replace>
+      <replace>BeyondMeat</replace>
+      <replace>pepsiCo</replace>
+      <replace>PepsiCo</replace>
+      <replace>heineken</replace>
+      <replace>Heineken</replace>
+      <replace>hennesey</replace>
+      <replace>Hennesey</replace>
+      <replace>private</replace>
+      <replace>1</replace>
+      <replace>private static Stock</replace>
+      <replace>2</replace>
+      <replace>3</replace>
+      <replace>userPortfolio1Sector1Stock1\2</replace>
+      <replace>userPortfolio1Sector1Stock2</replace>
+      <replace>Sector3</replace>
+      <replace>Sector4</replace>
+      <replace>Sector5</replace>
+      <replace>Sector76</replace>
+      <replace>Sector6</replace>
+      <replace>Sector7</replace>
+      <replace>retail</replace>
+      <replace>auto</replace>
+      <replace>aero</replace>
+      <replace>financial</replace>
+      <replace>food</replace>
+      <replace>inputChr.next().charAt(0);</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -42,44 +142,28 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Sector.java" />
+        <option value="$PROJECT_DIR$/src/Stock.java" />
+        <option value="$PROJECT_DIR$/src/Portfolio.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectId" id="1WdM3vW2meKx3K9c6M3mSU006AI" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="2020ComputerScienceFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2020ComputerScienceFinal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2020ComputerScienceFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2020ComputerScienceFinal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579529731689" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -93,23 +177,47 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="2020ComputerScienceFinal" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ac32eea0-aa4a-44bc-ac29-7a833c37da63" name="Default Changelist" comment="" />
-      <created>1579529487496</created>
+      <changelist id="f703a34a-ef1f-4181-af6a-7f0ea3e7c0a6" name="Default Changelist" comment="" />
+      <created>1579475230781</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1579529487496</updated>
+      <updated>1579475230781</updated>
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13671875" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.74945295" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -118,36 +226,80 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Portfolio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="27" column="95" selection-start-line="27" selection-start-column="95" selection-end-line="27" selection-end-column="95" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateStockPrice#1;class#Stock#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="200" column="18" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
+        <state relative-caret-position="271">
+          <caret line="203" column="9" lean-forward="true" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#5672#5673#0" expanded="true" />
+            <element signature="e#5699#5700#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="290" column="29" selection-start-line="290" selection-start-column="29" selection-end-line="290" selection-end-column="29" />
+        <state relative-caret-position="611">
+          <caret line="442" column="33" selection-start-line="442" selection-start-column="33" selection-end-line="442" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#22532#30521#0" />
+            <element signature="e#28072#48056#0" />
+            <element signature="e#22765#26589#1" />
+            <element signature="e#48062#68018#0" />
+            <element signature="e#68024#87974#0" />
+            <element signature="e#87980#107911#0" />
+            <element signature="e#107917#127853#0" />
+            <element signature="e#127859#147834#0" />
+            <element signature="e#147840#167772#0" />
+          </folding>
         </state>
       </provider>
     </entry>

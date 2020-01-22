@@ -13,17 +13,147 @@ public class Main {
 
     private static Scanner inputStr = new Scanner(System.in);
     private static Scanner inputNum = new Scanner(System.in);
+    private static Scanner inputChr = new Scanner(System.in);
+    
 
+    //Initialize Stocks for the user to fill in portfolio 1
+    private static Stock userPortfolio1Sector1Stock1 = new Stock();
+    private static Stock userPortfolio1Sector1Stock2 = new Stock();
+    private static Stock userPortfolio1Sector1Stock3 = new Stock();
+    private static Stock userPortfolio1Sector1Stock4 = new Stock();
+    private static Stock userPortfolio1Sector1Stock5 = new Stock();
+
+    private static Stock userPortfolio1Sector2Stock1 = new Stock();
+    private static Stock userPortfolio1Sector2Stock2 = new Stock();
+    private static Stock userPortfolio1Sector2Stock3 = new Stock();
+    private static Stock userPortfolio1Sector2Stock4 = new Stock();
+    private static Stock userPortfolio1Sector2Stock5 = new Stock();
+
+    private static Stock userPortfolio1Sector3Stock1 = new Stock();
+    private static Stock userPortfolio1Sector3Stock2 = new Stock();
+    private static Stock userPortfolio1Sector3Stock3 = new Stock();
+    private static Stock userPortfolio1Sector3Stock4 = new Stock();
+    private static Stock userPortfolio1Sector3Stock5 = new Stock();
+
+    private static Stock userPortfolio1Sector4Stock1 = new Stock();
+    private static Stock userPortfolio1Sector4Stock2 = new Stock();
+    private static Stock userPortfolio1Sector4Stock3 = new Stock();
+    private static Stock userPortfolio1Sector4Stock4 = new Stock();
+    private static Stock userPortfolio1Sector4Stock5 = new Stock();
+
+    private static Stock userPortfolio1Sector5Stock1 = new Stock();
+    private static Stock userPortfolio1Sector5Stock2 = new Stock();
+    private static Stock userPortfolio1Sector5Stock3 = new Stock();
+    private static Stock userPortfolio1Sector5Stock4 = new Stock();
+    private static Stock userPortfolio1Sector5Stock5 = new Stock();
+
+    private static Stock userPortfolio1Sector6Stock1 = new Stock();
+    private static Stock userPortfolio1Sector6Stock2 = new Stock();
+    private static Stock userPortfolio1Sector6Stock3 = new Stock();
+    private static Stock userPortfolio1Sector6Stock4 = new Stock();
+    private static Stock userPortfolio1Sector6Stock5 = new Stock();
+
+    private static Stock userPortfolio1Sector7Stock1 = new Stock();
+    private static Stock userPortfolio1Sector7Stock2 = new Stock();
+    private static Stock userPortfolio1Sector7Stock3 = new Stock();
+    private static Stock userPortfolio1Sector7Stock4 = new Stock();
+    private static Stock userPortfolio1Sector7Stock5 = new Stock();
+
+    //Initialize Stocks for the user to fill in portfolio 2
+    private static Stock userPortfolio2Sector1Stock1 = new Stock();
+    private static Stock userPortfolio2Sector1Stock2 = new Stock();
+    private static Stock userPortfolio2Sector1Stock3 = new Stock();
+    private static Stock userPortfolio2Sector1Stock4 = new Stock();
+    private static Stock userPortfolio2Sector1Stock5 = new Stock();
+
+    private static Stock userPortfolio2Sector2Stock1 = new Stock();
+    private static Stock userPortfolio2Sector2Stock2 = new Stock();
+    private static Stock userPortfolio2Sector2Stock3 = new Stock();
+    private static Stock userPortfolio2Sector2Stock4 = new Stock();
+    private static Stock userPortfolio2Sector2Stock5 = new Stock();
+
+    private static Stock userPortfolio2Sector3Stock1 = new Stock();
+    private static Stock userPortfolio2Sector3Stock2 = new Stock();
+    private static Stock userPortfolio2Sector3Stock3 = new Stock();
+    private static Stock userPortfolio2Sector3Stock4 = new Stock();
+    private static Stock userPortfolio2Sector3Stock5 = new Stock();
+
+    private static Stock userPortfolio2Sector4Stock1 = new Stock();
+    private static Stock userPortfolio2Sector4Stock2 = new Stock();
+    private static Stock userPortfolio2Sector4Stock3 = new Stock();
+    private static Stock userPortfolio2Sector4Stock4 = new Stock();
+    private static Stock userPortfolio2Sector4Stock5 = new Stock();
+
+    private static Stock userPortfolio2Sector5Stock1 = new Stock();
+    private static Stock userPortfolio2Sector5Stock2 = new Stock();
+    private static Stock userPortfolio2Sector5Stock3 = new Stock();
+    private static Stock userPortfolio2Sector5Stock4 = new Stock();
+    private static Stock userPortfolio2Sector5Stock5 = new Stock();
+
+    private static Stock userPortfolio2Sector6Stock1 = new Stock();
+    private static Stock userPortfolio2Sector6Stock2 = new Stock();
+    private static Stock userPortfolio2Sector6Stock3 = new Stock();
+    private static Stock userPortfolio2Sector6Stock4 = new Stock();
+    private static Stock userPortfolio2Sector6Stock5 = new Stock();
+
+    private static Stock userPortfolio2Sector7Stock1 = new Stock();
+    private static Stock userPortfolio2Sector7Stock2 = new Stock();
+    private static Stock userPortfolio2Sector7Stock3 = new Stock();
+    private static Stock userPortfolio2Sector7Stock4 = new Stock();
+    private static Stock userPortfolio2Sector7Stock5 = new Stock();
+
+    //Initialize Stocks for the user to fill in portfolio 3
+    private static Stock userPortfolio3Sector1Stock1 = new Stock();
+    private static Stock userPortfolio3Sector1Stock2 = new Stock();
+    private static Stock userPortfolio3Sector1Stock3 = new Stock();
+    private static Stock userPortfolio3Sector1Stock4 = new Stock();
+    private static Stock userPortfolio3Sector1Stock5 = new Stock();
+
+    private static Stock userPortfolio3Sector2Stock1 = new Stock();
+    private static Stock userPortfolio3Sector2Stock2 = new Stock();
+    private static Stock userPortfolio3Sector2Stock3 = new Stock();
+    private static Stock userPortfolio3Sector2Stock4 = new Stock();
+    private static Stock userPortfolio3Sector2Stock5 = new Stock();
+
+    private static Stock userPortfolio3Sector3Stock1 = new Stock();
+    private static Stock userPortfolio3Sector3Stock2 = new Stock();
+    private static Stock userPortfolio3Sector3Stock3 = new Stock();
+    private static Stock userPortfolio3Sector3Stock4 = new Stock();
+    private static Stock userPortfolio3Sector3Stock5 = new Stock();
+
+    private static Stock userPortfolio3Sector4Stock1 = new Stock();
+    private static Stock userPortfolio3Sector4Stock2 = new Stock();
+    private static Stock userPortfolio3Sector4Stock3 = new Stock();
+    private static Stock userPortfolio3Sector4Stock4 = new Stock();
+    private static Stock userPortfolio3Sector4Stock5 = new Stock();
+
+    private static Stock userPortfolio3Sector5Stock1 = new Stock();
+    private static Stock userPortfolio3Sector5Stock2 = new Stock();
+    private static Stock userPortfolio3Sector5Stock3 = new Stock();
+    private static Stock userPortfolio3Sector5Stock4 = new Stock();
+    private static Stock userPortfolio3Sector5Stock5 = new Stock();
+
+    private static Stock userPortfolio3Sector6Stock1 = new Stock();
+    private static Stock userPortfolio3Sector6Stock2 = new Stock();
+    private static Stock userPortfolio3Sector6Stock3 = new Stock();
+    private static Stock userPortfolio3Sector6Stock4 = new Stock();
+    private static Stock userPortfolio3Sector6Stock5 = new Stock();
+
+    private static Stock userPortfolio3Sector7Stock1 = new Stock();
+    private static Stock userPortfolio3Sector7Stock2 = new Stock();
+    private static Stock userPortfolio3Sector7Stock3 = new Stock();
+    private static Stock userPortfolio3Sector7Stock4 = new Stock();
+    private static Stock userPortfolio3Sector7Stock5 = new Stock();
 
     //All Technology Sector Stocks
-    private static Stock intelStock = new Stock("Intel", 'A', 59.41, 8.8, true);
-    private static Stock appleStock = new Stock("Apple", 'A', 59.41, 8.8, true);
-    private static Stock alphabetStock = new Stock("Alphabet", 'A', 59.41, 8.8, true);
-    private static Stock samsungStock = new Stock("Samsung", 'A', 59.41, 8.8, true);
-    private static Stock microsoftStock = new Stock("Microsoft", 'A', 59.41, 8.8, true);
-    private static Stock nvidiaStock = new Stock("Nvidia", 'A', 59.41, 8.8, true);
-    private static Stock nintendoStock = new Stock("Nintendo", 'A', 59.41, 8.8, true);
-    private static Stock amdStock = new Stock("AMD", 'A', 59.41, 8.8, true);
+    private static Stock intelStock = new Stock("Intel", 'N', 60.54, 0.7, true);
+    private static Stock appleStock = new Stock("Apple", 'N', 316.75, 0.8, true);
+    private static Stock alphabetStock = new Stock("Alphabet", 'N', 1482.98, 0.9, true);
+    private static Stock samsungStock = new Stock("Samsung", 'A', 218.32, 0.7, true);
+    private static Stock microsoftStock = new Stock("Microsoft", 'N', 166.25, 0.8, true);
+    private static Stock nvidiaStock = new Stock("Nvidia", 'A', 247.95, 0.1, true);
+    private static Stock nintendoStock = new Stock("Nintendo", 'A', 53.26, 0.7, true);
+    private static Stock amdStock = new Stock("AMD", 'A', 51.05, 0.1, true);
 
     //Array of all technology stocks
     private static Stock[] technologyArray = {intelStock, appleStock, alphabetStock, samsungStock, microsoftStock, nvidiaStock, nintendoStock, amdStock};
@@ -32,14 +162,14 @@ public class Main {
     private static Sector technologySector = new Sector("Technology", technologyArray);
 
     //All Crypto Currency Stocks
-    private static Stock bitcoinStock = new Stock("Bitcoin", 'A', 59.41, 8.8, true);
-    private static Stock doge_CoinStock = new Stock("Doge Coin", 'A', 59.41, 8.8, true);
-    private static Stock litecoinStock = new Stock("Litecoin", 'A', 59.41, 8.8, true);
-    private static Stock zCashStock = new Stock("zCash", 'A', 59.41, 8.8, true);
-    private static Stock ethereumStock = new Stock("Ethereum", 'A', 59.41, 8.8, true);
-    private static Stock zuccBuccStock = new Stock("ZuccBucc", 'A', 59.41, 8.8, true);
-    private static Stock rippleStock = new Stock("Ripple", 'A', 59.41, 8.8, true);
-    private static Stock dashStock = new Stock("Dash", 'A', 59.41, 8.8, true);
+    private static Stock bitcoinStock = new Stock("Bitcoin", 'N', 8700.32, 0.17, true);
+    private static Stock doge_CoinStock = new Stock("Doge Coin", 'E', 1.37, 0.13, true);
+    private static Stock litecoinStock = new Stock("Litecoin", 'A', 57.31, 0.16, true);
+    private static Stock zCashStock = new Stock("zCash", 'F', 53.23, 0.1, true);
+    private static Stock ethereumStock = new Stock("Ethereum", 'O', 168.19, 0.15, true);
+    private static Stock zuccBuccStock = new Stock("ZuccBucc", 'N', 666.66, 0.2, true);
+    private static Stock rippleStock = new Stock("Ripple", 'O', 1.23, 0.11, true);
+    private static Stock dashStock = new Stock("Dash", 'F', 108.13, 0.14, true);
 
     //Array of crypto currency stocks
     private static Stock[] cryptoArray = {bitcoinStock, doge_CoinStock, litecoinStock, zCashStock, ethereumStock, zuccBuccStock, rippleStock, dashStock};
@@ -48,14 +178,14 @@ public class Main {
     private static Sector cryptoCurrencySector = new Sector("Crypto Currency", cryptoArray);
 
     //All Retail Stocks
-    private static Stock amazonStock = new Stock("Amazon", 'A', 59.41, 8.8, true);
-    private static Stock alibabaStock = new Stock("Alibaba", 'A', 59.41, 8.8, true);
-    private static Stock bestBuyStock = new Stock("BestBuy", 'A', 59.41, 8.8, true);
-    private static Stock costcoStock = new Stock("Costco", 'A', 59.41, 8.8, true);
-    private static Stock rexallStock = new Stock("Rexall", 'A', 59.41, 8.8, true);
-    private static Stock wishStock = new Stock("Wish", 'A', 59.41, 8.8, true);
-    private static Stock freshCoStock = new Stock("FreshCo", 'A', 59.41, 8.8, true);
-    private static Stock ebayStock = new Stock("Ebay", 'A', 59.41, 8.8, true);
+    private static Stock amazonStock = new Stock("Amazon", 'N', 1892.02, 0.09, true);
+    private static Stock alibabaStock = new Stock("Alibaba", 'A', 222.26, 0.09, true);
+    private static Stock bestBuyStock = new Stock("BestBuy", 'N', 90.24, 0.07, true);
+    private static Stock costcoStock = new Stock("Costco", 'N', 313.26, 0.07, true);
+    private static Stock rexallStock = new Stock("Rexall", 'N', 1329.28, 0.09, true);
+    private static Stock wishStock = new Stock("Wish", 'A', 841.42, 0.08, true);
+    private static Stock freshCoStock = new Stock("FreshCo", 'N', 64.82, 0.07, true);
+    private static Stock ebayStock = new Stock("Ebay", 'N',35.72 , 0.08, true);
 
     //Array of retail stocks
     private static Stock[] retailArray = {amazonStock, alibabaStock, bestBuyStock, costcoStock, rexallStock, wishStock, freshCoStock, ebayStock};
@@ -64,14 +194,14 @@ public class Main {
     private static Sector retailSector = new Sector("Retail", retailArray);
 
     //All auto Stocks
-    private static Stock fordStock = new Stock("Ford", 'A', 59.41, 8.8, true);
-    private static Stock volkswagenStock = new Stock("Volkswagen", 'A', 59.41, 8.8, true);
-    private static Stock hondaStock = new Stock("Honda", 'A', 59.41, 8.8, true);
-    private static Stock toyotaStock = new Stock("Toyota", 'A', 59.41, 8.8, true);
-    private static Stock teslaStock = new Stock("Tesla", 'A', 59.41, 8.8, true);
-    private static Stock volvoStock = new Stock("Volvo", 'A', 59.41, 8.8, true);
-    private static Stock nissanStock = new Stock("Nissan", 'A', 59.41, 8.8, true);
-    private static Stock ferrariStock = new Stock("Ferrari", 'A', 59.41, 8.8, true);
+    private static Stock fordStock = new Stock("Ford", 'N', 9.21, 0.04, true);
+    private static Stock volkswagenStock = new Stock("Volkswagen", 'E', 181.30, 0.06, true);
+    private static Stock hondaStock = new Stock("Honda", 'A', 89.41, 0.03, true);
+    private static Stock toyotaStock = new Stock("Toyota", 'A', 32.45, 0.04, true);
+    private static Stock teslaStock = new Stock("Tesla", 'N', 523.89, 0.06, true);
+    private static Stock volvoStock = new Stock("Volvo", 'E', 161.45, 0.05, true);
+    private static Stock nissanStock = new Stock("Nissan", 'A', 29.41, 0.03, true);
+    private static Stock ferrariStock = new Stock("Ferrari", 'E', 213.13, 0.06, true);
 
     //Array of auto Stocks
     private static Stock[] autoArray = {fordStock, volkswagenStock, hondaStock, toyotaStock, teslaStock, volvoStock, nissanStock, ferrariStock};
@@ -80,30 +210,30 @@ public class Main {
     private static Sector autoSector = new Sector("Auto", autoArray);
 
     //All Aerospace and Defense Stocks
-    private static Stock bombardierStock = new Stock("Bombardier", 'A', 59.41, 8.8, true);
-    private static Stock generalElectricStock = new Stock("General Electric", 'A', 59.41, 8.8, true);
-    private static Stock boeingStock = new Stock("Boeing", 'A', 59.41, 8.8, true);
-    private static Stock unitedTechnologiesStock = new Stock("United Technologies", 'A', 59.41, 8.8, true);
-    private static Stock airbusStock = new Stock("Airbus", 'A', 59.41, 8.8, true);
-    private static Stock honeywellStock = new Stock("Honeywell", 'A', 59.41, 8.8, true);
-    private static Stock spaceXStock = new Stock("SpaceX", 'A', 59.41, 8.8, true);
-    private static Stock safronStock = new Stock("Safron", 'A', 59.41, 8.8, true);
+    private static Stock bombardierStock = new Stock("Bombardier", 'A', 1.29, 0.07, true);
+    private static Stock generalElectricStock = new Stock("General Electric", 'A', 11.66, 0.08, true);
+    private static Stock boeingStock = new Stock("Boeing", 'A', 313.37, 0.09, true);
+    private static Stock unitedTechnologiesStock = new Stock("United Technologies", 'A', 59.41, 0.07, true);
+    private static Stock airbusStock = new Stock("Airbus", 'A', 136.41, 0.08, true);
+    private static Stock honeywellStock = new Stock("Honeywell", 'A', 180.93, 0.08, true);
+    private static Stock spaceXStock = new Stock("SpaceX", 'A', 132.56, 0.09, true);
+    private static Stock safranStock = new Stock("Safran", 'A', 142.00, 0.09, true);
 
     //Array of Aerospace and defence stocks
-    private static Stock[] aeroArray = {bombardierStock, generalElectricStock, boeingStock, unitedTechnologiesStock, airbusStock, honeywellStock, spaceXStock, safronStock};
+    private static Stock[] aeroArray = {bombardierStock, generalElectricStock, boeingStock, unitedTechnologiesStock, airbusStock, honeywellStock, spaceXStock, safranStock};
 
     //Aerospace Sector
     private static Sector aerospaceSector = new Sector("Aerospace", aeroArray);
 
     //All Financial / banks stocks
-    private static Stock scotiaBankStock = new Stock("ScotiaBank", 'A', 59.41, 8.8, true);
-    private static Stock cibcStock = new Stock("CIBC", 'A', 59.41, 8.8, true);
-    private static Stock bankOfAmericaStock = new Stock("Bank of America", 'A', 59.41, 8.8, true);
-    private static Stock bmoStock = new Stock("BMO", 'A', 59.41, 8.8, true);
-    private static Stock hAndRBlockStock = new Stock("H and R Block", 'A', 59.41, 8.8, true);
-    private static Stock tdStock = new Stock("TD", 'A', 59.41, 8.8, true);
-    private static Stock rbcStock = new Stock("RBC", 'A', 59.41, 8.8, true);
-    private static Stock tangerineStock = new Stock("Tangerine", 'A', 59.41, 8.8, true);
+    private static Stock scotiaBankStock = new Stock("ScotiaBank", 'N', 72.63, 0.05, true);
+    private static Stock cibcStock = new Stock("CIBC", 'N', 108.14, 0.07, true);
+    private static Stock bankOfAmericaStock = new Stock("Bank of America", 'N', 34.26, 0.03, true);
+    private static Stock bmoStock = new Stock("BMO", 'N', 104.34, 0.04, true);
+    private static Stock hAndRBlockStock = new Stock("H and R Block", 'E', 53.63, 8.8, true);
+    private static Stock tdStock = new Stock("TD", 'N', 73.96, 0.05, true);
+    private static Stock rbcStock = new Stock("RBC", 'N', 106.79, 0.02, true);
+    private static Stock tangerineStock = new Stock("Tangerine", 'O', 163.76, 0.06, true);
 
     //Array of Financial stocks
     private static Stock[] financialArray = {scotiaBankStock, cibcStock, bankOfAmericaStock, bmoStock, hAndRBlockStock, tdStock, rbcStock, tangerineStock};
@@ -112,17 +242,17 @@ public class Main {
     private static Sector financialSector = new Sector("Financial", financialArray);
 
     //All food Stocks
-    private static Stock mcDonaldsStock = new Stock("McDonalds", 'A', 59.41, 8.8, true);
-    private static Stock wendysStock = new Stock("Wendys", 'A', 59.41, 8.8, true);
-    private static Stock chipotleStock = new Stock("Chipotle", 'A', 59.41, 8.8, true);
-    private static Stock dominoesStock = new Stock("Dominoes", 'A', 59.41, 8.8, true);
-    private static Stock beyondMeatStock = new Stock("BeyondMeat", 'A', 59.41, 8.8, true);
-    private static Stock pepsiCoStock = new Stock("PepsiCo", 'A', 59.41, 8.8, true);
-    private static Stock heinekenStock = new Stock("Heineken", 'A', 59.41, 8.8, true);
-    private static Stock henneseyStock = new Stock("Hennesey", 'A', 59.41, 8.8, true);
+    private static Stock mcDonaldsStock = new Stock("McDonalds", 'A', 211.16, 0.08, true);
+    private static Stock wendysStock = new Stock("Wendys", 'A', 21.66, 0.09, true);
+    private static Stock chipotleStock = new Stock("Chipotle", 'A', 870.73, 0.07, true);
+    private static Stock dominosStock = new Stock("Dominos", 'A', 285.11, 0.05, true);
+    private static Stock beyondMeatStock = new Stock("BeyondMeat", 'A', 129.18, 0.07, true);
+    private static Stock pepsiCoStock = new Stock("PepsiCo", 'A', 141.86, 0.1, true);
+    private static Stock heinekenStock = new Stock("Heineken", 'A', 99.86, 0.07, true);
+    private static Stock henneseyStock = new Stock("Hennesey", 'A', 51.41, 0.12, true);
 
     //Array of food Stocks
-    private static Stock[] foodArray = {mcDonaldsStock, wendysStock, chipotleStock, dominoesStock, beyondMeatStock, pepsiCoStock, heinekenStock, henneseyStock};
+    private static Stock[] foodArray = {mcDonaldsStock, wendysStock, chipotleStock, dominosStock, beyondMeatStock, pepsiCoStock, heinekenStock, henneseyStock};
 
     //Food Sector
     private static Sector foodSector = new Sector("Food", foodArray);
@@ -140,14 +270,6 @@ public class Main {
     private static Sector userFinancial1 = new Sector("Financial");
     private static Sector userFood1 = new Sector("Food");
 
-    //Initialize Stock arrays for portfolio one and each sector within
-    private static Stock[] userPortfolio1Sector1Stocks = new Stock[5];
-    private static Stock[] userPortfolio1Sector2Stocks = new Stock[5];
-    private static Stock[] userPortfolio1Sector3Stocks = new Stock[5];
-    private static Stock[] userPortfolio1Sector4Stocks = new Stock[5];
-    private static Stock[] userPortfolio1Sector5Stocks = new Stock[5];
-
-
     //initialize sector array for second portfolio.
     private static Sector[] userSectors2 = new Sector[5];
     private static Portfolio portfolio2 = new Portfolio("",userSectors2);
@@ -160,15 +282,6 @@ public class Main {
     private static Sector userAerospace2 = new Sector("Aerospace");
     private static Sector userFinancial2 = new Sector("Financial");
     private static Sector userFood2 = new Sector("Food");
-
-
-    //Initialize Stock arrays for portfolio two and each sector within
-    private static Stock[] userPortfolio2Sector1Stocks = new Stock[5];
-    private static Stock[] userPortfolio2Sector2Stocks = new Stock[5];
-    private static Stock[] userPortfolio2Sector3Stocks = new Stock[5];
-    private static Stock[] userPortfolio2Sector4Stocks = new Stock[5];
-    private static Stock[] userPortfolio2Sector5Stocks = new Stock[5];
-
 
     //Initialize sector array for third portfolio.
     private static Sector[] userSectors3 = new Sector[5];
@@ -183,17 +296,25 @@ public class Main {
     private static Sector userFinancial3 = new Sector("Financial");
     private static Sector userFood3 = new Sector("Food");
 
-
-    //Initialize Stock arrays for portfolio three and each sector within
-    private static Stock[] userPortfolio3Sector1Stocks = new Stock[5];
-    private static Stock[] userPortfolio3Sector2Stocks = new Stock[5];
-    private static Stock[] userPortfolio3Sector3Stocks = new Stock[5];
-    private static Stock[] userPortfolio3Sector4Stocks = new Stock[5];
-    private static Stock[] userPortfolio3Sector5Stocks = new Stock[5];
-
     private static Portfolio[] portfolios = {portfolio1, portfolio2, portfolio3};
 
     private static int numPortfolios = 0;
+
+    //User menu selection
+    private static int choice;
+    //Prevents user from adding the same sector or Stock twice
+    private static Boolean[] chosen = {true, true, true, true, true, true, true};
+    private static Boolean[] chosenStock = {true, true, true, true, true, true, true, true};
+    //Temp stock array to fill sectors
+    private static Stock[] tempStocks = new Stock[5];
+    //user stock choice
+    private static int stockChoice;
+    private static double currentPriceTemp;
+    private static double volatilityTemp;
+    private static char regionTemp;
+
+    //Menu navigator
+    public static int gameChoice;
 
 
     public static void main(String[]args){
@@ -207,79 +328,139 @@ public class Main {
          * 4. set beginDayPrice.
          */
 
-        int choice, gameChoice;
-
-        System.out.println(technologySector.toString());
 
 
         do{
-
+            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
             System.out.println("1. Play");
-            System.out.println("2. About us");
+            System.out.println("2. About us\n");
+            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+            gameChoice = inputNum.nextInt();
 
-            choice = inputNum.nextInt();
-
-            if(choice == 1){
+            if(gameChoice == 1){
 
                 do{
 
-                    System.out.println("1. Create a Portfolio");
-                    //Only allow user to select Portfolios if they have more then one
-                    if(numPortfolios > 1){
-                        System.out.println("2. Select Portfolio");
+
+                    if(numPortfolios < 1){
+                        gameChoice = 1;
+                    }
+                    else{
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("\n1. Create a Portfolio (max of three)");
+                        //Only allow user to select Portfolios if they have more then one
+                        if(numPortfolios < 3)
+                            System.out.println("2. Select Portfolio");
+
+                        System.out.println("[\n̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+
+                        gameChoice = inputNum.nextInt();
                     }
 
-                    gameChoice = inputNum.nextInt();
-
+                    //create portfolio
                     if(gameChoice == 1){
                         numPortfolios++;
-
                         createPortfolio();
 
                     }
+                    //Continue with the rest of the game
                     else if(gameChoice == 2){
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("\nWhich portfolio would you like to access");
+                        //Check how many portfolios the user has to determine which names to print
 
-                        System.out.println("Which portfolio would you like to access");
+                        if(numPortfolios == 3){
+                            do {
+                                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                                System.out.println("Which portfolio would you like to manage");
+                                System.out.println("1. " + portfolio1.getName());
+                                System.out.println("2. " + portfolio2.getName());
+                                System.out.println("3. " + portfolio3.getName());
+                                System.out.println("0. Go back");
+                                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                                gameChoice = inputNum.nextInt();
+
+                                if (gameChoice == 1) {
+
+                                }
+                                else if (gameChoice == 2) {
+
+                                }
+                                else if (gameChoice == 3) {
+
+                                }
+                                else{
+                                    System.out.println("Please enter a correct number");
+                                }
+                            }while(gameChoice != 0);
+                        }
+                        else{
+                            do {
+                                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                                System.out.println("Which portfolio would you like to manage");
+                                System.out.println("1. " + portfolio1.getName());
+                                System.out.println("2. " + portfolio2.getName());
+                                System.out.println("0 to go back");
+                                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                                gameChoice = inputNum.nextInt();
+
+                                if (gameChoice == 1) {
+
+                                } else if (gameChoice == 2) {
+
+                                }
+                                else{
+                                    System.out.println("Please enter a correct number");
+                                }
+
+                            }while(gameChoice != 0);
+                        }
+
+
+
 
                     }
 
                 }while(gameChoice != 0);
 
             }
-            else if(choice == 2){
+            else if(gameChoice == 2){
                 System.out.println("test 2");
             }
 
 
-        }while(choice != 0);
+        }while(gameChoice != 0);
 
 
 
 
     }
 
+    private static void menu(Portfolio folio){
+
+        do{
+
+        }while (gameChoice != 0);
+
+    }
+
     private static void createPortfolio(){
-        //User menu selection
-        int choice;
-        //Prevents user from adding the same sector or Stock twice
-        Boolean[] chosen = {true, true, true, true, true, true, true};
-        Boolean[] chosenStock = {true, true, true, true, true, true, true, true};
-        //Temp stock array to fill sectors
-        Stock[] tempStocks = new Stock[5];
-        //user stock choice
-        int stockChoice;
 
         if(numPortfolios == 1){
+            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+            System.out.print("Enter the name of your first portfolio\n");
+            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
 
-            System.out.print("Enter the name of your first portfolio: ");
             portfolio1.setName(inputStr.nextLine());
 
             for (int i = 0; i < userSectors1.length; i++){
 
                 do{
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                     System.out.println("Please choose what sectors you want in your portfolio");
                     System.out.println("Choose carefully you will not be able to change them later!");
-                    System.out.print("1. Technology, 2. Crypto Currency, 3. Retail, 4. Auto, 5. Aerospace and Defence, 6. Financial, 7. Food: ");
+                    System.out.println("1. Technology, 2. Crypto Currency, 3. Retail, 4. Auto, 5. Aerospace and Defence, 6. Financial, 7. Food\n");
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                     choice = inputNum.nextInt();
 
                     //User chooses technology sector and stocks within.
@@ -287,118 +468,158 @@ public class Main {
                         //Set the chosen sector
                         userSectors1[i] = userTechnology1;
 
-                        //Fill Stocks with user choices
-                        for(int o = 0; o < tempStocks.length; o++){
-
-                            do{
-
-                                System.out.println("Please choose the Stocks you want in the technology Sector");
-                                System.out.println("1. Choose Stock");
-                                System.out.println("2. Create Stock");
-                                choice = inputNum.nextInt();
-
-                                //Check if they want to create or choose a stock
-                                if(choice ==1){
-                                    System.out.println(technologySector.toString());
-                                    System.out.print("Which stock would you like to add: ");
-                                    stockChoice = inputNum.nextInt();
-
-                                    if(stockChoice == 1){
-                                        tempStocks[o] = technologyArray[stockChoice-1];
-                                        chosenStock[stockChoice-1] = false;
-                                        break;
-                                    }
-                                    else if(stockChoice == 2){
-                                        tempStocks[o] = technologyArray[stockChoice-1];
-                                        chosenStock[stockChoice-1] = false;
-                                        break;
-                                    }
-                                    else if(stockChoice == 3){
-                                        tempStocks[o] = technologyArray[stockChoice-1];
-                                        chosenStock[stockChoice-1] = false;
-                                        break;
-                                    }
-                                    else if(stockChoice == 4){
-                                        tempStocks[o] = technologyArray[stockChoice-1];
-                                        chosenStock[stockChoice-1] = false;
-                                        break;
-                                    }
-                                    else if(stockChoice == 5){
-                                        tempStocks[o] = technologyArray[stockChoice-1];
-                                        chosenStock[stockChoice-1] = false;
-                                        break;
-                                    }
-                                    else if(stockChoice == 6){
-                                        tempStocks[o] = technologyArray[stockChoice-1];
-                                        chosenStock[stockChoice-1] = false;
-                                        break;
-                                    }
-                                    else if(stockChoice == 7){
-                                        tempStocks[o] = technologyArray[stockChoice-1];
-                                        chosenStock[stockChoice-1] = false;
-                                        break;
-                                    }
-                                    else if(stockChoice == 8){
-                                        tempStocks[o] = technologyArray[stockChoice-1];
-                                        chosenStock[stockChoice-1] = false;
-                                        break;
-                                    }
-
-                                }
-                                else if(choice == 2){
-
-                                }
-
-                            }while(tempStocks[o] ==null);
-
-                        }
-
+                        //Fills Sector One stocks
+                        fillPortfolioOneSectorOne();
+                        userSectors1[i].setInstruments(tempStocks);
 
                         //Prevents user from adding the same sector twice
                         chosen[0] = false;
+
+                        //Clear temp stocks
+                        for(int u = 0; u < tempStocks.length; u++){
+                            tempStocks[u] = null;
+                        }
+                        //clears double stock check
+                        for(int u = 0; u < chosenStock.length; u++){
+                            chosenStock[u] = true;
+                        }
+
                         break;
                     }
                     //User chooses Crypto sector and stocks within.
                     else if (choice == 2 && chosen[1]) {
                         userSectors1[i] = userCrypto1;
+
+                        //Prevents user from adding the same sector twice
                         chosen[1] = false;
+
+                        fillPortfolioOneSectorTwo();
+                        userSectors1[i].setInstruments(tempStocks);
+
+                        //Clear temp stocks
+                        for(int u = 0; u < tempStocks.length; u++){
+                            tempStocks[u] = null;
+                        }
+
+                        //clears double stock check
+                        for(int u = 0; u < chosenStock.length; u++){
+                            chosenStock[u] = true;
+                        }
                         break;
                     }
                     //User chooses Retail sector and stocks within.
                     else if (choice == 3 && chosen[2]) {
                         userSectors1[i] = userRetail1;
+
+                        //Prevents user from adding the same sector twice
                         chosen[2] = false;
+
+                        fillPortfolioOneSectorThree();
+                        userSectors1[i].setInstruments(tempStocks);
+
+                        //Clear temp stocks
+                        for(int u = 0; u < tempStocks.length; u++){
+                            tempStocks[u] = null;
+                        }
+
+                        //clears double stock check
+                        for(int u = 0; u < chosenStock.length; u++){
+                            chosenStock[u] = true;
+                        }
+
                         break;
                     }
                     //User chooses Auto sector and stocks within.
                     else if (choice == 4 && chosen[3]) {
                         userSectors1[i] = userAuto1;
+
+                        //Prevents user from adding the same sector twice
                         chosen[3] = false;
+
+                        fillPortfolioOneSectorFour();
+                        userSectors1[i].setInstruments(tempStocks);
+
+                        //Clear temp stocks
+                        for(int u = 0; u < tempStocks.length; u++){
+                            tempStocks[u] = null;
+                        }
+
+                        //clears double stock check
+                        for(int u = 0; u < chosenStock.length; u++){
+                            chosenStock[u] = true;
+                        }
                         break;
                     }
                     //User chooses Aerospace sector and stocks within.
                     else if (choice == 5 && chosen[4]) {
                         userSectors1[i] = userAerospace1;
+
+                        //Prevents user from adding the same sector twice
                         chosen[4] = false;
+
+                        fillPortfolioOneSectorFive();
+                        userSectors1[i].setInstruments(tempStocks);
+
+                        //Clear temp stocks
+                        for(int u = 0; u < tempStocks.length; u++){
+                            tempStocks[u] = null;
+                        }
+
+                        //clears double stock check
+                        for(int u = 0; u < chosenStock.length; u++){
+                            chosenStock[u] = true;
+                        }
+
                         break;
                     }
                     //User chooses Financial sector and stocks within.
                     else if (choice == 6 && chosen[5]) {
                         userSectors1[i] = userFinancial1;
+
+                        //Prevents user from adding the same sector twice
                         chosen[5] = false;
+
+                        fillPortfolioOneSectorSix();
+                        userSectors1[i].setInstruments(tempStocks);
+
+                        //Clear temp stocks
+                        for(int u = 0; u < tempStocks.length; u++){
+                            tempStocks[u] = null;
+                        }
+
+                        //clears double stock check
+                        for(int u = 0; u < chosenStock.length; u++){
+                            chosenStock[u] = true;
+                        }
+
                         break;
                     }
                     //User chooses Food sector and stocks within.
                     else if (choice == 7 && chosen[6]) {
                         userSectors1[i] = userFood1;
+
+                        //Prevents user from adding the same sector twice
                         chosen[6] = false;
+
+                        fillPortfolioOneSectorSeven();
+                        userSectors1[i].setInstruments(tempStocks);
+
+                        //Clear temp stocks
+                        for(int u = 0; u < tempStocks.length; u++){
+                            tempStocks[u] = null;
+                        }
+
+                        //clears double stock check
+                        for(int u = 0; u < chosenStock.length; u++){
+                            chosenStock[u] = true;
+                        }
+
                         break;
                     }
                     else if(choice<1 || choice>7) {
                         System.out.println("Please enter a number from 1-7");
                     }
-                    else if(!chosen[choice-1])
-                    {
+                    else {
                         System.out.println("Sector already selected. Pick something else.");
                     }
                 }while(userSectors1[i] == null);
@@ -421,5 +642,2044 @@ public class Main {
 
         }
     }
+
+    private static void fillPortfolioOneSectorOne(){
+        //Fill Stocks with user choices in Sector 1
+        for(int o = 0; o < tempStocks.length; o++){
+
+            do{
+                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                System.out.println("Please choose or create the stocks you want in this sector");
+                System.out.println("1. Choose Stock");
+                System.out.println("2. Create Stock");
+                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                choice = inputNum.nextInt();
+
+                //Check if they want to create or choose a stock
+                if(choice == 1){
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                    System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                    System.out.println(technologySector.toString());
+                    System.out.print("Which stock would you like to add?\n");
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                    stockChoice = inputNum.nextInt();
+
+                    if(stockChoice == 1 && chosenStock[0]){
+                        tempStocks[o] = technologyArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 2 && chosenStock[1]){
+                        tempStocks[o] = technologyArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 3 && chosenStock[2]){
+                        tempStocks[o] = technologyArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 4 && chosenStock[3]){
+                        tempStocks[o] = technologyArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 5 && chosenStock[4]){
+                        tempStocks[o] = technologyArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 6 && chosenStock[5]){
+                        tempStocks[o] = technologyArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 7 && chosenStock[6]){
+                        tempStocks[o] = technologyArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 8 && chosenStock[7]){
+                        tempStocks[o] = technologyArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice > 8 || stockChoice < 1){
+                        System.out.println("\nPlease enter a number between 1 and 8");
+                    }
+                    else {
+                        System.out.println("\nStock already selected. Pick something else.");
+                    }
+
+
+                }
+                //Create stocks
+                else if(choice == 2){
+
+                    //Slot 1
+                    if(o == 0){
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector1Stock1.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector1Stock1.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector1Stock1.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector1Stock1.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector1Stock1;
+
+                    }
+                    //Slot 2
+                    else if(o == 1){
+
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector1Stock2.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector1Stock2.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector1Stock2.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector1Stock2.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector1Stock2;
+                    }
+                    //Slot 3
+                    else if(o == 2){
+                        //paste o == 0 here and change stock 1 to 3
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector1Stock3.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector1Stock3.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector1Stock3.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector1Stock3.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector1Stock3;
+                    }
+                    //Slot 4
+                    else if(o == 3){
+                        //paste o == 0 here and change stock 1 to 4
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector1Stock4.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector1Stock4.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector1Stock4.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector1Stock4.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector1Stock4;
+                    }
+                    //Slot 5
+                    else{
+                        //paste o == 0 here and change stock 1 to 5
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector1Stock5.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector1Stock5.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector1Stock5.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector1Stock5.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector1Stock5;
+                    }
+
+                }
+
+            }while(tempStocks[o] == null);
+
+        }
+    }
+
+    private static void fillPortfolioOneSectorTwo(){
+        //Fill Stocks with user choices in Sector 1
+        for(int o = 0; o < tempStocks.length; o++){
+
+            do{
+                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                System.out.println("Please choose or create the stocks you want in this sector");
+                System.out.println("1. Choose Stock");
+                System.out.println("2. Create Stock");
+                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                choice = inputNum.nextInt();
+
+                //Check if they want to create or choose a stock
+                if(choice == 1){
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                    System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                    System.out.println(cryptoCurrencySector.toString());
+                    System.out.print("Which stock would you like to add?\n");
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                    stockChoice = inputNum.nextInt();
+
+                    if(stockChoice == 1 && chosenStock[0]){
+                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 2 && chosenStock[1]){
+                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 3 && chosenStock[2]){
+                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 4 && chosenStock[3]){
+                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 5 && chosenStock[4]){
+                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 6 && chosenStock[5]){
+                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 7 && chosenStock[6]){
+                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 8 && chosenStock[7]){
+                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice > 8 || stockChoice < 1){
+                        System.out.println("\nPlease enter a number between 1 and 8");
+                    }
+                    else {
+                        System.out.println("\nStock already selected. Pick something else.");
+                    }
+
+                }
+                //Create stocks
+                else if(choice == 2){
+
+                    //Slot 1
+                    if(o == 0){
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector2Stock1.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector2Stock1.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector2Stock1.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector2Stock1.setVolatility(volatilityTemp);
+
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector2Stock1;
+
+                    }
+                    //Slot 2
+                    else if(o == 1){
+
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector2Stock2.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector2Stock2.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector2Stock2.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector2Stock2.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector2Stock2;
+                    }
+                    //Slot 3
+                    else if(o == 2){
+                        //paste o == 0 here and change stock 1 to 3
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector2Stock3.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector2Stock3.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector2Stock3.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector2Stock3.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector2Stock3;
+                    }
+                    //Slot 4
+                    else if(o == 3){
+                        //paste o == 0 here and change stock 1 to 4
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector2Stock4.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector2Stock4.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector2Stock4.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector2Stock4.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector2Stock4;
+                    }
+                    //Slot 5
+                    else{
+                        //paste o == 0 here and change stock 1 to 5
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector2Stock5.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector2Stock5.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector2Stock5.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector2Stock5.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector2Stock5;
+                    }
+
+                }
+
+            }while(tempStocks[o] == null);
+
+        }
+    }
+
+    private static void fillPortfolioOneSectorThree(){
+        //Fill Stocks with user choices in Sector 1
+        for(int o = 0; o < tempStocks.length; o++){
+
+            do{
+                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                System.out.println("Please choose or create the stocks you want in this sector");
+                System.out.println("1. Choose Stock");
+                System.out.println("2. Create Stock");
+                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                choice = inputNum.nextInt();
+
+                //Check if they want to create or choose a stock
+                if(choice == 1){
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                    System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                    System.out.println(retailSector.toString());
+                    System.out.print("Which stock would you like to add?\n");
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                    stockChoice = inputNum.nextInt();
+
+                    if(stockChoice == 1 && chosenStock[0]){
+                        tempStocks[o] = retailArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 2 && chosenStock[1]){
+                        tempStocks[o] = retailArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 3 && chosenStock[2]){
+                        tempStocks[o] = retailArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 4 && chosenStock[3]){
+                        tempStocks[o] = retailArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 5 && chosenStock[4]){
+                        tempStocks[o] = retailArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 6 && chosenStock[5]){
+                        tempStocks[o] = retailArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 7 && chosenStock[6]){
+                        tempStocks[o] = retailArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 8 && chosenStock[7]){
+                        tempStocks[o] = retailArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice > 8 || stockChoice < 1){
+                        System.out.println("\nPlease enter a number between 1 and 8");
+                    }
+                    else {
+                        System.out.println("\nStock already selected. Pick something else.");
+                    }
+
+                }
+                //Create stocks
+                else if(choice == 2){
+
+                    //Slot 1
+                    if(o == 0){
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector3Stock1.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector3Stock1.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector3Stock1.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector3Stock1.setVolatility(volatilityTemp);
+
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector3Stock1;
+
+                    }
+                    //Slot 2
+                    else if(o == 1){
+
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector3Stock2.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector3Stock2.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector3Stock2.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector3Stock2.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector3Stock2;
+                    }
+                    //Slot 3
+                    else if(o == 2){
+                        //paste o == 0 here and change stock 1 to 3
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector3Stock3.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector3Stock3.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector3Stock3.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector3Stock3.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector3Stock3;
+                    }
+                    //Slot 4
+                    else if(o == 3){
+                        //paste o == 0 here and change stock 1 to 4
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector3Stock4.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector3Stock4.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector3Stock4.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector3Stock4.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector3Stock4;
+                    }
+                    //Slot 5
+                    else{
+                        //paste o == 0 here and change stock 1 to 5
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector3Stock5.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector3Stock5.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector3Stock5.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector3Stock5.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector3Stock5;
+                    }
+
+                }
+
+            }while(tempStocks[o] == null);
+
+        }
+    }
+
+    private static void fillPortfolioOneSectorFour(){
+        //Fill Stocks with user choices in Sector 1
+        for(int o = 0; o < tempStocks.length; o++){
+
+            do{
+                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                System.out.println("Please choose or create the stocks you want in this sector");
+                System.out.println("1. Choose Stock");
+                System.out.println("2. Create Stock");
+                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                choice = inputNum.nextInt();
+
+                //Check if they want to create or choose a stock
+                if(choice == 1){
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                    System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                    System.out.println(autoSector.toString());
+                    System.out.print("Which stock would you like to add?\n");
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                    stockChoice = inputNum.nextInt();
+
+                    if(stockChoice == 1 && chosenStock[0]){
+                        tempStocks[o] = autoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 2 && chosenStock[1]){
+                        tempStocks[o] = autoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 3 && chosenStock[2]){
+                        tempStocks[o] = autoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 4 && chosenStock[3]){
+                        tempStocks[o] = autoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 5 && chosenStock[4]){
+                        tempStocks[o] = autoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 6 && chosenStock[5]){
+                        tempStocks[o] = autoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 7 && chosenStock[6]){
+                        tempStocks[o] = autoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 8 && chosenStock[7]){
+                        tempStocks[o] = autoArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice > 8 || stockChoice < 1){
+                        System.out.println("\nPlease enter a number between 1 and 8");
+                    }
+                    else {
+                        System.out.println("\nStock already selected. Pick something else.");
+                    }
+
+                }
+                //Create stocks
+                else if(choice == 2){
+
+                    //Slot 1
+                    if(o == 0){
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector4Stock1.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector4Stock1.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector4Stock1.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector4Stock1.setVolatility(volatilityTemp);
+
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector4Stock1;
+
+                    }
+                    //Slot 2
+                    else if(o == 1){
+
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector4Stock2.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector4Stock2.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector4Stock2.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector4Stock2.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector4Stock2;
+                    }
+                    //Slot 3
+                    else if(o == 2){
+                        //paste o == 0 here and change stock 1 to 3
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector4Stock3.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector4Stock3.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector4Stock3.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector4Stock3.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector4Stock3;
+                    }
+                    //Slot 4
+                    else if(o == 3){
+                        //paste o == 0 here and change stock 1 to 4
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector4Stock4.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector4Stock4.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector4Stock4.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector4Stock4.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector4Stock4;
+                    }
+                    //Slot 5
+                    else{
+                        //paste o == 0 here and change stock 1 to 5
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector4Stock5.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector4Stock5.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector4Stock5.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector4Stock5.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector4Stock5;
+                    }
+
+                }
+
+            }while(tempStocks[o] == null);
+
+        }
+    }
+
+    private static void fillPortfolioOneSectorFive(){
+        //Fill Stocks with user choices in Sector 1
+        for(int o = 0; o < tempStocks.length; o++){
+
+            do{
+                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                System.out.println("Please choose or create the stocks you want in this sector");
+                System.out.println("1. Choose Stock");
+                System.out.println("2. Create Stock");
+                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                choice = inputNum.nextInt();
+
+                //Check if they want to create or choose a stock
+                if(choice == 1){
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                    System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                    System.out.println(aerospaceSector.toString());
+                    System.out.print("Which stock would you like to add?\n");
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                    stockChoice = inputNum.nextInt();
+
+                    if(stockChoice == 1 && chosenStock[0]){
+                        tempStocks[o] = aeroArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 2 && chosenStock[1]){
+                        tempStocks[o] = aeroArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 3 && chosenStock[2]){
+                        tempStocks[o] = aeroArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 4 && chosenStock[3]){
+                        tempStocks[o] = aeroArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 5 && chosenStock[4]){
+                        tempStocks[o] = aeroArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 6 && chosenStock[5]){
+                        tempStocks[o] = aeroArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 7 && chosenStock[6]){
+                        tempStocks[o] = aeroArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 8 && chosenStock[7]){
+                        tempStocks[o] = aeroArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice > 8 || stockChoice < 1){
+                        System.out.println("\nPlease enter a number between 1 and 8");
+                    }
+                    else {
+                        System.out.println("\nStock already selected. Pick something else.");
+                    }
+
+                }
+                //Create stocks
+                else if(choice == 2){
+
+                    //Slot 1
+                    if(o == 0){
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector5Stock1.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector5Stock1.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector5Stock1.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector5Stock1.setVolatility(volatilityTemp);
+
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector5Stock1;
+
+                    }
+                    //Slot 2
+                    else if(o == 1){
+
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector5Stock2.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector5Stock2.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector5Stock2.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector5Stock2.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector5Stock2;
+                    }
+                    //Slot 3
+                    else if(o == 2){
+                        //paste o == 0 here and change stock 1 to 3
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector5Stock3.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector5Stock3.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector5Stock3.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector5Stock3.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector5Stock3;
+                    }
+                    //Slot 4
+                    else if(o == 3){
+                        //paste o == 0 here and change stock 1 to 4
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector5Stock4.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector5Stock4.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector5Stock4.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector5Stock4.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector5Stock4;
+                    }
+                    //Slot 5
+                    else{
+                        //paste o == 0 here and change stock 1 to 5
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector5Stock5.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector5Stock5.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector5Stock5.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector5Stock5.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector5Stock5;
+                    }
+
+                }
+
+            }while(tempStocks[o] == null);
+
+        }
+    }
+
+    private static void fillPortfolioOneSectorSix(){
+        //Fill Stocks with user choices in Sector 1
+        for(int o = 0; o < tempStocks.length; o++){
+
+            do{
+                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                System.out.println("Please choose or create the stocks you want in this sector");
+                System.out.println("1. Choose Stock");
+                System.out.println("2. Create Stock");
+                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                choice = inputNum.nextInt();
+
+                //Check if they want to create or choose a stock
+                if(choice == 1){
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                    System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                    System.out.println(financialSector.toString());
+                    System.out.print("Which stock would you like to add?\n");
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                    stockChoice = inputNum.nextInt();
+
+                    if(stockChoice == 1 && chosenStock[0]){
+                        tempStocks[o] = financialArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 2 && chosenStock[1]){
+                        tempStocks[o] = financialArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 3 && chosenStock[2]){
+                        tempStocks[o] = financialArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 4 && chosenStock[3]){
+                        tempStocks[o] = financialArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 5 && chosenStock[4]){
+                        tempStocks[o] = financialArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 6 && chosenStock[5]){
+                        tempStocks[o] = financialArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 7 && chosenStock[6]){
+                        tempStocks[o] = financialArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 8 && chosenStock[7]){
+                        tempStocks[o] = financialArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice > 8 || stockChoice < 1){
+                        System.out.println("\nPlease enter a number between 1 and 8");
+                    }
+                    else {
+                        System.out.println("\nStock already selected. Pick something else.");
+                    }
+
+                }
+                //Create stocks
+                else if(choice == 2){
+
+                    //Slot 1
+                    if(o == 0){
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector6Stock1.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector6Stock1.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector6Stock1.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector6Stock1.setVolatility(volatilityTemp);
+
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector6Stock1;
+
+                    }
+                    //Slot 2
+                    else if(o == 1){
+
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector6Stock2.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector6Stock2.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector6Stock2.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector6Stock2.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector6Stock2;
+                    }
+                    //Slot 3
+                    else if(o == 2){
+                        //paste o == 0 here and change stock 1 to 3
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector6Stock3.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector6Stock3.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector6Stock3.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector6Stock3.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector6Stock3;
+                    }
+                    //Slot 4
+                    else if(o == 3){
+                        //paste o == 0 here and change stock 1 to 4
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector6Stock4.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector6Stock4.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector6Stock4.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector6Stock4.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector6Stock4;
+                    }
+                    //Slot 5
+                    else{
+                        //paste o == 0 here and change stock 1 to 5
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector6Stock5.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector6Stock5.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector6Stock5.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector6Stock5.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector6Stock5;
+                    }
+
+                }
+
+            }while(tempStocks[o] == null);
+
+        }
+    }
+
+    private static void fillPortfolioOneSectorSeven(){
+        //Fill Stocks with user choices in Sector 1
+        for(int o = 0; o < tempStocks.length; o++){
+
+            do{
+                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                System.out.println("Please choose or create the stocks you want in this sector");
+                System.out.println("1. Choose Stock");
+                System.out.println("2. Create Stock");
+                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                choice = inputNum.nextInt();
+
+                //Check if they want to create or choose a stock
+                if(choice == 1){
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                    System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                    System.out.println(foodSector.toString());
+                    System.out.print("Which stock would you like to add?\n");
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                    stockChoice = inputNum.nextInt();
+
+                    if(stockChoice == 1 && chosenStock[0]){
+                        tempStocks[o] = foodArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 2 && chosenStock[1]){
+                        tempStocks[o] = foodArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 3 && chosenStock[2]){
+                        tempStocks[o] = foodArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 4 && chosenStock[3]){
+                        tempStocks[o] = foodArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 5 && chosenStock[4]){
+                        tempStocks[o] = foodArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 6 && chosenStock[5]){
+                        tempStocks[o] = foodArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 7 && chosenStock[6]){
+                        tempStocks[o] = foodArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice == 8 && chosenStock[7]){
+                        tempStocks[o] = foodArray[stockChoice-1];
+                        chosenStock[stockChoice-1] = false;
+                        break;
+                    }
+                    else if(stockChoice > 8 || stockChoice < 1){
+                        System.out.println("\nPlease enter a number between 1 and 8");
+                    }
+                    else {
+                        System.out.println("\nStock already selected. Pick something else.");
+                    }
+
+                }
+                //Create stocks
+                else if(choice == 2){
+
+                    //Slot 1
+                    if(o == 0){
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector7Stock1.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector7Stock1.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector7Stock1.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector7Stock1.setVolatility(volatilityTemp);
+
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector7Stock1;
+
+                    }
+                    //Slot 2
+                    else if(o == 1){
+
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector7Stock2.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector7Stock2.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector7Stock2.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector7Stock2.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector7Stock2;
+                    }
+                    //Slot 3
+                    else if(o == 2){
+                        //paste o == 0 here and change stock 1 to 3
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector7Stock3.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector7Stock3.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector7Stock3.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector7Stock3.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector7Stock3;
+                    }
+                    //Slot 4
+                    else if(o == 3){
+                        //paste o == 0 here and change stock 1 to 4
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector7Stock4.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector7Stock4.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector7Stock4.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector7Stock4.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector7Stock4;
+                    }
+                    //Slot 5
+                    else{
+                        //paste o == 0 here and change stock 1 to 5
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Enter the name of your stock");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        userPortfolio1Sector7Stock5.setName(inputStr.nextLine());
+
+                        //Loop makes sure they enter a valid Region
+                        do
+                        {
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the region as a single letter");
+                            System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
+                            System.out.println("Make sure it is a capital letter!");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+
+                            regionTemp = inputChr.next().charAt(0);
+                            userPortfolio1Sector7Stock5.setRegion(regionTemp);
+
+                        }while(!(regionTemp == 'N' || regionTemp == 'E' || regionTemp == 'A' || regionTemp == 'F' || regionTemp == 'O' ));
+
+                        //Loop makes sure they enter a valid stock price
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            currentPriceTemp = inputNum.nextDouble();
+                            userPortfolio1Sector7Stock5.setCurrentPrice(currentPriceTemp);
+
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                        do{
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Enter the stocks volatility (It must be less than or equal to 0.2 and greater than 0)");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            volatilityTemp = inputNum.nextDouble();
+                            userPortfolio1Sector7Stock5.setVolatility(volatilityTemp);
+                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
+
+                        tempStocks[o] = userPortfolio1Sector7Stock5;
+                    }
+
+                }
+
+            }while(tempStocks[o] == null);
+
+        }
+    }
+
+
 
 }
