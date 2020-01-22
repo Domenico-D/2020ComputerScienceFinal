@@ -25,8 +25,7 @@ public class Stock  {
 
     }
 
-    public Stock(String nm, char location, double goingPrice, double risk, boolean openMarket)
-    {
+    public Stock(String nm, char location, double goingPrice, double risk, boolean openMarket) {
         name = nm;
         region = location;
         currentPrice = goingPrice;
@@ -90,8 +89,7 @@ public class Stock  {
         daysOwned++;
     }
 
-    public void buyShares(double purchase)
-    {
+    public void buyShares(double purchase) {
         sharesOwned += purchase;
         priceWhenBought = currentPrice;
     }
@@ -100,8 +98,7 @@ public class Stock  {
         sharesOwned -= sell;
     }
 
-    public double getDayProfit()
-    {
+    public double getDayProfit() {
         double dayProfit = 0;
 
         dayProfit += (currentPrice-beginDayPrice)*sharesOwned;
@@ -109,8 +106,7 @@ public class Stock  {
         return dayProfit;
     }
 
-    public String toString()
-    {
+    public String toString() {
 
         String str;
 
@@ -118,7 +114,7 @@ public class Stock  {
         NumberFormat nfRound = NumberFormat.getInstance();
 
         //price, risk, open market
-        str = String.format("%-25s %4s %8s %4s",name,region,nfMoney.format(currentPrice),nfRound.format(volatility),active+"\n");
+        str = String.format("%-25s %4s %8s %4s %6s",name,region,nfMoney.format(currentPrice),nfRound.format(volatility),active+"\n");
 
         return str;
     }

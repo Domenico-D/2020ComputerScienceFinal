@@ -313,6 +313,9 @@ public class Main {
     private static double volatilityTemp;
     private static char regionTemp;
 
+    //Menu navigator
+    public static int gameChoice;
+
 
     public static void main(String[]args){
 
@@ -325,16 +328,16 @@ public class Main {
          * 4. set beginDayPrice.
          */
 
-        int choice, gameChoice;
+
 
         do{
             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
             System.out.println("1. Play");
             System.out.println("2. About us\n");
             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
-            choice = inputNum.nextInt();
+            gameChoice = inputNum.nextInt();
 
-            if(choice == 1){
+            if(gameChoice == 1){
 
                 do{
 
@@ -347,8 +350,9 @@ public class Main {
                         System.out.println("\n1. Create a Portfolio (max of three)");
                         //Only allow user to select Portfolios if they have more then one
                         if(numPortfolios < 3)
-                        System.out.println("2. Select Portfolio");
-                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            System.out.println("2. Select Portfolio");
+
+                        System.out.println("[\n̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
 
                         gameChoice = inputNum.nextInt();
                     }
@@ -356,9 +360,7 @@ public class Main {
                     //create portfolio
                     if(gameChoice == 1){
                         numPortfolios++;
-
                         createPortfolio();
-                        System.out.println(portfolio1.toString());
 
                     }
                     //Continue with the rest of the game
@@ -368,24 +370,51 @@ public class Main {
                         //Check how many portfolios the user has to determine which names to print
 
                         if(numPortfolios == 3){
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Which portfolio would you like to manage");
-                            System.out.println("1. " + portfolio1.getName());
-                            System.out.println("2. " + portfolio2.getName());
-                            System.out.println("3. " + portfolio3.getName());
-                            System.out.println("0 to go back");
-                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                        }else{
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Which portfolio would you like to manage");
-                            System.out.println("1. " + portfolio1.getName());
-                            System.out.println("2. " + portfolio2.getName());
-                            System.out.println("0 to go back");
-                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                        }
+                            do {
+                                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                                System.out.println("Which portfolio would you like to manage");
+                                System.out.println("1. " + portfolio1.getName());
+                                System.out.println("2. " + portfolio2.getName());
+                                System.out.println("3. " + portfolio3.getName());
+                                System.out.println("0. Go back");
+                                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                                gameChoice = inputNum.nextInt();
 
-                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
-                        gameChoice = inputNum.nextInt();
+                                if (gameChoice == 1) {
+
+                                }
+                                else if (gameChoice == 2) {
+
+                                }
+                                else if (gameChoice == 3) {
+
+                                }
+                                else{
+                                    System.out.println("Please enter a correct number");
+                                }
+                            }while(gameChoice != 0);
+                        }
+                        else{
+                            do {
+                                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                                System.out.println("Which portfolio would you like to manage");
+                                System.out.println("1. " + portfolio1.getName());
+                                System.out.println("2. " + portfolio2.getName());
+                                System.out.println("0 to go back");
+                                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                                gameChoice = inputNum.nextInt();
+
+                                if (gameChoice == 1) {
+
+                                } else if (gameChoice == 2) {
+
+                                }
+                                else{
+                                    System.out.println("Please enter a correct number");
+                                }
+
+                            }while(gameChoice != 0);
+                        }
 
 
 
@@ -395,15 +424,23 @@ public class Main {
                 }while(gameChoice != 0);
 
             }
-            else if(choice == 2){
+            else if(gameChoice == 2){
                 System.out.println("test 2");
             }
 
 
-        }while(choice != 0);
+        }while(gameChoice != 0);
 
 
 
+
+    }
+
+    private static void menu(Portfolio folio){
+
+        do{
+
+        }while (gameChoice != 0);
 
     }
 
@@ -2642,5 +2679,7 @@ public class Main {
 
         }
     }
+
+
 
 }

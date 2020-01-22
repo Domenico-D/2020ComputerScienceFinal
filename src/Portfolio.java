@@ -16,8 +16,7 @@ public class Portfolio {
     // the number of elements is open to change.
 
 
-    public Portfolio(String nm, Sector[]chosen)
-    {
+    public Portfolio(String nm, Sector[]chosen) {
         name = nm;
         chosenDivisions = chosen;
         totalProfitLoss = 0;
@@ -31,12 +30,10 @@ public class Portfolio {
         chosenDivisions = sectorArray;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
-    public double getTotalProfitLoss()
-    {
+    public double getTotalProfitLoss() {
         double tempTotalProfit=0;
         for(int i=0; i<chosenDivisions.length; i++)
         {
@@ -45,8 +42,7 @@ public class Portfolio {
         totalProfitLoss = tempTotalProfit;
         return totalProfitLoss;
     }
-    public double getDailyProfit()
-    {
+    public double getDailyProfit() {
         //printed at the end of each day.
         double dailyProfit = 0;
 
@@ -57,20 +53,16 @@ public class Portfolio {
 
         return dailyProfit;
     }
-    public double getMoneyInvested()
-    {
+    public double getMoneyInvested() {
         return moneyInvested;
     }
-    public double getCashLeftover()
-    {
+    public double getCashLeftover() {
         return cashLeftover;
     }
-    public double getCapital()
-    {
+    public double getCapital() {
         return capital;
     }
-    public int getTrades()
-    {
+    public int getTrades() {
         return trades;
     }
 
