@@ -29,6 +29,15 @@ public class Portfolio {
     public void setSectors(Sector[] sectorArray){
         chosenDivisions = sectorArray;
     }
+    public String getSectors(){
+        String str = "";
+
+        for(int i = 0; i < chosenDivisions.length; i++){
+            str = (i + 1) + chosenDivisions[i].getName() + "\n";
+        }
+
+        return str;
+    }
 
     public String getName() {
         return name;

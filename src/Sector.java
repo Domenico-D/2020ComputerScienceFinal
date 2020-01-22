@@ -113,7 +113,7 @@ public class Sector {
     public void organize(){
 
         Stock[] tempArrayStocks = new Stock[5];
-        Double[] doubleArray = new Double[5];
+        double[] doubleArray = new double[5];
         int counter = 0;
 
         for(int i = 0; i < instruments.length; i++){
@@ -131,12 +131,12 @@ public class Sector {
             }
         }
 
-        //Sort from lowest to highest
-        Arrays.sort(doubleArray, Collections.reverseOrder());
+        reverseOrder(doubleArray);
 
         //Convert the array back to regular values which puts it in order by highest to lowest
         for(int i = 0; i < doubleArray.length; i++){
             doubleArray[i]*= -1;
+
         }
 
         for(int i = 0; i < tempArrayStocks.length; i++){
@@ -165,7 +165,15 @@ public class Sector {
                 instruments[i] = tempArrayStocks[i];
             }
         }
+    }
 
+    private static void reverseOrder(double[] nums) {
+        Arrays.sort(nums);
+        double[] reverseSortedNum = new double[nums.length];
+        for (int i = 0; i < nums.length; i++)
+        {
+            reverseSortedNum[i] = nums[nums.length - 1 - i];
+        }
     }
 
     public void tradeStock(Stock newStock, Stock oldStock){
