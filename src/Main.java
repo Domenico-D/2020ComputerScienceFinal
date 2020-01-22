@@ -380,12 +380,16 @@ public class Main {
                                 System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                                 gameChoice = inputNum.nextInt();
 
+
+                                //Portfolio 1
                                 if (gameChoice == 1) {
 
                                 }
+                                //Portfolio 2
                                 else if (gameChoice == 2) {
 
                                 }
+                                //Portfolio
                                 else if (gameChoice == 3) {
 
                                 }
@@ -2679,6 +2683,32 @@ public class Main {
 
         }
     }
+
+    private static void basicMenu(){
+        do {
+            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+            System.out.println("1. Add Investment");
+            System.out.println("2. Take Profit/Loss");
+            System.out.println("3. Trade Stock");
+            System.out.println("4. List Sectors");
+            System.out.println("5. Determine total Capital");
+            System.out.println("6. End day");
+            System.out.println("0. To go back");
+            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+            gameChoice = inputNum.nextInt();
+
+            //Add Investment
+            if (gameChoice == 1) {
+
+            }
+            else if(gameChoice == 2){
+
+            }
+
+        }while(gameChoice != 0);
+    }
+
+
 
 
 

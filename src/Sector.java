@@ -162,10 +162,6 @@ public class Sector {
             }
         }
 
-
-
-
-
     }
 
     public void tradeStock(Stock newStock, Stock oldStock){
