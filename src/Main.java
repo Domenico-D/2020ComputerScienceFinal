@@ -286,7 +286,6 @@ public class Main {
 
             System.out.println("1. Play");
             System.out.println("2. About us");
-
             choice = inputNum.nextInt();
 
             if(choice == 1){
@@ -294,13 +293,16 @@ public class Main {
                 do{
 
 
-                    System.out.println("1. Create a Portfolio");
-                    //Only allow user to select Portfolios if they have more then one
-                    if(numPortfolios >= 1){
+                    if(numPortfolios < 1){
+                        gameChoice = 1;
+                    }
+                    else{
+                        System.out.println("\n1. Create a Portfolio");
+                        //Only allow user to select Portfolios if they have more then one
                         System.out.println("2. Select Portfolio");
+                        gameChoice = inputNum.nextInt();
                     }
 
-                    gameChoice = inputNum.nextInt();
 
                     if(gameChoice == 1){
                         numPortfolios++;
@@ -310,7 +312,7 @@ public class Main {
                     }
                     else if(gameChoice == 2){
 
-                        System.out.println("Which portfolio would you like to access");
+                        System.out.println("\nWhich portfolio would you like to access");
 
                     }
 
@@ -339,18 +341,21 @@ public class Main {
         Stock[] tempStocks = new Stock[5];
         //user stock choice
         int stockChoice;
+        double currentPriceTemp;
+        double volatilityTemp;
+        char regionTemp;
 
         if(numPortfolios == 1){
 
-            System.out.print("Enter the name of your first portfolio: ");
+            System.out.print("\nEnter the name of your first portfolio: ");
             portfolio1.setName(inputStr.nextLine());
 
             for (int i = 0; i < userSectors1.length; i++){
 
                 do{
-                    System.out.println("Please choose what sectors you want in your portfolio");
+                    System.out.println("\nPlease choose what sectors you want in your portfolio");
                     System.out.println("Choose carefully you will not be able to change them later!");
-                    System.out.print("1. Technology, 2. Crypto Currency, 3. Retail, 4. Auto, 5. Aerospace and Defence, 6. Financial, 7. Food: ");
+                    System.out.println("1. Technology, 2. Crypto Currency, 3. Retail, 4. Auto, 5. Aerospace and Defence, 6. Financial, 7. Food");
                     choice = inputNum.nextInt();
 
                     //User chooses technology sector and stocks within.
@@ -363,15 +368,15 @@ public class Main {
 
                             do{
 
-                                System.out.println("Please choose the Stocks you want in the technology Sector");
+                                System.out.println("\nPlease choose the Stocks you want in the technology Sector");
                                 System.out.println("1. Choose Stock");
                                 System.out.println("2. Create Stock");
                                 choice = inputNum.nextInt();
 
                                 //Check if they want to create or choose a stock
-                                if(choice ==1){
+                                if(choice == 1){
                                     System.out.println(technologySector.toString());
-                                    System.out.print("Which stock would you like to add: ");
+                                    System.out.print("\nWhich stock would you like to add: ");
                                     stockChoice = inputNum.nextInt();
 
                                     if(stockChoice == 1 && chosenStock[0]){
@@ -416,28 +421,36 @@ public class Main {
                                     }
                                     else if(!chosenStock[stockChoice-1])
                                     {
-                                        System.out.println("Stock already selected. Pick something else.");
+                                        System.out.println("\nStock already selected. Pick something else.");
                                     }
                                     else{
-                                        System.out.println("Please enter a number between 1 and 8");
+                                        System.out.println("\nPlease enter a number between 1 and 8");
                                     }
 
                                 }
                                 else if(choice == 2){
 
-                                    //See what pa
                                     if(o == 0){
-                                        System.out.print("Enter the name of your stock");
+                                        System.out.print("\nEnter the name of your stock");
                                         userPortfolio1Sector1Stock1.setName(inputStr.nextLine());
 
-                                        System.out.print("Enter the region as a single letter");
+                                        System.out.print("\nEnter the region as a single letter");
+                                        System.out.println("N for North America, E for Europe, A for Asia, F for Africa, O for Oceania ");
                                         userPortfolio1Sector1Stock1.setRegion(inputStr.next().charAt(0));
 
-                                        System.out.println("Enter the current price");
-                                        userPortfolio1Sector1Stock1.setCurrentPrice(inputNum.nextDouble());
+                                        //Loop makes sure they enter a valid stock price
+                                        do {
+                                            System.out.println("\nEnter the current stock price(It must be less the 1000 and greater than 0) ");
+                                            currentPriceTemp = inputNum.nextDouble();
+                                            userPortfolio1Sector1Stock1.setCurrentPrice(currentPriceTemp);
 
-                                        System.out.println("Enter the stocks volatility");
-                                        userPortfolio1Sector1Stock1.setVolatility(inputNum.nextDouble());
+                                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
+
+                                        do{
+                                            System.out.println("\nEnter the stocks volatility (It must be less the 0.2 and greater than 0)");
+                                            volatilityTemp = inputNum.nextDouble();
+                                            userPortfolio1Sector1Stock1.setVolatility(volatilityTemp);
+                                        }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
                                         tempStocks[o] = userPortfolio1Sector1Stock1;
 

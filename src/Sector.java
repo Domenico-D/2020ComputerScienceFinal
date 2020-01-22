@@ -46,8 +46,8 @@ public class Sector {
     public char getSectorVolatality() {
 
         //Constants to store volatility levels to determine char
-        final double high = 10;
-        final double medium = 20;
+        final double high = 0.1;
+        final double medium = 0.06;
 
         //For loop to add up all of the volatility of each stock in the sector
         double volatilityTotal = 0;
