@@ -371,6 +371,11 @@ public class Main {
                     }
                     //Continue with the rest of the game
                     else if(gameChoice == 2){
+
+                        System.out.println(tempStocks1[0].toString());
+                        System.out.println(tempStocks1[4].toString());
+                        System.out.println(portfolio1.chosenDivisions[0].instruments[0].toString());
+                        System.out.println(portfolio1.chosenDivisions[0].instruments[4].toString());
                         System.out.println(portfolio1.chosenDivisions[0].toString());
                         System.out.println(portfolio1.toString());
                         System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -483,7 +488,6 @@ public class Main {
                         //Fills Sector One stocks
                         fillPortfolioOneSectorOne();
                         userSectors1[i].setInstruments(tempStocks1);
-
                         //Prevents user from adding the same sector twice
                         chosen[0] = false;
 
@@ -655,7 +659,6 @@ public class Main {
 
                     if(stockChoice == 1 && chosenStock[0]){
                         tempStocks1[o] = technologyArray[stockChoice-1];
-                        System.out.println(technologyArray[0]);
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
@@ -919,9 +922,11 @@ public class Main {
 
                 }
 
+
             }while(tempStocks1[o] == null);
 
         }
+
     }
 
     private static void fillPortfolioOneSectorTwo(){

@@ -4,6 +4,7 @@
  */
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Sector {
 
@@ -112,23 +113,26 @@ public class Sector {
     public void organize(){
 
         Stock[] tempArrayStocks = new Stock[5];
-        double[] doubleArray = new double[5];
+        Double[] doubleArray = new Double[5];
         int counter = 0;
-
-
 
         for(int i = 0; i < instruments.length; i++){
             if(instruments[i] != null){
                 //Organize the array from objects to null
                 tempArrayStocks[counter] = instruments[i];
                 //Organize the array from Profit to null and multiply by one
-                doubleArray[counter] = instruments[i].getProfitLoss() * -1;
+                if(instruments[i].getProfitLoss() !=0) {
+                    doubleArray[counter] = instruments[i].getProfitLoss() * -1;
+                }
+                else{
+                    doubleArray[counter]= instruments[i].getCurrentPrice() * -1;
+                }
                 counter++;
             }
         }
 
         //Sort from lowest to highest
-        Arrays.sort(doubleArray);
+        Arrays.sort(doubleArray, Collections.reverseOrder());
 
         //Convert the array back to regular values which puts it in order by highest to lowest
         for(int i = 0; i < doubleArray.length; i++){
