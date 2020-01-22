@@ -306,7 +306,13 @@ public class Main {
     private static Boolean[] chosen = {true, true, true, true, true, true, true};
     private static Boolean[] chosenStock = {true, true, true, true, true, true, true, true};
     //Temp stock array to fill sectors
-    private static Stock[] tempStocks = new Stock[5];
+    private static Stock[] tempStocks1 = new Stock[5];
+    private static Stock[] tempStocks2= new Stock[5];
+    private static Stock[] tempStocks3 = new Stock[5];
+    private static Stock[] tempStocks4 = new Stock[5];
+    private static Stock[] tempStocks5 = new Stock[5];
+    private static Stock[] tempStocks6 = new Stock[5];
+    private static Stock[] tempStocks7 = new Stock[5];
     //user stock choice
     private static int stockChoice;
     private static double currentPriceTemp;
@@ -352,7 +358,7 @@ public class Main {
                         if(numPortfolios < 3)
                             System.out.println("2. Select Portfolio");
 
-                        System.out.println("[\n̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
 
                         gameChoice = inputNum.nextInt();
                     }
@@ -365,6 +371,8 @@ public class Main {
                     }
                     //Continue with the rest of the game
                     else if(gameChoice == 2){
+                        System.out.println(portfolio1.chosenDivisions[0].toString());
+                        System.out.println(portfolio1.toString());
                         System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                         System.out.println("\nWhich portfolio would you like to access");
                         //Check how many portfolios the user has to determine which names to print
@@ -474,15 +482,12 @@ public class Main {
 
                         //Fills Sector One stocks
                         fillPortfolioOneSectorOne();
-                        userSectors1[i].setInstruments(tempStocks);
+                        userSectors1[i].setInstruments(tempStocks1);
 
                         //Prevents user from adding the same sector twice
                         chosen[0] = false;
 
-                        //Clear temp stocks
-                        for(int u = 0; u < tempStocks.length; u++){
-                            tempStocks[u] = null;
-                        }
+
                         //clears double stock check
                         for(int u = 0; u < chosenStock.length; u++){
                             chosenStock[u] = true;
@@ -498,12 +503,7 @@ public class Main {
                         chosen[1] = false;
 
                         fillPortfolioOneSectorTwo();
-                        userSectors1[i].setInstruments(tempStocks);
-
-                        //Clear temp stocks
-                        for(int u = 0; u < tempStocks.length; u++){
-                            tempStocks[u] = null;
-                        }
+                        userSectors1[i].setInstruments(tempStocks2);
 
                         //clears double stock check
                         for(int u = 0; u < chosenStock.length; u++){
@@ -519,12 +519,8 @@ public class Main {
                         chosen[2] = false;
 
                         fillPortfolioOneSectorThree();
-                        userSectors1[i].setInstruments(tempStocks);
+                        userSectors1[i].setInstruments(tempStocks3);
 
-                        //Clear temp stocks
-                        for(int u = 0; u < tempStocks.length; u++){
-                            tempStocks[u] = null;
-                        }
 
                         //clears double stock check
                         for(int u = 0; u < chosenStock.length; u++){
@@ -541,12 +537,9 @@ public class Main {
                         chosen[3] = false;
 
                         fillPortfolioOneSectorFour();
-                        userSectors1[i].setInstruments(tempStocks);
+                        userSectors1[i].setInstruments(tempStocks4);
 
-                        //Clear temp stocks
-                        for(int u = 0; u < tempStocks.length; u++){
-                            tempStocks[u] = null;
-                        }
+
 
                         //clears double stock check
                         for(int u = 0; u < chosenStock.length; u++){
@@ -562,12 +555,9 @@ public class Main {
                         chosen[4] = false;
 
                         fillPortfolioOneSectorFive();
-                        userSectors1[i].setInstruments(tempStocks);
+                        userSectors1[i].setInstruments(tempStocks5);
 
-                        //Clear temp stocks
-                        for(int u = 0; u < tempStocks.length; u++){
-                            tempStocks[u] = null;
-                        }
+
 
                         //clears double stock check
                         for(int u = 0; u < chosenStock.length; u++){
@@ -584,12 +574,9 @@ public class Main {
                         chosen[5] = false;
 
                         fillPortfolioOneSectorSix();
-                        userSectors1[i].setInstruments(tempStocks);
+                        userSectors1[i].setInstruments(tempStocks6);
 
-                        //Clear temp stocks
-                        for(int u = 0; u < tempStocks.length; u++){
-                            tempStocks[u] = null;
-                        }
+
 
                         //clears double stock check
                         for(int u = 0; u < chosenStock.length; u++){
@@ -606,12 +593,9 @@ public class Main {
                         chosen[6] = false;
 
                         fillPortfolioOneSectorSeven();
-                        userSectors1[i].setInstruments(tempStocks);
+                        userSectors1[i].setInstruments(tempStocks7);
 
-                        //Clear temp stocks
-                        for(int u = 0; u < tempStocks.length; u++){
-                            tempStocks[u] = null;
-                        }
+
 
                         //clears double stock check
                         for(int u = 0; u < chosenStock.length; u++){
@@ -630,7 +614,7 @@ public class Main {
             }
 
             //Add the sectors to the current portfolio
-            portfolio1.setSectors(userSectors1);
+
 
 
 
@@ -645,11 +629,12 @@ public class Main {
 
 
         }
+        portfolio1.setSectors(userSectors1);
     }
 
     private static void fillPortfolioOneSectorOne(){
         //Fill Stocks with user choices in Sector 1
-        for(int o = 0; o < tempStocks.length; o++){
+        for(int o = 0; o < tempStocks1.length; o++){
 
             do{
                 System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -669,42 +654,43 @@ public class Main {
                     stockChoice = inputNum.nextInt();
 
                     if(stockChoice == 1 && chosenStock[0]){
-                        tempStocks[o] = technologyArray[stockChoice-1];
+                        tempStocks1[o] = technologyArray[stockChoice-1];
+                        System.out.println(technologyArray[0]);
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 2 && chosenStock[1]){
-                        tempStocks[o] = technologyArray[stockChoice-1];
+                        tempStocks1[o] = technologyArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 3 && chosenStock[2]){
-                        tempStocks[o] = technologyArray[stockChoice-1];
+                        tempStocks1[o] = technologyArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 4 && chosenStock[3]){
-                        tempStocks[o] = technologyArray[stockChoice-1];
+                        tempStocks1[o] = technologyArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 5 && chosenStock[4]){
-                        tempStocks[o] = technologyArray[stockChoice-1];
+                        tempStocks1[o] = technologyArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 6 && chosenStock[5]){
-                        tempStocks[o] = technologyArray[stockChoice-1];
+                        tempStocks1[o] = technologyArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 7 && chosenStock[6]){
-                        tempStocks[o] = technologyArray[stockChoice-1];
+                        tempStocks1[o] = technologyArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 8 && chosenStock[7]){
-                        tempStocks[o] = technologyArray[stockChoice-1];
+                        tempStocks1[o] = technologyArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
@@ -759,7 +745,7 @@ public class Main {
                             userPortfolio1Sector1Stock1.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector1Stock1;
+                        tempStocks1[o] = userPortfolio1Sector1Stock1;
 
                     }
                     //Slot 2
@@ -802,7 +788,7 @@ public class Main {
                             userPortfolio1Sector1Stock2.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector1Stock2;
+                        tempStocks1[o] = userPortfolio1Sector1Stock2;
                     }
                     //Slot 3
                     else if(o == 2){
@@ -844,7 +830,7 @@ public class Main {
                             userPortfolio1Sector1Stock3.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector1Stock3;
+                        tempStocks1[o] = userPortfolio1Sector1Stock3;
                     }
                     //Slot 4
                     else if(o == 3){
@@ -886,7 +872,7 @@ public class Main {
                             userPortfolio1Sector1Stock4.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector1Stock4;
+                        tempStocks1[o] = userPortfolio1Sector1Stock4;
                     }
                     //Slot 5
                     else{
@@ -928,19 +914,19 @@ public class Main {
                             userPortfolio1Sector1Stock5.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector1Stock5;
+                        tempStocks1[o] = userPortfolio1Sector1Stock5;
                     }
 
                 }
 
-            }while(tempStocks[o] == null);
+            }while(tempStocks1[o] == null);
 
         }
     }
 
     private static void fillPortfolioOneSectorTwo(){
         //Fill Stocks with user choices in Sector 1
-        for(int o = 0; o < tempStocks.length; o++){
+        for(int o = 0; o < tempStocks2.length; o++){
 
             do{
                 System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -960,42 +946,42 @@ public class Main {
                     stockChoice = inputNum.nextInt();
 
                     if(stockChoice == 1 && chosenStock[0]){
-                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        tempStocks2[o] = cryptoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 2 && chosenStock[1]){
-                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        tempStocks2[o] = cryptoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 3 && chosenStock[2]){
-                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        tempStocks2[o] = cryptoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 4 && chosenStock[3]){
-                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        tempStocks2[o] = cryptoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 5 && chosenStock[4]){
-                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        tempStocks2[o] = cryptoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 6 && chosenStock[5]){
-                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        tempStocks2[o] = cryptoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 7 && chosenStock[6]){
-                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        tempStocks2[o] = cryptoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 8 && chosenStock[7]){
-                        tempStocks[o] = cryptoArray[stockChoice-1];
+                        tempStocks2[o] = cryptoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
@@ -1050,7 +1036,7 @@ public class Main {
 
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector2Stock1;
+                        tempStocks2[o] = userPortfolio1Sector2Stock1;
 
                     }
                     //Slot 2
@@ -1093,7 +1079,7 @@ public class Main {
                             userPortfolio1Sector2Stock2.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector2Stock2;
+                        tempStocks2[o] = userPortfolio1Sector2Stock2;
                     }
                     //Slot 3
                     else if(o == 2){
@@ -1135,7 +1121,7 @@ public class Main {
                             userPortfolio1Sector2Stock3.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector2Stock3;
+                        tempStocks2[o] = userPortfolio1Sector2Stock3;
                     }
                     //Slot 4
                     else if(o == 3){
@@ -1177,7 +1163,7 @@ public class Main {
                             userPortfolio1Sector2Stock4.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector2Stock4;
+                        tempStocks2[o] = userPortfolio1Sector2Stock4;
                     }
                     //Slot 5
                     else{
@@ -1219,19 +1205,19 @@ public class Main {
                             userPortfolio1Sector2Stock5.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector2Stock5;
+                        tempStocks2[o] = userPortfolio1Sector2Stock5;
                     }
 
                 }
 
-            }while(tempStocks[o] == null);
+            }while(tempStocks2[o] == null);
 
         }
     }
 
     private static void fillPortfolioOneSectorThree(){
         //Fill Stocks with user choices in Sector 1
-        for(int o = 0; o < tempStocks.length; o++){
+        for(int o = 0; o < tempStocks3.length; o++){
 
             do{
                 System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1251,42 +1237,42 @@ public class Main {
                     stockChoice = inputNum.nextInt();
 
                     if(stockChoice == 1 && chosenStock[0]){
-                        tempStocks[o] = retailArray[stockChoice-1];
+                        tempStocks3[o] = retailArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 2 && chosenStock[1]){
-                        tempStocks[o] = retailArray[stockChoice-1];
+                        tempStocks3[o] = retailArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 3 && chosenStock[2]){
-                        tempStocks[o] = retailArray[stockChoice-1];
+                        tempStocks3[o] = retailArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 4 && chosenStock[3]){
-                        tempStocks[o] = retailArray[stockChoice-1];
+                        tempStocks3[o] = retailArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 5 && chosenStock[4]){
-                        tempStocks[o] = retailArray[stockChoice-1];
+                        tempStocks3[o] = retailArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 6 && chosenStock[5]){
-                        tempStocks[o] = retailArray[stockChoice-1];
+                        tempStocks3[o] = retailArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 7 && chosenStock[6]){
-                        tempStocks[o] = retailArray[stockChoice-1];
+                        tempStocks3[o] = retailArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 8 && chosenStock[7]){
-                        tempStocks[o] = retailArray[stockChoice-1];
+                        tempStocks3[o] = retailArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
@@ -1341,7 +1327,7 @@ public class Main {
 
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector3Stock1;
+                        tempStocks3[o] = userPortfolio1Sector3Stock1;
 
                     }
                     //Slot 2
@@ -1384,7 +1370,7 @@ public class Main {
                             userPortfolio1Sector3Stock2.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector3Stock2;
+                        tempStocks3[o] = userPortfolio1Sector3Stock2;
                     }
                     //Slot 3
                     else if(o == 2){
@@ -1426,7 +1412,7 @@ public class Main {
                             userPortfolio1Sector3Stock3.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector3Stock3;
+                        tempStocks3[o] = userPortfolio1Sector3Stock3;
                     }
                     //Slot 4
                     else if(o == 3){
@@ -1468,7 +1454,7 @@ public class Main {
                             userPortfolio1Sector3Stock4.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector3Stock4;
+                        tempStocks3[o] = userPortfolio1Sector3Stock4;
                     }
                     //Slot 5
                     else{
@@ -1510,19 +1496,19 @@ public class Main {
                             userPortfolio1Sector3Stock5.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector3Stock5;
+                        tempStocks3[o] = userPortfolio1Sector3Stock5;
                     }
 
                 }
 
-            }while(tempStocks[o] == null);
+            }while(tempStocks3[o] == null);
 
         }
     }
 
     private static void fillPortfolioOneSectorFour(){
         //Fill Stocks with user choices in Sector 1
-        for(int o = 0; o < tempStocks.length; o++){
+        for(int o = 0; o < tempStocks4.length; o++){
 
             do{
                 System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1542,42 +1528,42 @@ public class Main {
                     stockChoice = inputNum.nextInt();
 
                     if(stockChoice == 1 && chosenStock[0]){
-                        tempStocks[o] = autoArray[stockChoice-1];
+                        tempStocks4[o] = autoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 2 && chosenStock[1]){
-                        tempStocks[o] = autoArray[stockChoice-1];
+                        tempStocks4[o] = autoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 3 && chosenStock[2]){
-                        tempStocks[o] = autoArray[stockChoice-1];
+                        tempStocks4[o] = autoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 4 && chosenStock[3]){
-                        tempStocks[o] = autoArray[stockChoice-1];
+                        tempStocks4[o] = autoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 5 && chosenStock[4]){
-                        tempStocks[o] = autoArray[stockChoice-1];
+                        tempStocks4[o] = autoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 6 && chosenStock[5]){
-                        tempStocks[o] = autoArray[stockChoice-1];
+                        tempStocks4[o] = autoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 7 && chosenStock[6]){
-                        tempStocks[o] = autoArray[stockChoice-1];
+                        tempStocks4[o] = autoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 8 && chosenStock[7]){
-                        tempStocks[o] = autoArray[stockChoice-1];
+                        tempStocks4[o] = autoArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
@@ -1632,7 +1618,7 @@ public class Main {
 
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector4Stock1;
+                        tempStocks4[o] = userPortfolio1Sector4Stock1;
 
                     }
                     //Slot 2
@@ -1675,7 +1661,7 @@ public class Main {
                             userPortfolio1Sector4Stock2.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector4Stock2;
+                        tempStocks4[o] = userPortfolio1Sector4Stock2;
                     }
                     //Slot 3
                     else if(o == 2){
@@ -1717,7 +1703,7 @@ public class Main {
                             userPortfolio1Sector4Stock3.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector4Stock3;
+                        tempStocks4[o] = userPortfolio1Sector4Stock3;
                     }
                     //Slot 4
                     else if(o == 3){
@@ -1759,7 +1745,7 @@ public class Main {
                             userPortfolio1Sector4Stock4.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector4Stock4;
+                        tempStocks4[o] = userPortfolio1Sector4Stock4;
                     }
                     //Slot 5
                     else{
@@ -1801,19 +1787,19 @@ public class Main {
                             userPortfolio1Sector4Stock5.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector4Stock5;
+                        tempStocks4[o] = userPortfolio1Sector4Stock5;
                     }
 
                 }
 
-            }while(tempStocks[o] == null);
+            }while(tempStocks4[o] == null);
 
         }
     }
 
     private static void fillPortfolioOneSectorFive(){
         //Fill Stocks with user choices in Sector 1
-        for(int o = 0; o < tempStocks.length; o++){
+        for(int o = 0; o < tempStocks5.length; o++){
 
             do{
                 System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1833,42 +1819,42 @@ public class Main {
                     stockChoice = inputNum.nextInt();
 
                     if(stockChoice == 1 && chosenStock[0]){
-                        tempStocks[o] = aeroArray[stockChoice-1];
+                        tempStocks5[o] = aeroArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 2 && chosenStock[1]){
-                        tempStocks[o] = aeroArray[stockChoice-1];
+                        tempStocks5[o] = aeroArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 3 && chosenStock[2]){
-                        tempStocks[o] = aeroArray[stockChoice-1];
+                        tempStocks5[o] = aeroArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 4 && chosenStock[3]){
-                        tempStocks[o] = aeroArray[stockChoice-1];
+                        tempStocks5[o] = aeroArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 5 && chosenStock[4]){
-                        tempStocks[o] = aeroArray[stockChoice-1];
+                        tempStocks5[o] = aeroArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 6 && chosenStock[5]){
-                        tempStocks[o] = aeroArray[stockChoice-1];
+                        tempStocks5[o] = aeroArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 7 && chosenStock[6]){
-                        tempStocks[o] = aeroArray[stockChoice-1];
+                        tempStocks5[o] = aeroArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 8 && chosenStock[7]){
-                        tempStocks[o] = aeroArray[stockChoice-1];
+                        tempStocks5[o] = aeroArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
@@ -1923,7 +1909,7 @@ public class Main {
 
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector5Stock1;
+                        tempStocks5[o] = userPortfolio1Sector5Stock1;
 
                     }
                     //Slot 2
@@ -1966,7 +1952,7 @@ public class Main {
                             userPortfolio1Sector5Stock2.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector5Stock2;
+                        tempStocks5[o] = userPortfolio1Sector5Stock2;
                     }
                     //Slot 3
                     else if(o == 2){
@@ -2008,7 +1994,7 @@ public class Main {
                             userPortfolio1Sector5Stock3.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector5Stock3;
+                        tempStocks5[o] = userPortfolio1Sector5Stock3;
                     }
                     //Slot 4
                     else if(o == 3){
@@ -2050,7 +2036,7 @@ public class Main {
                             userPortfolio1Sector5Stock4.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector5Stock4;
+                        tempStocks5[o] = userPortfolio1Sector5Stock4;
                     }
                     //Slot 5
                     else{
@@ -2092,19 +2078,19 @@ public class Main {
                             userPortfolio1Sector5Stock5.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector5Stock5;
+                        tempStocks5[o] = userPortfolio1Sector5Stock5;
                     }
 
                 }
 
-            }while(tempStocks[o] == null);
+            }while(tempStocks5[o] == null);
 
         }
     }
 
     private static void fillPortfolioOneSectorSix(){
         //Fill Stocks with user choices in Sector 1
-        for(int o = 0; o < tempStocks.length; o++){
+        for(int o = 0; o < tempStocks6.length; o++){
 
             do{
                 System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2124,42 +2110,42 @@ public class Main {
                     stockChoice = inputNum.nextInt();
 
                     if(stockChoice == 1 && chosenStock[0]){
-                        tempStocks[o] = financialArray[stockChoice-1];
+                        tempStocks6[o] = financialArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 2 && chosenStock[1]){
-                        tempStocks[o] = financialArray[stockChoice-1];
+                        tempStocks6[o] = financialArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 3 && chosenStock[2]){
-                        tempStocks[o] = financialArray[stockChoice-1];
+                        tempStocks6[o] = financialArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 4 && chosenStock[3]){
-                        tempStocks[o] = financialArray[stockChoice-1];
+                        tempStocks6[o] = financialArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 5 && chosenStock[4]){
-                        tempStocks[o] = financialArray[stockChoice-1];
+                        tempStocks6[o] = financialArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 6 && chosenStock[5]){
-                        tempStocks[o] = financialArray[stockChoice-1];
+                        tempStocks6[o] = financialArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 7 && chosenStock[6]){
-                        tempStocks[o] = financialArray[stockChoice-1];
+                        tempStocks6[o] = financialArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 8 && chosenStock[7]){
-                        tempStocks[o] = financialArray[stockChoice-1];
+                        tempStocks6[o] = financialArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
@@ -2214,7 +2200,7 @@ public class Main {
 
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector6Stock1;
+                        tempStocks6[o] = userPortfolio1Sector6Stock1;
 
                     }
                     //Slot 2
@@ -2257,7 +2243,7 @@ public class Main {
                             userPortfolio1Sector6Stock2.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector6Stock2;
+                        tempStocks6[o] = userPortfolio1Sector6Stock2;
                     }
                     //Slot 3
                     else if(o == 2){
@@ -2299,7 +2285,7 @@ public class Main {
                             userPortfolio1Sector6Stock3.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector6Stock3;
+                        tempStocks6[o] = userPortfolio1Sector6Stock3;
                     }
                     //Slot 4
                     else if(o == 3){
@@ -2341,7 +2327,7 @@ public class Main {
                             userPortfolio1Sector6Stock4.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector6Stock4;
+                        tempStocks6[o] = userPortfolio1Sector6Stock4;
                     }
                     //Slot 5
                     else{
@@ -2383,19 +2369,19 @@ public class Main {
                             userPortfolio1Sector6Stock5.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector6Stock5;
+                        tempStocks6[o] = userPortfolio1Sector6Stock5;
                     }
 
                 }
 
-            }while(tempStocks[o] == null);
+            }while(tempStocks6[o] == null);
 
         }
     }
 
     private static void fillPortfolioOneSectorSeven(){
         //Fill Stocks with user choices in Sector 1
-        for(int o = 0; o < tempStocks.length; o++){
+        for(int o = 0; o < tempStocks7.length; o++){
 
             do{
                 System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2415,42 +2401,42 @@ public class Main {
                     stockChoice = inputNum.nextInt();
 
                     if(stockChoice == 1 && chosenStock[0]){
-                        tempStocks[o] = foodArray[stockChoice-1];
+                        tempStocks7[o] = foodArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 2 && chosenStock[1]){
-                        tempStocks[o] = foodArray[stockChoice-1];
+                        tempStocks7[o] = foodArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 3 && chosenStock[2]){
-                        tempStocks[o] = foodArray[stockChoice-1];
+                        tempStocks7[o] = foodArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 4 && chosenStock[3]){
-                        tempStocks[o] = foodArray[stockChoice-1];
+                        tempStocks7[o] = foodArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 5 && chosenStock[4]){
-                        tempStocks[o] = foodArray[stockChoice-1];
+                        tempStocks7[o] = foodArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 6 && chosenStock[5]){
-                        tempStocks[o] = foodArray[stockChoice-1];
+                        tempStocks7[o] = foodArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 7 && chosenStock[6]){
-                        tempStocks[o] = foodArray[stockChoice-1];
+                        tempStocks7[o] = foodArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
                     else if(stockChoice == 8 && chosenStock[7]){
-                        tempStocks[o] = foodArray[stockChoice-1];
+                        tempStocks7[o] = foodArray[stockChoice-1];
                         chosenStock[stockChoice-1] = false;
                         break;
                     }
@@ -2505,7 +2491,7 @@ public class Main {
 
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector7Stock1;
+                        tempStocks7[o] = userPortfolio1Sector7Stock1;
 
                     }
                     //Slot 2
@@ -2548,7 +2534,7 @@ public class Main {
                             userPortfolio1Sector7Stock2.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector7Stock2;
+                        tempStocks7[o] = userPortfolio1Sector7Stock2;
                     }
                     //Slot 3
                     else if(o == 2){
@@ -2590,7 +2576,7 @@ public class Main {
                             userPortfolio1Sector7Stock3.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector7Stock3;
+                        tempStocks7[o] = userPortfolio1Sector7Stock3;
                     }
                     //Slot 4
                     else if(o == 3){
@@ -2632,7 +2618,7 @@ public class Main {
                             userPortfolio1Sector7Stock4.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector7Stock4;
+                        tempStocks7[o] = userPortfolio1Sector7Stock4;
                     }
                     //Slot 5
                     else{
@@ -2674,12 +2660,12 @@ public class Main {
                             userPortfolio1Sector7Stock5.setVolatility(volatilityTemp);
                         }while(!(volatilityTemp > 0 && volatilityTemp <= 0.2));
 
-                        tempStocks[o] = userPortfolio1Sector7Stock5;
+                        tempStocks7[o] = userPortfolio1Sector7Stock5;
                     }
 
                 }
 
-            }while(tempStocks[o] == null);
+            }while(tempStocks7[o] == null);
 
         }
     }
@@ -2700,15 +2686,38 @@ public class Main {
             //Add Investment
             if (gameChoice == 1) {
 
+
             }
+            //Take Profit / Loss
             else if(gameChoice == 2){
 
+            }
+            //Trade Stock
+            else if(gameChoice == 3){
+
+            }
+            //List Sectors
+            else if(gameChoice == 4){
+
+            }
+            //Determine total Capital
+            else if(gameChoice == 5){
+
+            }
+            //End Day
+            else if(gameChoice == 6){
+
+            }
+            else{
+                System.out.println("Please ");
             }
 
         }while(gameChoice != 0);
     }
 
+    public void listSectors(){
 
+    }
 
 
 

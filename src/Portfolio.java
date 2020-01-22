@@ -12,7 +12,7 @@ public class Portfolio {
     private double capital;
     private int trades;
 
-    private Sector[] chosenDivisions; //chosen in main file, taken from a temp array that stores all possible choices.
+    public Sector[] chosenDivisions; //chosen in main file, taken from a temp array that stores all possible choices.
     // the number of elements is open to change.
 
 
@@ -84,4 +84,19 @@ public class Portfolio {
         return str;
 
     }
+
+//    public String getSectors(){
+//
+//        String str;
+//
+//        for(int i = 0; i < chosenDivisions.length; i++){
+//
+//
+//
+//        }
+//
+//    }
+
+
+
 }

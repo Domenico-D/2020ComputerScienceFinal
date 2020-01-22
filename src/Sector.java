@@ -10,7 +10,7 @@ public class Sector {
     private String name;
     private double sectorProfitLoss;
     private char sectorVolatality;
-    private Stock[] instruments;
+    public Stock[] instruments;
 
     public Sector(String nm){
         name = nm;
