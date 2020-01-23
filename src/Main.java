@@ -2979,7 +2979,8 @@ public class Main {
 
                 }while(sectorChoice != 0);
 
-
+                //Update sectors so stock prices change
+                folio.updateSectors();
             }
             //Take Profit / Loss
             else if(basicMenuChoice == 2){
@@ -3104,6 +3105,8 @@ public class Main {
                         }
                     }
                 }while(sectorChoice !=0);
+                //Update sectors so stock prices change
+                folio.updateSectors();
             }
             //Trade Stock
             else if(basicMenuChoice == 3){
@@ -3585,6 +3588,8 @@ public class Main {
                     }
                 }while(sectorChoice != 0);
 
+                //Update sectors so stock prices change
+                folio.updateSectors();
             }
             //List Sectors
             else if(basicMenuChoice == 4){
@@ -3614,13 +3619,15 @@ public class Main {
             }
             //Determine total Capital
             else if(basicMenuChoice == 5){
+                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                System.out.println("Total Capital of " + folio.getName() + " " + moneyFormat.format(folio.getTotalCapital()));
 
-                System.out.println(folio.getTotalCapital());
 
             }
             //End Day
             else if(basicMenuChoice == 6){
 
+                folio.updateSectorsDay();
             }
             else{
                 System.out.println("Please enter a correct number.");
