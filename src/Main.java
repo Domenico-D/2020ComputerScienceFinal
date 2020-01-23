@@ -321,6 +321,15 @@ public class Main {
 
     //Menu navigator
     public static int gameChoice;
+    public static int menuChoice;
+    public static int sectorChoice;
+    public static int stockchoice;
+    public static boolean taken = false;
+
+    //Starting Cash
+    private static double money1 = 10000;
+    private static double money2 = 10000;
+    private static double money3 = 10000;
 
 
     public static void main(String[]args){
@@ -417,7 +426,7 @@ public class Main {
                                 gameChoice = inputNum.nextInt();
 
                                 if (gameChoice == 1) {
-
+                                    basicMenu(portfolio1);
                                 } else if (gameChoice == 2) {
 
                                 }
@@ -604,11 +613,15 @@ public class Main {
                     }
                 }while(userSectors1[i] == null);
             }
+            portfolio1.setSectors(userSectors1);
+            for(int i = 0; i < portfolio1.chosenDivisions.length; i++){
 
-            //Add the sectors to the current portfolio
+                for(int u = 0; u < portfolio1.chosenDivisions[i].instruments.length; u++){
+                    portfolio1.chosenDivisions[i].instruments[u].buyShares();
+                    money1 -= 1000;
+                }
 
-
-
+            }
 
         }
         else if(numPortfolios == 2){
@@ -621,7 +634,9 @@ public class Main {
 
 
         }
-        portfolio1.setSectors(userSectors1);
+
+
+
     }
 
     private static void fillPortfolioOneSectorOne(){
@@ -721,12 +736,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector1Stock1.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -764,12 +779,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector1Stock2.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -806,12 +821,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector1Stock3.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -848,12 +863,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector1Stock4.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -890,12 +905,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector1Stock5.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1013,12 +1028,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector2Stock1.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1057,12 +1072,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector2Stock2.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1099,12 +1114,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector2Stock3.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1141,12 +1156,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector2Stock4.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1183,12 +1198,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector2Stock5.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1304,12 +1319,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector3Stock1.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1348,12 +1363,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector3Stock2.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1390,12 +1405,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector3Stock3.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1432,12 +1447,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector3Stock4.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1474,12 +1489,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector3Stock5.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1595,12 +1610,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector4Stock1.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1639,12 +1654,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector4Stock2.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1681,12 +1696,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector4Stock3.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1723,12 +1738,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector4Stock4.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1765,12 +1780,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector4Stock5.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1886,12 +1901,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector5Stock1.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1930,12 +1945,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector5Stock2.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -1972,12 +1987,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector5Stock3.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2014,12 +2029,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector5Stock4.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2056,12 +2071,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector5Stock5.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2177,12 +2192,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector6Stock1.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2221,12 +2236,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector6Stock2.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2263,12 +2278,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector6Stock3.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2305,12 +2320,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector6Stock4.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2347,12 +2362,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector6Stock5.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2468,12 +2483,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector7Stock1.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2512,12 +2527,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector7Stock2.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2554,12 +2569,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector7Stock3.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2596,12 +2611,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector7Stock4.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2638,12 +2653,12 @@ public class Main {
                         //Loop makes sure they enter a valid stock price
                         do {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                            System.out.println("Enter the current stock price(It must be less the 2500.0 and greater than 0.0) ");
+                            System.out.println("Enter the current stock price(It must be less the 1000.0 and greater than 0.0) ");
                             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector7Stock5.setCurrentPrice(currentPriceTemp);
 
-                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 2500));
+                        }while(!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do{
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2672,12 +2687,12 @@ public class Main {
             System.out.println("4. List Sectors");
             System.out.println("5. Determine total Capital");
             System.out.println("6. End day");
-            System.out.println("0. To go back");
+            System.out.println("0. Go back");
             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-            gameChoice = inputNum.nextInt();
+            menuChoice = inputNum.nextInt();
 
             //Add Investment
-            if (gameChoice == 1 ) {
+            if (menuChoice == 1) {
                 do
                 {
                     System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2685,42 +2700,157 @@ public class Main {
                     System.out.println("0. to go back");
                     System.out.println("Which Sector would you like to access?");
                     System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                    gameChoice = inputNum.nextInt();
-                    
-                }while(gameChoice != 0);
+                    sectorChoice = inputNum.nextInt();
+
+                    //Opens the sector of user choice
+                    if(sectorChoice == 1){
+                        //Prints out all the instruments in that sector
+                        for(int i = 0; i < folio.chosenDivisions[sectorChoice -1].instruments.length; i++){
+                            if(folio.chosenDivisions[sectorChoice - 1].instruments[i] != null)
+                            System.out.println(folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
+                        }
+                        //Check if there are any open slots in that sector
+                        for(int i = 0; i < folio.chosenDivisions[sectorChoice-1].instruments.length; i++){
+                            if(folio.chosenDivisions[sectorChoice-1].instruments[i] == null){
+
+                                //Checks which Sector the user is in (example technology or retail) to know which stocks to allow them to buy
+                                if(folio.chosenDivisions[sectorChoice-1].getName().equalsIgnoreCase("technology")){
+                                    //print availible stocks for purchase in technology sector
+                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                                    System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                                    System.out.println(technologySector.toString());
+                                    System.out.print("Which stock would you like to add?\n");
+                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                                    stockChoice = inputNum.nextInt();
+
+
+
+
+                                }
+                                else if(folio.chosenDivisions[sectorChoice].getName().equalsIgnoreCase("Crypto Currency")){
+
+                                }
+                                else if(folio.chosenDivisions[sectorChoice].getName().equalsIgnoreCase("Retail")){
+
+                                }
+                                else if(folio.chosenDivisions[sectorChoice].getName().equalsIgnoreCase("Auto")){
+
+                                }
+                                else if(folio.chosenDivisions[sectorChoice].getName().equalsIgnoreCase("Aerospace")){
+
+                                }
+                                else if(folio.chosenDivisions[sectorChoice].getName().equalsIgnoreCase("Financial")){
+
+                                }
+                                else if(folio.chosenDivisions[sectorChoice].getName().equalsIgnoreCase("Food")){
+
+                                }
+                                break;
+                            }
+                        }
+
+                    }
+                    else if(sectorChoice == 2){
+
+                    }
+                    else if(sectorChoice == 3){
+
+                    }
+                    else if(sectorChoice == 4){
+
+                    }
+                    else if(sectorChoice == 5){
+
+                    }
+
+                }while(sectorChoice != 0);
 
 
             }
             //Take Profit / Loss
-            else if(gameChoice == 2){
+            else if(menuChoice == 2){
+                do
+                {
+                    //Print out sectors for the user to choose
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                    System.out.println(folio.getSectors());
+                    System.out.println("0. to go back");
+                    System.out.println("Which Sector would you like to access?");
+                    System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                    gameChoice = inputNum.nextInt();
 
+                    //Print out stocks within chosen Sector
+                    if(gameChoice == 1){
+                        for(int i = 0; i < folio.chosenDivisions[gameChoice - 1].instruments.length; i++){
+                            System.out.println(folio.chosenDivisions[gameChoice - 1].instruments[i].toString());
+                        }
+                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        System.out.println("Which stock would you like to take profit/loss");
+                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                        gameChoice = inputNum.nextInt();
+
+                        if(gameChoice == 1 && folio.chosenDivisions[0].instruments[gameChoice -1] != null){
+                            money1 += folio.chosenDivisions[0].instruments[gameChoice - 1].takeProfitLoss();
+                            folio.chosenDivisions[0].removeStock(gameChoice-1);
+                            for(int i = 0; i < folio.chosenDivisions[gameChoice - 1].instruments.length; i++){
+                                if(folio.chosenDivisions[gameChoice-1].instruments[i] != null)
+                                    System.out.println(folio.chosenDivisions[gameChoice - 1].instruments[i].toString());
+                            }
+                        }
+                        else if(gameChoice == 2){
+
+                        }
+                        else if(gameChoice == 3){
+
+                        }
+                        else if(gameChoice == 4){
+
+                        }
+                        else if(gameChoice == 5){
+
+                        }
+
+
+                    }
+                    else if(gameChoice == 2){
+
+                    }
+                    else if(gameChoice == 3){
+
+                    }
+                    else if(gameChoice == 4){
+
+                    }
+                    else if(gameChoice == 5){
+
+                    }
+
+
+                }while(gameChoice !=0);
             }
             //Trade Stock
-            else if(gameChoice == 3){
+            else if(menuChoice == 3){
 
             }
             //List Sectors
-            else if(gameChoice == 4){
+            else if(menuChoice == 4){
 
             }
             //Determine total Capital
-            else if(gameChoice == 5){
+            else if(menuChoice == 5){
 
             }
             //End Day
-            else if(gameChoice == 6){
+            else if(menuChoice == 6){
 
             }
             else{
                 System.out.println("Please enter a correct number.");
             }
 
-        }while(gameChoice != 0);
+        }while(menuChoice != 0);
     }
 
-    public void listSectors(){
-
-    }
 
 
 

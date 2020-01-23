@@ -94,7 +94,6 @@ public class Sector {
     public void removeStock(int choice){
 
         instruments[choice] = null;
-        organize();
 
     }
 
@@ -130,41 +129,42 @@ public class Sector {
                 counter++;
             }
         }
-
-        reverseOrder(doubleArray);
-
-        //Convert the array back to regular values which puts it in order by highest to lowest
-        for(int i = 0; i < doubleArray.length; i++){
-            doubleArray[i]*= -1;
-
-        }
-
-        for(int i = 0; i < tempArrayStocks.length; i++){
-
-            //use the the array sorted from objects to null to re order the main array from highest profit stock to lowest
-            if(tempArrayStocks[i] != null){
-
-                //Check each array slot that isnt null and check which highest to lowest slot it equals and set it to that slot in the main array
-                if(tempArrayStocks[i].getProfitLoss() == doubleArray[0]){
-                    instruments[0] = tempArrayStocks[i];
-                }
-                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[1]){
-                    instruments[1] = tempArrayStocks[i];
-                }
-                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[2]){
-                    instruments[2] = tempArrayStocks[i];
-                }
-                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[3]){
-                    instruments[3] = tempArrayStocks[i];
-                }
-                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[4]){
-                    instruments[4] = tempArrayStocks[i];
-                }
-            }else{
-                //Set all other sections to null that have been reorganized
-                instruments[i] = tempArrayStocks[i];
-            }
-        }
+        instruments = tempArrayStocks;
+//
+//        reverseOrder(doubleArray);
+//
+//        //Convert the array back to regular values which puts it in order by highest to lowest
+//        for(int i = 0; i < doubleArray.length; i++){
+//            doubleArray[i]*= -1;
+//
+//        }
+//
+//        for(int i = 0; i < tempArrayStocks.length; i++){
+//
+//            //use the the array sorted from objects to null to re order the main array from highest profit stock to lowest
+//            if(tempArrayStocks[i] != null){
+//
+//                //Check each array slot that isnt null and check which highest to lowest slot it equals and set it to that slot in the main array
+//                if(tempArrayStocks[i].getProfitLoss() == doubleArray[0]){
+//                    instruments[0] = tempArrayStocks[i];
+//                }
+//                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[1]){
+//                    instruments[1] = tempArrayStocks[i];
+//                }
+//                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[2]){
+//                    instruments[2] = tempArrayStocks[i];
+//                }
+//                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[3]){
+//                    instruments[3] = tempArrayStocks[i];
+//                }
+//                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[4]){
+//                    instruments[4] = tempArrayStocks[i];
+//                }
+//            }else{
+//                //Set all other sections to null that have been reorganized
+//                instruments[i] = tempArrayStocks[i];
+//            }
+//        }
     }
 
     private static void reverseOrder(double[] nums) {
@@ -194,7 +194,7 @@ public class Sector {
                 //Wipe old stock from user sector and add new stock
                 instruments[i] = null;
                 instruments[i] = newStock;
-                instruments[i].buyShares(newShares);
+                instruments[i].buyShares();
             }
         }
         organize();
@@ -215,7 +215,6 @@ public class Sector {
 
         return str;
     }
-
 
 
 

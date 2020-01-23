@@ -15,7 +15,6 @@ public class Portfolio {
     public Sector[] chosenDivisions; //chosen in main file, taken from a temp array that stores all possible choices.
     // the number of elements is open to change.
 
-
     public Portfolio(String nm, Sector[]chosen) {
         name = nm;
         chosenDivisions = chosen;
@@ -29,11 +28,12 @@ public class Portfolio {
     public void setSectors(Sector[] sectorArray){
         chosenDivisions = sectorArray;
     }
+
     public String getSectors(){
         String str = "";
 
         for(int i = 0; i < chosenDivisions.length; i++){
-            str = (i + 1) + chosenDivisions[i].getName() + "\n";
+            str += (i + 1) + " " + chosenDivisions[i].getName() + "\n";
         }
 
         return str;
@@ -42,6 +42,7 @@ public class Portfolio {
     public String getName() {
         return name;
     }
+
     public double getTotalProfitLoss() {
         double tempTotalProfit=0;
         for(int i=0; i<chosenDivisions.length; i++)
@@ -51,6 +52,7 @@ public class Portfolio {
         totalProfitLoss = tempTotalProfit;
         return totalProfitLoss;
     }
+
     public double getDailyProfit() {
         //printed at the end of each day.
         double dailyProfit = 0;
@@ -62,27 +64,32 @@ public class Portfolio {
 
         return dailyProfit;
     }
+
     public double getMoneyInvested() {
         return moneyInvested;
     }
+
     public double getCashLeftover() {
         return cashLeftover;
     }
+
     public double getCapital() {
         return capital;
     }
+
     public int getTrades() {
         return trades;
     }
 
-
-    public void setName(String nm)
-    {
+    public void setName(String nm) {
         name = nm;
     }
 
-    public String toString()
-    {
+    public String getStocks(int choice){
+        return chosenDivisions[choice].toString();
+    }
+
+    public String toString() {
         String str="";
 
         for(int i = 0; i<chosenDivisions.length;i++)
@@ -93,19 +100,6 @@ public class Portfolio {
         return str;
 
     }
-
-//    public String getSectors(){
-//
-//        String str;
-//
-//        for(int i = 0; i < chosenDivisions.length; i++){
-//
-//
-//
-//        }
-//
-//    }
-
 
 
 }

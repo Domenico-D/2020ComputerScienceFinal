@@ -89,8 +89,9 @@ public class Stock  {
         daysOwned++;
     }
 
-    public void buyShares(double purchase) {
-        sharesOwned += purchase;
+    public void buyShares() {
+        //2500
+        sharesOwned = 1000 / currentPrice;
         priceWhenBought = currentPrice;
     }
     public void sellShares(double sell)
@@ -158,6 +159,13 @@ public class Stock  {
             updateStockPrice();
         }
 
+    }
+
+    public double takeProfitLoss(){
+
+        double cash = currentPrice * sharesOwned;
+
+        return cash;
     }
 
 
