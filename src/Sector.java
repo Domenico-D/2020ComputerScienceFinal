@@ -34,12 +34,26 @@ public class Sector {
         double profitLoss = 0;
 
         for(int i = 0; i < instruments.length; i++ ){
-            profitLoss += instruments[i].getProfitLoss();
+            if(instruments[i] != null)
+                profitLoss += instruments[i].getProfitLoss();
         }
 
         sectorProfitLoss = profitLoss;
 
         return sectorProfitLoss;
+    }
+
+    public double getSectorCapital(){
+        double capital = 0;
+        double sectorCapital;
+        for(int i = 0; i < instruments.length; i++ ){
+            if(instruments[i] != null)
+                capital += instruments[i].takeProfitLoss();
+        }
+
+        sectorCapital = capital;
+
+        return sectorCapital;
     }
 
     //Gets the total Sector Volatility as a char to show the user the level of volatility
@@ -212,6 +226,20 @@ public class Sector {
         }
 
         return str;
+    }
+
+    public void updateAllSectorStocks(){
+        for(int i = 0; i < instruments.length; i++){
+            if(instruments[i] != null)
+                instruments[i].updateStockPrice();
+        }
+    }
+
+    public void updateAllSectorStocksDay(){
+        for(int i = 0; i < instruments.length; i++){
+            if(instruments[i] != null)
+                instruments[i].updateStockPriceDay();
+        }
     }
 
 

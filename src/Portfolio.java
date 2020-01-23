@@ -11,6 +11,7 @@ public class Portfolio {
     public double cashLeftover = 25000;     //cold hard cash. changed in main.
     private double capital;
     private int trades;
+    private double totalCapital;
 
     public Sector[] chosenDivisions; //chosen in main file, taken from a temp array that stores all possible choices.
     // the number of elements is open to change.
@@ -65,15 +66,16 @@ public class Portfolio {
     }
 
     public double getMoneyInvested() {
+
+        for(int i = 0; i < chosenDivisions.length; i++){
+            moneyInvested += chosenDivisions[i].getSectorCapital();
+        }
+
         return moneyInvested;
     }
 
     public double getCashLeftover() {
         return cashLeftover;
-    }
-
-    public double getCapital() {
-        return capital;
     }
 
     public int getTrades() {
@@ -82,10 +84,6 @@ public class Portfolio {
 
     public void setName(String nm) {
         name = nm;
-    }
-
-    public String getStocks(int choice){
-        return chosenDivisions[choice].toString();
     }
 
     public String toString() {
@@ -100,7 +98,21 @@ public class Portfolio {
 
     }
 
-    public double calculateCapital;
+    public double getTotalCapital(){
 
+        totalCapital = getCashLeftover() + getMoneyInvested();
+
+        return totalCapital;
+    }
+
+    public void updateSectors(){
+        for(int i = 0; i < chosenDivisions.length; i++){
+            chosenDivisions[i].updateAllSectorStocks();
+        }
+    }
+
+    public void updateSectorsDay(){
+        
+    }
 
 }

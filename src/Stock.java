@@ -100,11 +100,6 @@ public class Stock  {
         priceWhenBought = newCurrentPrice;
     }
 
-    public void sellShares(double sell)
-    {
-        sharesOwned -= sell;
-    }
-
     public double getDayProfit() {
         double dayProfit = 0;
 
@@ -169,9 +164,7 @@ public class Stock  {
 
     public double takeProfitLoss(){
 
-        double cash = currentPrice * sharesOwned;
-
-        return cash;
+        return currentPrice * sharesOwned;
     }
 
 
