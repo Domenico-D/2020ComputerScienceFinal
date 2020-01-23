@@ -8,7 +8,7 @@ public class Portfolio {
     private String name;
     private double totalProfitLoss;
     private double moneyInvested;
-    public double cashLeftover;     //cold hard cash. changed in main.
+    public double cashLeftover = 10000;     //cold hard cash. changed in main.
     private double capital;
     private int trades;
 
@@ -20,7 +20,6 @@ public class Portfolio {
         chosenDivisions = chosen;
         totalProfitLoss = 0;
         moneyInvested = 0;
-        cashLeftover = 10000;
         capital = moneyInvested + cashLeftover;
         trades = 8;
     }
