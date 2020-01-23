@@ -3194,29 +3194,376 @@ public class Main {
 
                             if(!taken){
                                 if(stockChoice == 1){
-                                    newStock = technologyArray[sectorChoice-1];
-
+                                    newStock = technologyArray[stockChoice-1];
                                 }
                                 else if(stockChoice == 2){
-                                    newStock = technologyArray[sectorChoice-1];
+                                    newStock = technologyArray[stockChoice-1];
                                 }
                                 else if(stockChoice == 3){
-                                    newStock = technologyArray[sectorChoice-1];
+                                    newStock = technologyArray[stockChoice-1];
                                 }
                                 else if(stockChoice == 4){
-                                    newStock = technologyArray[sectorChoice-1];
+                                    newStock = technologyArray[stockChoice-1];
                                 }
                                 else if(stockChoice == 5){
-                                    newStock = technologyArray[sectorChoice-1];
+                                    newStock = technologyArray[stockChoice-1];
                                 }
                                 else if(stockChoice == 6){
-                                    newStock = technologyArray[sectorChoice-1];
+                                    newStock = technologyArray[stockChoice-1];
                                 }
                                 else if(stockChoice == 7){
-                                    newStock = technologyArray[sectorChoice-1];
+                                    newStock = technologyArray[stockChoice-1];
                                 }
                                 else if(stockChoice == 8){
-                                    newStock = technologyArray[sectorChoice-1];
+                                    newStock = technologyArray[stockChoice-1];
+                                }
+                                else{
+                                    System.out.println("Please enter a valid stock");
+                                }
+
+                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+
+                            }
+                        }
+                        else if(folio.chosenDivisions[sectorChoice-1].getName().equalsIgnoreCase("Crypto Currency")){
+                            taken = false;
+                            //print available stocks for purchase in crypto sector
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                            System.out.println(cryptoCurrencySector.toString());
+                            System.out.print("Which stock would you like to add?\n");
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            stockChoice = inputNum.nextInt();
+
+                            //Checks to see if user is trying to trade for a duplicate stock
+                            for(int u = 0; u < folio.chosenDivisions[sectorChoice-1].instruments.length; u++){
+                                //Check all non null slots for a duplicate
+                                if(folio.chosenDivisions[sectorChoice-1].instruments[u] != null)
+                                {
+                                    //If duplicate then break loop and say choose another stock
+                                    if (cryptoArray[stockChoice-1].getName().equalsIgnoreCase(folio.chosenDivisions[sectorChoice - 1].instruments[u].getName())) {
+                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        //if stock chosen is a duplicate than ask them to choose another
+                                        taken = true;
+                                        break;
+                                    }
+                                }
+                            }
+
+                            if(!taken){
+                                if(stockChoice == 1){
+                                    newStock = cryptoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 2){
+                                    newStock = cryptoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 3){
+                                    newStock = cryptoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 4){
+                                    newStock = cryptoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 5){
+                                    newStock = cryptoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 6){
+                                    newStock = cryptoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 7){
+                                    newStock = cryptoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 8){
+                                    newStock = cryptoArray[stockChoice-1];
+                                }
+                                else{
+                                    System.out.println("Please enter a valid stock");
+                                }
+
+                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+
+                            }
+                        }
+                        else if(folio.chosenDivisions[sectorChoice-1].getName().equalsIgnoreCase("Retail")){
+                            taken = false;
+                            //print available stocks for purchase in retail sector
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                            System.out.println(retailSector.toString());
+                            System.out.print("Which stock would you like to add?\n");
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            stockChoice = inputNum.nextInt();
+
+                            //Checks to see if user is trying to trade for a duplicate stock
+                            for(int u = 0; u < folio.chosenDivisions[sectorChoice-1].instruments.length; u++){
+                                //Check all non null slots for a duplicate
+                                if(folio.chosenDivisions[sectorChoice-1].instruments[u] != null)
+                                {
+                                    //If duplicate then break loop and say choose another stock
+                                    if (retailArray[stockChoice-1].getName().equalsIgnoreCase(folio.chosenDivisions[sectorChoice - 1].instruments[u].getName())) {
+                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        //if stock chosen is a duplicate than ask them to choose another
+                                        taken = true;
+                                        break;
+                                    }
+                                }
+                            }
+
+                            if(!taken){
+                                if(stockChoice == 1){
+                                    newStock = retailArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 2){
+                                    newStock = retailArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 3){
+                                    newStock = retailArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 4){
+                                    newStock = retailArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 5){
+                                    newStock = retailArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 6){
+                                    newStock = retailArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 7){
+                                    newStock = retailArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 8){
+                                    newStock = retailArray[stockChoice-1];
+                                }
+                                else{
+                                    System.out.println("Please enter a valid stock");
+                                }
+
+                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+
+                            }
+                        }
+                        else if(folio.chosenDivisions[sectorChoice-1].getName().equalsIgnoreCase("Auto")){
+                            taken = false;
+                            //print available stocks for purchase in auto sector
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                            System.out.println(autoSector.toString());
+                            System.out.print("Which stock would you like to add?\n");
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            stockChoice = inputNum.nextInt();
+
+                            //Checks to see if user is trying to trade for a duplicate stock
+                            for(int u = 0; u < folio.chosenDivisions[sectorChoice-1].instruments.length; u++){
+                                //Check all non null slots for a duplicate
+                                if(folio.chosenDivisions[sectorChoice-1].instruments[u] != null)
+                                {
+                                    //If duplicate then break loop and say choose another stock
+                                    if (autoArray[stockChoice-1].getName().equalsIgnoreCase(folio.chosenDivisions[sectorChoice - 1].instruments[u].getName())) {
+                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        //if stock chosen is a duplicate than ask them to choose another
+                                        taken = true;
+                                        break;
+                                    }
+                                }
+                            }
+
+                            if(!taken){
+                                if(stockChoice == 1){
+                                    newStock = autoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 2){
+                                    newStock = autoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 3){
+                                    newStock = autoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 4){
+                                    newStock = autoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 5){
+                                    newStock = autoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 6){
+                                    newStock = autoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 7){
+                                    newStock = autoArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 8){
+                                    newStock = autoArray[stockChoice-1];
+                                }
+                                else{
+                                    System.out.println("Please enter a valid stock");
+                                }
+
+                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+
+                            }
+                        }
+                        else if(folio.chosenDivisions[sectorChoice-1].getName().equalsIgnoreCase("Aerospace")){
+                            taken = false;
+                            //print available stocks for purchase in aerospace sector
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                            System.out.println(aerospaceSector.toString());
+                            System.out.print("Which stock would you like to add?\n");
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            stockChoice = inputNum.nextInt();
+
+                            //Checks to see if user is trying to trade for a duplicate stock
+                            for(int u = 0; u < folio.chosenDivisions[sectorChoice-1].instruments.length; u++){
+                                //Check all non null slots for a duplicate
+                                if(folio.chosenDivisions[sectorChoice-1].instruments[u] != null)
+                                {
+                                    //If duplicate then break loop and say choose another stock
+                                    if (aeroArray[stockChoice-1].getName().equalsIgnoreCase(folio.chosenDivisions[sectorChoice - 1].instruments[u].getName())) {
+                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        //if stock chosen is a duplicate than ask them to choose another
+                                        taken = true;
+                                        break;
+                                    }
+                                }
+                            }
+
+                            if(!taken){
+                                if(stockChoice == 1){
+                                    newStock = aeroArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 2){
+                                    newStock = aeroArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 3){
+                                    newStock = aeroArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 4){
+                                    newStock = aeroArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 5){
+                                    newStock = aeroArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 6){
+                                    newStock = aeroArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 7){
+                                    newStock = aeroArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 8){
+                                    newStock = aeroArray[stockChoice-1];
+                                }
+                                else{
+                                    System.out.println("Please enter a valid stock");
+                                }
+
+                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+
+                            }
+                        }
+                        else if(folio.chosenDivisions[sectorChoice-1].getName().equalsIgnoreCase("Financial")){
+                            taken = false;
+                            //print available stocks for purchase in financial sector
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                            System.out.println(financialSector.toString());
+                            System.out.print("Which stock would you like to add?\n");
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            stockChoice = inputNum.nextInt();
+
+                            //Checks to see if user is trying to trade for a duplicate stock
+                            for(int u = 0; u < folio.chosenDivisions[sectorChoice-1].instruments.length; u++){
+                                //Check all non null slots for a duplicate
+                                if(folio.chosenDivisions[sectorChoice-1].instruments[u] != null)
+                                {
+                                    //If duplicate then break loop and say choose another stock
+                                    if (financialArray[stockChoice-1].getName().equalsIgnoreCase(folio.chosenDivisions[sectorChoice - 1].instruments[u].getName())) {
+                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        //if stock chosen is a duplicate than ask them to choose another
+                                        taken = true;
+                                        break;
+                                    }
+                                }
+                            }
+
+                            if(!taken){
+                                if(stockChoice == 1){
+                                    newStock = financialArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 2){
+                                    newStock = financialArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 3){
+                                    newStock = financialArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 4){
+                                    newStock = financialArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 5){
+                                    newStock = financialArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 6){
+                                    newStock = financialArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 7){
+                                    newStock = financialArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 8){
+                                    newStock = financialArray[stockChoice-1];
+                                }
+                                else{
+                                    System.out.println("Please enter a valid stock");
+                                }
+
+                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+
+                            }
+                        }
+                        else if(folio.chosenDivisions[sectorChoice-1].getName().equalsIgnoreCase("Food")){
+                            taken = false;
+                            //print available stocks for purchase in food sector
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                            System.out.println(foodSector.toString());
+                            System.out.print("Which stock would you like to add?\n");
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            stockChoice = inputNum.nextInt();
+
+                            //Checks to see if user is trying to trade for a duplicate stock
+                            for(int u = 0; u < folio.chosenDivisions[sectorChoice-1].instruments.length; u++){
+                                //Check all non null slots for a duplicate
+                                if(folio.chosenDivisions[sectorChoice-1].instruments[u] != null)
+                                {
+                                    //If duplicate then break loop and say choose another stock
+                                    if (foodArray[stockChoice-1].getName().equalsIgnoreCase(folio.chosenDivisions[sectorChoice - 1].instruments[u].getName())) {
+                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        //if stock chosen is a duplicate than ask them to choose another
+                                        taken = true;
+                                        break;
+                                    }
+                                }
+                            }
+
+                            if(!taken){
+                                if(stockChoice == 1){
+                                    newStock = foodArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 2){
+                                    newStock = foodArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 3){
+                                    newStock = foodArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 4){
+                                    newStock = foodArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 5){
+                                    newStock = foodArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 6){
+                                    newStock = foodArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 7){
+                                    newStock = foodArray[stockChoice-1];
+                                }
+                                else if(stockChoice == 8){
+                                    newStock = foodArray[stockChoice-1];
                                 }
                                 else{
                                     System.out.println("Please enter a valid stock");
