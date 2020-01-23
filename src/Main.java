@@ -322,10 +322,14 @@ public class Main {
     private static char regionTemp;
 
     //Menu navigator
-    public static int gameChoice;
-    public static int menuChoice;
-    public static int sectorChoice;
-    public static boolean taken = false;
+    private static int gameChoice;
+    private static int menuChoice;
+    private static int sectorChoice;
+    private static boolean taken = false;
+
+    //Trade Stocks temporary objects
+    private static Stock currentStock;
+    private static Stock newStock;
     
 
 
@@ -3111,25 +3115,54 @@ public class Main {
                     if (sectorChoice > 5 || sectorChoice < 1)
                     {
                         System.out.println("Please enter one of the available Sectors");
-                    } else
-                    {
+                    }
+                    else {
                         //Prints out all the instruments in that sector
-                        for (int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++)
-                        {
+                        for (int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++) {
+
                             if (folio.chosenDivisions[sectorChoice - 1].instruments[i] != null)
                                 System.out.println(folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
+
                         }
+                        do {
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.println("Which stock would you like to trade?");
+                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            stockChoice = inputNum.nextInt();
 
-                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                        System.out.println("Which stock would you like to trade?");
-                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-                        stockChoice = inputNum.nextInt();
+                            //Sets a temporary variable to store the current stock that is going to be traded
+                            if (stockChoice == 1) {
+                                currentStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
 
-                        for(int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++){
-                            
-                        }
+                                
 
 
+                            }
+                            else if (stockChoice == 2) {
+                                currentStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+
+
+                            }
+                            else if (stockChoice == 3) {
+                                currentStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+
+
+                            }
+                            else if (stockChoice == 4) {
+                                currentStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+
+
+                            }
+                            else if (stockChoice == 5) {
+                                currentStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+
+
+                            }
+                            else {
+                                System.out.println("Please enter a valid stock");
+                            }
+
+                        }while(stockChoice != 0);
                     }
                 }while(sectorChoice != 0);
 
