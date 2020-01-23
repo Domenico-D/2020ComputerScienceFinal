@@ -4,13 +4,14 @@
  */
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Sector {
 
     private String name;
     private double sectorProfitLoss;
     private char sectorVolatality;
-    private Stock[] instruments;
+    public Stock[] instruments;
 
     public Sector(String nm){
         name = nm;
@@ -25,7 +26,6 @@ public class Sector {
 
     public void setInstruments(Stock[] stocks){
         instruments = stocks;
-        organize();
     }
 
     //Add up profit from each of the Stocks and return
@@ -34,7 +34,8 @@ public class Sector {
         double profitLoss = 0;
 
         for(int i = 0; i < instruments.length; i++ ){
-            profitLoss += instruments[i].getProfitLoss();
+            if(instruments[i] != null)
+                profitLoss += instruments[i].getProfitLoss();
         }
 
         sectorProfitLoss = profitLoss;
@@ -42,12 +43,25 @@ public class Sector {
         return sectorProfitLoss;
     }
 
+    public double getSectorCapital(){
+        double capital = 0;
+        double sectorCapital;
+        for(int i = 0; i < instruments.length; i++ ){
+            if(instruments[i] != null)
+                capital += instruments[i].takeProfitLoss();
+        }
+
+        sectorCapital = capital;
+
+        return sectorCapital;
+    }
+
     //Gets the total Sector Volatility as a char to show the user the level of volatility
     public char getSectorVolatality() {
 
         //Constants to store volatility levels to determine char
-        final double high = 10;
-        final double medium = 20;
+        final double high = 0.1;
+        final double medium = 0.06;
 
         //For loop to add up all of the volatility of each stock in the sector
         double volatilityTotal = 0;
@@ -86,14 +100,13 @@ public class Sector {
             }
         }
 
-        organize();
+
     }
 
     //Removes a stock and reorganizez the array
     public void removeStock(int choice){
 
         instruments[choice] = null;
-        organize();
 
     }
 
@@ -109,69 +122,77 @@ public class Sector {
 
     //NEED TO ADD getDailyProfit();
 
-    public void organize(){
+//    public void organize(){
+//
+//        Stock[] tempArrayStocks = new Stock[5];
+//        double[] doubleArray = new double[5];
+//        int counter = 0;
+//
+//        for(int i = 0; i < instruments.length; i++){
+//            if(instruments[i] != null){
+//                //Organize the array from objects to null
+//                tempArrayStocks[counter] = instruments[i];
+//                //Organize the array from Profit to null and multiply by one
+//                if(instruments[i].getProfitLoss() !=0) {
+//                    doubleArray[counter] = instruments[i].getProfitLoss() * -1;
+//                }
+//                else{
+//                    doubleArray[counter]= instruments[i].getCurrentPrice() * -1;
+//                }
+//                counter++;
+//            }
+//        }
+//        instruments = tempArrayStocks;
+////
+////        reverseOrder(doubleArray);
+////
+////        //Convert the array back to regular values which puts it in order by highest to lowest
+////        for(int i = 0; i < doubleArray.length; i++){
+////            doubleArray[i]*= -1;
+////
+////        }
+////
+////        for(int i = 0; i < tempArrayStocks.length; i++){
+////
+////            //use the the array sorted from objects to null to re order the main array from highest profit stock to lowest
+////            if(tempArrayStocks[i] != null){
+////
+////                //Check each array slot that isnt null and check which highest to lowest slot it equals and set it to that slot in the main array
+////                if(tempArrayStocks[i].getProfitLoss() == doubleArray[0]){
+////                    instruments[0] = tempArrayStocks[i];
+////                }
+////                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[1]){
+////                    instruments[1] = tempArrayStocks[i];
+////                }
+////                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[2]){
+////                    instruments[2] = tempArrayStocks[i];
+////                }
+////                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[3]){
+////                    instruments[3] = tempArrayStocks[i];
+////                }
+////                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[4]){
+////                    instruments[4] = tempArrayStocks[i];
+////                }
+////            }else{
+////                //Set all other sections to null that have been reorganized
+////                instruments[i] = tempArrayStocks[i];
+////            }
+////        }
+//    }
 
-        Stock[] tempArrayStocks = new Stock[5];
-        double[] doubleArray = new double[5];
-        int counter = 0;
-
-
-
-        for(int i = 0; i < instruments.length; i++){
-            if(instruments[i] != null){
-                //Organize the array from objects to null
-                tempArrayStocks[counter] = instruments[i];
-                //Organize the array from Profit to null and multiply by one
-                doubleArray[counter] = instruments[i].getProfitLoss() * -1;
-                counter++;
-            }
+    private static void reverseOrder(double[] nums) {
+        Arrays.sort(nums);
+        double[] reverseSortedNum = new double[nums.length];
+        for (int i = 0; i < nums.length; i++)
+        {
+            reverseSortedNum[i] = nums[nums.length - 1 - i];
         }
-
-        //Sort from lowest to highest
-        Arrays.sort(doubleArray);
-
-        //Convert the array back to regular values which puts it in order by highest to lowest
-        for(int i = 0; i < doubleArray.length; i++){
-            doubleArray[i]*= -1;
-        }
-
-        for(int i = 0; i < tempArrayStocks.length; i++){
-
-            //use the the array sorted from objects to null to re order the main array from highest profit stock to lowest
-            if(tempArrayStocks[i] != null){
-
-                //Check each array slot that isnt null and check which highest to lowest slot it equals and set it to that slot in the main array
-                if(tempArrayStocks[i].getProfitLoss() == doubleArray[0]){
-                    instruments[0] = tempArrayStocks[i];
-                }
-                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[1]){
-                    instruments[1] = tempArrayStocks[i];
-                }
-                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[2]){
-                    instruments[2] = tempArrayStocks[i];
-                }
-                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[3]){
-                    instruments[3] = tempArrayStocks[i];
-                }
-                else if(tempArrayStocks[i].getProfitLoss() == doubleArray[4]){
-                    instruments[4] = tempArrayStocks[i];
-                }
-            }else{
-                //Set all other sections to null that have been reorganized
-                instruments[i] = tempArrayStocks[i];
-            }
-        }
-
-
-
-
-
     }
 
     public void tradeStock(Stock newStock, Stock oldStock){
 
         for(int i = 0; i < instruments.length; i++){
-            if(instruments[i] == oldStock){
+            if(instruments[i].getName().equalsIgnoreCase(oldStock.getName())){
 
                 //Get Price and number of shares of New Stock
                 double newStockPrice = newStock.getCurrentPrice();
@@ -186,28 +207,39 @@ public class Sector {
                 //Wipe old stock from user sector and add new stock
                 instruments[i] = null;
                 instruments[i] = newStock;
-                instruments[i].buyShares(newShares);
+                instruments[i].buyShares(newShares, newStockPrice);
             }
         }
-        organize();
     }
 
     public String getName(){
         return name;
     }
 
-    //finish toString
     public String toString(){
         String str = "";
 
         for(int i=0;i<instruments.length;i++)
         {
-            str += instruments[i].toString();
+            str += (i + 1) + " " + instruments[i].toString();
         }
 
         return str;
     }
 
+    public void updateAllSectorStocks(){
+        for(int i = 0; i < instruments.length; i++){
+            if(instruments[i] != null)
+                instruments[i].updateStockPrice();
+        }
+    }
+
+    public void updateAllSectorStocksDay(){
+        for(int i = 0; i < instruments.length; i++){
+            if(instruments[i] != null)
+                instruments[i].updateStockPriceDay();
+        }
+    }
 
 
 
