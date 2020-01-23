@@ -3126,7 +3126,7 @@ public class Main {
                         stockChoice = inputNum.nextInt();
 
                         for(int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++){
-                            
+
                         }
 
 
@@ -3162,6 +3162,8 @@ public class Main {
             }
             //Determine total Capital
             else if(menuChoice == 5){
+
+                folio.getCapital();
 
             }
             //End Day
