@@ -3250,6 +3250,8 @@ public class Main {
             //Determine total Capital
             else if(basicMenuChoice == 5){
 
+                folio.getCapital();
+
             }
             //End Day
             else if(basicMenuChoice == 6){
