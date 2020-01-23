@@ -322,10 +322,14 @@ public class Main {
     private static char regionTemp;
 
     //Menu navigator
-    public static int gameChoice;
-    public static int menuChoice;
-    public static int sectorChoice;
-    public static boolean taken = false;
+    private static int gameChoice;
+    private static int menuChoice;
+    private static int sectorChoice;
+    private static boolean taken = false;
+
+    //Trade Stocks temporary objects
+    private static Stock currentStock;
+    private static Stock newStock;
     
 
 
@@ -356,8 +360,7 @@ public class Main {
 
                     if(numPortfolios < 1){
                         gameChoice = 1;
-                    }
-                    else{
+                    }else{
                         System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                         System.out.println("1. Create a Portfolio (max of three)");
                         //Only allow user to select Portfolios if they have more then one
@@ -371,9 +374,8 @@ public class Main {
 
                     //create portfolio
                     if(gameChoice == 1){
-                        createPortfolio();
                         numPortfolios++;
-
+                        createPortfolio();
                     }
                     //Continue with the rest of the game
                     else if(gameChoice == 2){
@@ -3111,13 +3113,14 @@ public class Main {
                     if (sectorChoice > 5 || sectorChoice < 1)
                     {
                         System.out.println("Please enter one of the available Sectors");
-                    } else
-                    {
+                    }
+                    else {
                         //Prints out all the instruments in that sector
-                        for (int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++)
-                        {
+                        for (int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++) {
+
                             if (folio.chosenDivisions[sectorChoice - 1].instruments[i] != null)
                                 System.out.println(folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
+
                         }
 
                         System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -3125,8 +3128,83 @@ public class Main {
                         System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                         stockChoice = inputNum.nextInt();
 
-                        for(int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++){
+                        if(stockChoice == 1){
+                            currentStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice-1];
+                        }
+                        else if(stockChoice == 2){
+                            currentStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+                        }
+                        else if(stockChoice == 3){
+                            currentStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice -1];
+                        }
+                        else if(stockChoice == 4){
+                            currentStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+                        }
+                        else if(stockChoice == 5){
+                            currentStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+                        }
+                        else{
+                            System.out.println("Please enter a valid stock");
+                        }
 
+                        if(folio.chosenDivisions[sectorChoice-1].getName().equalsIgnoreCase("technology")){
+                            taken = false;
+                            //print available stocks for purchase in technology sector
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                            System.out.format("%-25s %4s %8s %4s %6s","Name","Region","Price","Volatility","Active" + "\n");
+                            System.out.println(technologySector.toString());
+                            System.out.print("Which stock would you like to add?\n");
+                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
+                            stockChoice = inputNum.nextInt();
+
+                            //Checks to see if user is trying to trade for a duplicate stock
+                            for(int u = 0; u < folio.chosenDivisions[sectorChoice-1].instruments.length; u++){
+                                //Check all non null slots for a duplicate
+                                if(folio.chosenDivisions[sectorChoice-1].instruments[u] != null)
+                                {
+                                    //If duplicate then break loop and say choose another stock
+                                    if (technologyArray[stockChoice-1].getName().equalsIgnoreCase(folio.chosenDivisions[sectorChoice - 1].instruments[u].getName())) {
+                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        //if stock chosen is a duplicate than ask them to choose another
+                                        taken = true;
+                                        break;
+                                    }
+                                }
+                            }
+
+                            if(!taken){
+                                if(stockChoice == 1){
+                                    newStock = technologyArray[sectorChoice-1];
+
+                                }
+                                else if(stockChoice == 2){
+                                    newStock = technologyArray[sectorChoice-1];
+                                }
+                                else if(stockChoice == 3){
+                                    newStock = technologyArray[sectorChoice-1];
+                                }
+                                else if(stockChoice == 4){
+                                    newStock = technologyArray[sectorChoice-1];
+                                }
+                                else if(stockChoice == 5){
+                                    newStock = technologyArray[sectorChoice-1];
+                                }
+                                else if(stockChoice == 6){
+                                    newStock = technologyArray[sectorChoice-1];
+                                }
+                                else if(stockChoice == 7){
+                                    newStock = technologyArray[sectorChoice-1];
+                                }
+                                else if(stockChoice == 8){
+                                    newStock = technologyArray[sectorChoice-1];
+                                }
+                                else{
+                                    System.out.println("Please enter a valid stock");
+                                }
+
+                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+
+                            }
                         }
 
 
