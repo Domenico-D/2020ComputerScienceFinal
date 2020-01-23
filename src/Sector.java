@@ -216,13 +216,12 @@ public class Sector {
         return name;
     }
 
-    //finish toString
     public String toString(){
         String str = "";
 
         for(int i=0;i<instruments.length;i++)
         {
-            str += instruments[i].toString();
+            str += (i + 1) + " " + instruments[i].toString();
         }
 
         return str;

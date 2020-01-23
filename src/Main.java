@@ -2682,6 +2682,9 @@ public class Main {
 
     private static void basicMenu(Portfolio folio){
         do {
+            //Update Sector Stock prices
+            folio.updateSectors();
+            //Print out Main Menu
             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
             System.out.println("1. Add Investment");
             System.out.println("2. Take Profit/Loss");
@@ -2713,7 +2716,7 @@ public class Main {
                         //Prints out all the instruments in that sector
                         for(int i = 0; i < folio.chosenDivisions[sectorChoice -1].instruments.length; i++){
                             if(folio.chosenDivisions[sectorChoice - 1].instruments[i] != null)
-                                System.out.println(folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
+                                System.out.println( (i + 1) + ". " + folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
                         }
                         //Check if there are any open slots in that sector
                         for(int i = 0; i < folio.chosenDivisions[sectorChoice-1].instruments.length; i++){
@@ -2998,7 +3001,7 @@ public class Main {
                     if(sectorChoice == 1){
                         for(int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++){
                             if(folio.chosenDivisions[sectorChoice - 1].instruments[i] != null)
-                                System.out.println(folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
+                                System.out.println((i + 1) + ". " + folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
                         }
                         System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                         System.out.println("Which stock would you like to take profit/loss");
@@ -3020,7 +3023,7 @@ public class Main {
                     else if(sectorChoice == 2){
                         for(int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++){
                             if(folio.chosenDivisions[sectorChoice - 1].instruments[i] != null)
-                                System.out.println(folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
+                                System.out.println((i + 1) + ". " + folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
                         }
                         System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                         System.out.println("Which stock would you like to take profit/loss");
@@ -3042,7 +3045,7 @@ public class Main {
                     else if(sectorChoice == 3){
                         for(int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++){
                             if(folio.chosenDivisions[sectorChoice - 1].instruments[i] != null)
-                                System.out.println(folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
+                                System.out.println((i + 1) + ". " + folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
                         }
                         System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                         System.out.println("Which stock would you like to take profit/loss");
@@ -3064,7 +3067,7 @@ public class Main {
                     else if(sectorChoice == 4){
                         for(int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++){
                             if(folio.chosenDivisions[sectorChoice - 1].instruments[i] != null)
-                                System.out.println(folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
+                                System.out.println((i + 1) + ". " + folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
                         }
                         System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                         System.out.println("Which stock would you like to take profit/loss");
@@ -3086,7 +3089,7 @@ public class Main {
                     else if(sectorChoice == 5){
                         for(int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++){
                             if(folio.chosenDivisions[sectorChoice - 1].instruments[i] != null)
-                                System.out.println(folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
+                                System.out.println((i + 1) + ". " + folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
                         }
                         System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                         System.out.println("Which stock would you like to take profit/loss");
@@ -3134,7 +3137,7 @@ public class Main {
                             for (int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++) {
 
                                 if (folio.chosenDivisions[sectorChoice - 1].instruments[i] != null)
-                                    System.out.println(folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
+                                    System.out.println((i + 1) + ". " + folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
 
                             }
 
@@ -3612,7 +3615,7 @@ public class Main {
                         for (int i = 0; i < folio.chosenDivisions[sectorChoice - 1].instruments.length; i++)
                         {
                             if (folio.chosenDivisions[sectorChoice - 1].instruments[i] != null)
-                                System.out.println(folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
+                                System.out.println((i + 1) + ". " + folio.chosenDivisions[sectorChoice - 1].instruments[i].toString());
                         }
                     }
                 }while(sectorChoice != 0);

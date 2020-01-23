@@ -91,7 +91,7 @@ public class Portfolio {
 
         for(int i = 0; i<chosenDivisions.length;i++)
         {
-            str+=chosenDivisions[i].toString();
+            str+= (i + 1) + " " + chosenDivisions[i].toString();
         }
 
         return str;
