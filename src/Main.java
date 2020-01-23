@@ -360,8 +360,7 @@ public class Main {
 
                     if(numPortfolios < 1){
                         gameChoice = 1;
-                    }
-                    else{
+                    }else{
                         System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                         System.out.println("1. Create a Portfolio (max of three)");
                         //Only allow user to select Portfolios if they have more then one
@@ -375,9 +374,8 @@ public class Main {
 
                     //create portfolio
                     if(gameChoice == 1){
-                        createPortfolio();
                         numPortfolios++;
-
+                        createPortfolio();
                     }
                     //Continue with the rest of the game
                     else if(gameChoice == 2){
