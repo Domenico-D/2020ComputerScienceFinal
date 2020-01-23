@@ -323,7 +323,7 @@ public class Main {
 
     //Menu navigator
     private static int gameChoice;
-    private static int menuChoice;
+    private static int basicMenuChoice;
     private static int sectorChoice;
     private static boolean taken = false;
 
@@ -348,8 +348,9 @@ public class Main {
 
         do{
             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-            System.out.println("1. Play");
-            System.out.println("2. About us\n");
+            System.out.println("1. Play.");
+            System.out.println("2. About us.");
+            System.out.println("3. Enter -1 to exit.");
             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
             gameChoice = inputNum.nextInt();
 
@@ -357,14 +358,13 @@ public class Main {
 
                 do{
 
-
                     if(numPortfolios < 1){
                         gameChoice = 1;
                     }else{
                         System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                         System.out.println("1. Create a Portfolio (max of three)");
                         //Only allow user to select Portfolios if they have more then one
-                        if(numPortfolios < 3)
+                        if(numPortfolios >= 1)
                             System.out.println("2. Select Portfolio");
 
                         System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
@@ -390,61 +390,70 @@ public class Main {
                                 System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                                 gameChoice = inputNum.nextInt();
 
-
-                                //Portfolio 1
-                                if (gameChoice == 1) {
-
+                                if (gameChoice == 1)                        //Portfolio 1
                                     basicMenu(portfolio1);
-                                }
-                                //Portfolio 2
-                                else if (gameChoice == 2) {
+                                else if (gameChoice == 2)                   //Portfolio 2
                                     basicMenu(portfolio2);
-                                }
-                                //Portfolio
-                                else if (gameChoice == 3) {
+                                else if (gameChoice == 3)                   //Portfolio 3
                                     basicMenu(portfolio3);
-                                }
-                                else{
+                                else if (gameChoice==0)                     //Exit
+                                    System.out.println("Exiting menu.");
+                                else
                                     System.out.println("Please enter a correct number");
-                                }
+
                             }while(gameChoice != 0);
-                        }
-                        else{
+
+                        }else if (numPortfolios==2){
                             do {
                                 System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                                 System.out.println("Which portfolio would you like to access");
                                 System.out.println("1. " + portfolio1.getName());
                                 System.out.println("2. " + portfolio2.getName());
-                                System.out.println("0 to go back");
+                                System.out.println("0. Go Back");
                                 System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                                 gameChoice = inputNum.nextInt();
 
-                                if (gameChoice == 1) {
+                                if (gameChoice == 1)
                                     basicMenu(portfolio1);
-                                } else if (gameChoice == 2) {
-
-                                }
-                                else{
+                                else if (gameChoice == 2)
+                                    basicMenu((portfolio2));
+                                else if (gameChoice==0)
+                                    System.out.println("Exiting menu.");
+                                else
                                     System.out.println("Please enter a correct number");
-                                }
+
+                            }while(gameChoice != 0);
+                        }else{
+                            do {
+                                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                                System.out.println("Which portfolio would you like to access");
+                                System.out.println("1. " + portfolio1.getName());
+                                System.out.println("0. Go Back");
+                                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                                gameChoice = inputNum.nextInt();
+
+                                if (gameChoice == 1)
+                                    basicMenu(portfolio1);
+                                else if (gameChoice==0)
+                                    System.out.println("Exiting menu.");
+                                else
+                                    System.out.println("Please enter a correct number");
 
                             }while(gameChoice != 0);
                         }
-
-
-
-
                     }
-
                 }while(gameChoice != 0);
-
             }
             else if(gameChoice == 2){
                 System.out.println("test 2");
             }
+            else if(gameChoice == -1) {
+                System.out.println("Exiting. Have a good day.");
+            }else{
+                System.out.println("Please enter a valid choice.");
+            }
 
-
-        }while(gameChoice != 0);
+        }while(gameChoice != -1);
 
 
 
@@ -2684,10 +2693,10 @@ public class Main {
             System.out.println("Current Balance: " + moneyFormat.format(folio.getCashLeftover()));
             System.out.println("0. Go back");
             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
-            menuChoice = inputNum.nextInt();
+            basicMenuChoice = inputNum.nextInt();
 
             //Add Investment
-            if (menuChoice == 1) {
+            if (basicMenuChoice == 1) {
                 do
                 {
                     System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2974,7 +2983,7 @@ public class Main {
 
             }
             //Take Profit / Loss
-            else if(menuChoice == 2){
+            else if(basicMenuChoice == 2){
                 do
                 {
                     //Print out sectors for the user to choose
@@ -3098,7 +3107,7 @@ public class Main {
                 }while(sectorChoice !=0);
             }
             //Trade Stock
-            else if(menuChoice == 3){
+            else if(basicMenuChoice == 3){
 
                 do
                 {
@@ -3213,7 +3222,7 @@ public class Main {
 
             }
             //List Sectors
-            else if(menuChoice == 4){
+            else if(basicMenuChoice == 4){
                 do
                 {
                     System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -3239,18 +3248,18 @@ public class Main {
                 }while(sectorChoice != 0);
             }
             //Determine total Capital
-            else if(menuChoice == 5){
+            else if(basicMenuChoice == 5){
 
             }
             //End Day
-            else if(menuChoice == 6){
+            else if(basicMenuChoice == 6){
 
             }
             else{
                 System.out.println("Please enter a correct number.");
             }
 
-        }while(menuChoice != 0);
+        }while(basicMenuChoice != 0);
     }
 
 
