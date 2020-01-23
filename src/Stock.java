@@ -90,10 +90,16 @@ public class Stock  {
     }
 
     public void buyShares() {
-        //2500
         sharesOwned = 1000 / currentPrice;
         priceWhenBought = currentPrice;
+
     }
+
+    public void buyShares(double shares, double newCurrentPrice){
+        sharesOwned = shares;
+        priceWhenBought = newCurrentPrice;
+    }
+
     public void sellShares(double sell)
     {
         sharesOwned -= sell;
