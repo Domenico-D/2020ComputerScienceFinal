@@ -3159,7 +3159,7 @@ public class Main {
                             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]");
                             stockChoice = inputNum.nextInt();
 
-                            //Checks to see if user is trying to buy a duplicate stock
+                            //Checks to see if user is trying to trade for a duplicate stock
                             for(int u = 0; u < folio.chosenDivisions[sectorChoice-1].instruments.length; u++){
                                 //Check all non null slots for a duplicate
                                 if(folio.chosenDivisions[sectorChoice-1].instruments[u] != null)
@@ -3171,6 +3171,27 @@ public class Main {
                                         taken = true;
                                         break;
                                     }
+                                }
+                            }
+
+                            if(!taken){
+                                if(stockChoice == 1){
+                                    newStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice-1];
+                                }
+                                else if(stockChoice == 2){
+                                    newStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+                                }
+                                else if(stockChoice == 3){
+                                    newStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice -1];
+                                }
+                                else if(stockChoice == 4){
+                                    newStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+                                }
+                                else if(stockChoice == 5){
+                                    newStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+                                }
+                                else{
+                                    System.out.println("Please enter a valid stock");
                                 }
                             }
                         }
