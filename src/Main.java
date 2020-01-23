@@ -3174,23 +3174,36 @@ public class Main {
 
                             if(!taken){
                                 if(stockChoice == 1){
-                                    newStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice-1];
+                                    newStock = technologyArray[sectorChoice-1];
+
                                 }
                                 else if(stockChoice == 2){
-                                    newStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+                                    newStock = technologyArray[sectorChoice-1];
                                 }
                                 else if(stockChoice == 3){
-                                    newStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice -1];
+                                    newStock = technologyArray[sectorChoice-1];
                                 }
                                 else if(stockChoice == 4){
-                                    newStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+                                    newStock = technologyArray[sectorChoice-1];
                                 }
                                 else if(stockChoice == 5){
-                                    newStock = folio.chosenDivisions[sectorChoice - 1].instruments[stockChoice - 1];
+                                    newStock = technologyArray[sectorChoice-1];
+                                }
+                                else if(stockChoice == 6){
+                                    newStock = technologyArray[sectorChoice-1];
+                                }
+                                else if(stockChoice == 7){
+                                    newStock = technologyArray[sectorChoice-1];
+                                }
+                                else if(stockChoice == 8){
+                                    newStock = technologyArray[sectorChoice-1];
                                 }
                                 else{
                                     System.out.println("Please enter a valid stock");
                                 }
+
+                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+
                             }
                         }
 
