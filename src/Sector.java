@@ -178,7 +178,7 @@ public class Sector {
     public void tradeStock(Stock newStock, Stock oldStock){
 
         for(int i = 0; i < instruments.length; i++){
-            if(instruments[i] == oldStock){
+            if(instruments[i].getName().equalsIgnoreCase(oldStock.getName())){
 
                 //Get Price and number of shares of New Stock
                 double newStockPrice = newStock.getCurrentPrice();

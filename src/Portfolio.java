@@ -100,7 +100,7 @@ public class Portfolio {
 
     }
 
-    public double calculateCapital
+    public double calculateCapital;
 
 
 }
