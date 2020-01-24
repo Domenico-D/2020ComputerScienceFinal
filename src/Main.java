@@ -6001,9 +6001,9 @@ public class Main {
 
     public static void endDay(){
         if(numPortfolios == 3){
-            System.out.println(portfolio1.getName() + " Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()));
-            System.out.println(portfolio2.getName() + " Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()));
-            System.out.println(portfolio3.getName() + " Daily Profit:" + moneyFormat.format(portfolio3.getDailyProfit()));
+            System.out.println(portfolio1.getName() + "\n" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()));
+            System.out.println(portfolio2.getName() + "\n" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()));
+            System.out.println(portfolio3.getName() + "\n" + "Daily Profit:" + moneyFormat.format(portfolio3.getDailyProfit()));
 
             portfolio1.resetTrades();
             portfolio2.resetTrades();
@@ -6021,8 +6021,8 @@ public class Main {
 
         }
         else if(numPortfolios == 2){
-            System.out.println(portfolio1.getName() + " Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()));
-            System.out.println(portfolio2.getName() + " Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()));
+            System.out.println(portfolio1.getName()+ "\n" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()));
+            System.out.println(portfolio2.getName()+ "\n" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()));
 
             portfolio1.resetTrades();
             portfolio2.resetTrades();
@@ -6036,7 +6036,7 @@ public class Main {
             updatePrePopulatedSectors();
         }
         else if(numPortfolios == 1){
-            System.out.println(portfolio1.getName() + " Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()));
+            System.out.println(portfolio1.getName()+ "\n" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()));
 
             portfolio1.resetTrades();
 
