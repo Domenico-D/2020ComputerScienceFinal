@@ -2977,7 +2977,8 @@ public class Main {
                                // break;
                             }
                             else{
-                                System.out.println("Remember you cannot add stocks to a full Sector");
+                                if(i == 4)
+                                    System.out.println("Remember you cannot add stocks to a full Sector");
                             }
                         }
 
