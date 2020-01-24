@@ -42,21 +42,9 @@ public class Stock  {
     {
         return region;
     }
-    public int getDaysOwned()
-    {
-        return daysOwned;
-    }
-    public double getSharesOwned()
-    {
-        return sharesOwned;
-    }
     public double getCurrentPrice()
     {
         return currentPrice;
-    }
-    public double getPriceWhenBought()
-    {
-        return priceWhenBought;
     }
     public double getVolatility()
     {
@@ -155,15 +143,6 @@ public class Stock  {
             }else{
                 currentPrice -= increase;
             }
-        }
-
-    }
-
-    public void updateStockPriceDay(){
-
-       //At the end of the day update multiple times for overnight affect
-        for(int i = 0; i < 5; i++ ){
-            updateStockPrice();
         }
 
     }

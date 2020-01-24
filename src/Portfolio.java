@@ -82,6 +82,10 @@ public class Portfolio {
         return trades;
     }
 
+    public void updateTrades(){
+        trades--;
+    }
+
     public void setName(String nm) {
         name = nm;
     }
@@ -164,12 +168,6 @@ public class Portfolio {
 
         }
 
-    }
-
-    public void updateSectorsDay(){
-        for(int i = 0; i < chosenDivisions.length; i++){
-            chosenDivisions[i].updateAllSectorStocksDay();
-        }
     }
 
     public void resetTrades(){

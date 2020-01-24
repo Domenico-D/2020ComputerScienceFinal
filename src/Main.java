@@ -2693,16 +2693,16 @@ public class Main {
             System.out.println("3. Trade Stock");
             System.out.println("4. List Sectors");
             System.out.println("5. Determine Total Capital");
-            System.out.println("6. End day");
-            System.out.println("7. View Profit");
-            System.out.println("8. Check Sector Volatility");
+            System.out.println("6. View Profit");
+            System.out.println("7. Check Sector Volatility");
+            System.out.println("8. End day");
             System.out.println("0. Go back");
             System.out.println("Current Balance: " + moneyFormat.format(folio.getCashLeftover()));
             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
             basicMenuChoice = inputNum.nextInt();
 
             //Add Investment
-            if (basicMenuChoice == 1) {
+            if (basicMenuChoice == 1 && folio.getTrades() > 0) {
                 do
                 {
                     System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
@@ -2757,6 +2757,7 @@ public class Main {
                                         folio.chosenDivisions[sectorChoice-1].instruments[i].buyShares();
                                         folio.cashLeftover -=  1000;
                                         System.out.println(folio.chosenDivisions[sectorChoice-1].instruments[i].toString());
+                                        folio.updateTrades();
                                         break;
                                     }
                                     taken = false;
@@ -2793,6 +2794,7 @@ public class Main {
                                         folio.chosenDivisions[sectorChoice-1].instruments[i].buyShares();
                                         folio.cashLeftover -=  1000;
                                         System.out.println(folio.chosenDivisions[sectorChoice-1].instruments[i].toString());
+                                        folio.updateTrades();
                                         break;
                                     }
                                     taken = false;
@@ -2829,6 +2831,7 @@ public class Main {
                                         folio.chosenDivisions[sectorChoice-1].instruments[i].buyShares();
                                         folio.cashLeftover -=  1000;
                                         System.out.println(folio.chosenDivisions[sectorChoice-1].instruments[i].toString());
+                                        folio.updateTrades();
                                         break;
                                     }
                                     taken = false;
@@ -2865,6 +2868,7 @@ public class Main {
                                         folio.chosenDivisions[sectorChoice-1].instruments[i].buyShares();
                                         folio.cashLeftover -=  1000;
                                         System.out.println(folio.chosenDivisions[sectorChoice-1].instruments[i].toString());
+                                        folio.updateTrades();
                                         break;
                                     }
                                     taken = false;
@@ -2901,6 +2905,7 @@ public class Main {
                                         folio.chosenDivisions[sectorChoice-1].instruments[i].buyShares();
                                         folio.cashLeftover -=  1000;
                                         System.out.println(folio.chosenDivisions[sectorChoice-1].instruments[i].toString());
+                                        folio.updateTrades();
                                         break;
                                     }
                                     taken = false;
@@ -2937,6 +2942,7 @@ public class Main {
                                         folio.chosenDivisions[sectorChoice-1].instruments[i].buyShares();
                                         folio.cashLeftover -=  1000;
                                         System.out.println(folio.chosenDivisions[sectorChoice-1].instruments[i].toString());
+                                        folio.updateTrades();
                                         break;
                                     }
                                     taken = false;
@@ -2974,6 +2980,7 @@ public class Main {
                                         folio.cashLeftover -=  1000;
                                         System.out.println(folio.chosenDivisions[sectorChoice-1].instruments[i].toString());
                                         taken = false;
+                                        folio.updateTrades();
                                         break;
                                     }
                                     taken = false;
@@ -2988,11 +2995,11 @@ public class Main {
 
                       }
 
-                }while(sectorChoice != 0);
+                }while(sectorChoice != 0 && folio.getTrades() > 0);
 
             }
             //Take Profit / Loss
-            else if(basicMenuChoice == 2){
+            else if(basicMenuChoice == 2 && folio.getTrades() > 0){
                 do
                 {
                     //Print out sectors for the user to choose
@@ -3021,6 +3028,7 @@ public class Main {
                                 if(folio.chosenDivisions[0].instruments[i] != null)
                                     System.out.println(folio.chosenDivisions[0].instruments[i].toString());
                             }
+                            folio.updateTrades();
                         }else{
                             System.out.println("Please choose a different stock");
                         }
@@ -3043,6 +3051,7 @@ public class Main {
                                 if(folio.chosenDivisions[1].instruments[i] != null)
                                     System.out.println(folio.chosenDivisions[1].instruments[i].toString());
                             }
+                            folio.updateTrades();
                         }else{
                             System.out.println("Please choose a different stock");
                         }
@@ -3065,6 +3074,7 @@ public class Main {
                                 if(folio.chosenDivisions[2].instruments[i] != null)
                                     System.out.println(folio.chosenDivisions[2].instruments[i].toString());
                             }
+                            folio.updateTrades();
                         }else{
                             System.out.println("Please choose a different stock");
                         }
@@ -3087,6 +3097,7 @@ public class Main {
                                 if(folio.chosenDivisions[3].instruments[i] != null)
                                     System.out.println(folio.chosenDivisions[3].instruments[i].toString());
                             }
+                            folio.updateTrades();
                         }else{
                             System.out.println("Please choose a different stock");
                         }
@@ -3109,15 +3120,16 @@ public class Main {
                                 if(folio.chosenDivisions[4].instruments[i] != null)
                                     System.out.println(folio.chosenDivisions[4].instruments[i].toString());
                             }
+                            folio.updateTrades();
                         }else{
                             System.out.println("Please choose a different stock");
                         }
                     }
-                }while(sectorChoice !=0);
+                }while(sectorChoice !=0 && folio.getTrades() > 0);
 
             }
             //Trade Stock
-            else if(basicMenuChoice == 3){
+            else if(basicMenuChoice == 3 && folio.getTrades() > 0){
 
                 do
                 {
@@ -3206,34 +3218,42 @@ public class Main {
                                 if(stockChoice == 1){
                                     newStock = technologyArray[stockChoice-1];
                                     folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 2){
                                     newStock = technologyArray[stockChoice-1];
                                     folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 3){
                                     newStock = technologyArray[stockChoice-1];
                                     folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 4){
                                     newStock = technologyArray[stockChoice-1];
                                     folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 5){
                                     newStock = technologyArray[stockChoice-1];
                                     folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 6){
                                     newStock = technologyArray[stockChoice-1];
                                     folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 7){
                                     newStock = technologyArray[stockChoice-1];
                                     folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 8){
                                     newStock = technologyArray[stockChoice-1];
                                     folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else{
                                     System.out.println("Please enter a valid stock");
@@ -3271,34 +3291,47 @@ public class Main {
                             if(!taken){
                                 if(stockChoice == 1){
                                     newStock = cryptoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 2){
                                     newStock = cryptoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 3){
                                     newStock = cryptoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 4){
                                     newStock = cryptoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 5){
                                     newStock = cryptoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 6){
                                     newStock = cryptoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 7){
                                     newStock = cryptoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 8){
                                     newStock = cryptoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else{
                                     System.out.println("Please enter a valid stock");
                                 }
-
-                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
-
                             }
                         }
                         else if(folio.chosenDivisions[sectorChoice-1].getName().equalsIgnoreCase("Retail")){
@@ -3329,33 +3362,47 @@ public class Main {
                             if(!taken){
                                 if(stockChoice == 1){
                                     newStock = retailArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 2){
                                     newStock = retailArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 3){
                                     newStock = retailArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 4){
                                     newStock = retailArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 5){
                                     newStock = retailArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 6){
                                     newStock = retailArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 7){
                                     newStock = retailArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 8){
                                     newStock = retailArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else{
                                     System.out.println("Please enter a valid stock");
                                 }
-
-                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
 
                             }
                         }
@@ -3387,33 +3434,47 @@ public class Main {
                             if(!taken){
                                 if(stockChoice == 1){
                                     newStock = autoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 2){
                                     newStock = autoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 3){
                                     newStock = autoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 4){
                                     newStock = autoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 5){
                                     newStock = autoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 6){
                                     newStock = autoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 7){
                                     newStock = autoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 8){
                                     newStock = autoArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else{
                                     System.out.println("Please enter a valid stock");
                                 }
-
-                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
 
                             }
                         }
@@ -3445,33 +3506,47 @@ public class Main {
                             if(!taken){
                                 if(stockChoice == 1){
                                     newStock = aeroArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 2){
                                     newStock = aeroArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 3){
                                     newStock = aeroArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 4){
                                     newStock = aeroArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 5){
                                     newStock = aeroArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 6){
                                     newStock = aeroArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 7){
                                     newStock = aeroArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 8){
                                     newStock = aeroArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else{
                                     System.out.println("Please enter a valid stock");
                                 }
-
-                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
 
                             }
                         }
@@ -3503,33 +3578,48 @@ public class Main {
                             if(!taken){
                                 if(stockChoice == 1){
                                     newStock = financialArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 2){
                                     newStock = financialArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 3){
                                     newStock = financialArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 4){
                                     newStock = financialArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 5){
                                     newStock = financialArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 6){
                                     newStock = financialArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 7){
                                     newStock = financialArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 8){
                                     newStock = financialArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else{
                                     System.out.println("Please enter a valid stock");
                                 }
 
-                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
 
                             }
                         }
@@ -3561,40 +3651,53 @@ public class Main {
                             if(!taken){
                                 if(stockChoice == 1){
                                     newStock = foodArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 2){
                                     newStock = foodArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 3){
                                     newStock = foodArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 4){
                                     newStock = foodArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();;
                                 }
                                 else if(stockChoice == 5){
                                     newStock = foodArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 6){
                                     newStock = foodArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 7){
                                     newStock = foodArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else if(stockChoice == 8){
                                     newStock = foodArray[stockChoice-1];
+                                    folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
+                                    folio.updateTrades();
                                 }
                                 else{
                                     System.out.println("Please enter a valid stock");
                                 }
-
-                                folio.chosenDivisions[sectorChoice - 1].tradeStock(newStock, currentStock);
-
                             }
                         }
 
 
                     }
-                }while(sectorChoice != 0);
+                }while(sectorChoice != 0 && folio.getTrades() > 0);
 
             }
             //List Sectors
@@ -3630,17 +3733,35 @@ public class Main {
                 System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
 
             }
-            //End Day
-            else if(basicMenuChoice == 6){
-                endDay();
-            }
             //View Profit
-            else if(basicMenuChoice == 7){
-
+            else if(basicMenuChoice == 6){
+                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                System.out.println(folio.getName() + " Total Profit/Loss: " + folio.getTotalProfitLoss());
+                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
             }
             //Check Sector Volatility
-            else if(basicMenuChoice == 8){
+            else if(basicMenuChoice == 7){
+                do
+                {
+                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                    System.out.println(folio.getSectors());
+                    System.out.println("0. to go back");
+                    System.out.println("Which Sector Volatility would you like to access?");
+                    System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+                    sectorChoice = inputNum.nextInt();
 
+                    if (sectorChoice >= 1 && sectorChoice <= 5) {
+                        folio.chosenDivisions[sectorChoice - 1].getSectorVolatality();
+                    }
+                    else{
+                        System.out.println("Please enter a correct sector");
+                    }
+
+                }while(sectorChoice != 0);
+            }
+            //End Day
+            else if(basicMenuChoice == 8 || folio.getTrades() == 0){
+                endDay();
             }
             else{
                 System.out.println("Please enter a correct number.");
