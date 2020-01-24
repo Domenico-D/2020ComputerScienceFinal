@@ -229,19 +229,22 @@ public class Sector {
 
     public void updateAllSectorStocks(){
         for(int i = 0; i < instruments.length; i++){
-            if(instruments[i] != null)
-                instruments[i].updateStockPrice();
+            if(instruments[i] != null){
+                if(instruments[i].getActive())
+                    instruments[i].updateStockPrice();
+            }
         }
     }
 
     public void updateAllSectorStocksDay(){
         for(int i = 0; i < instruments.length; i++){
-            if(instruments[i] != null)
-                instruments[i].updateStockPriceDay();
+            if(instruments[i] != null){
+                if(instruments[i].getActive())
+                    instruments[i].updateStockPriceDay();
+            }
+
         }
     }
-
-
 
 
 }

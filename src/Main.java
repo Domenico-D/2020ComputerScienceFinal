@@ -331,6 +331,7 @@ public class Main {
     private static Stock currentStock;
     private static Stock newStock;
 
+    private static Random gen = new Random();
 
     public static void main(String[]args){
 
@@ -375,6 +376,7 @@ public class Main {
                     if(gameChoice == 1){
                         numPortfolios++;
                         createPortfolio();
+                        endDay();
                     }
                     //Continue with the rest of the game
                     else if(gameChoice == 2){
@@ -624,6 +626,7 @@ public class Main {
                 }
 
             }
+
 
         }
         else if(numPortfolios == 2){
@@ -2683,18 +2686,18 @@ public class Main {
     private static void basicMenu(Portfolio folio){
         do {
             //Update Sector Stock prices
-            folio.updateSectors();
-            updatePrePopulatedSectors();
             //Print out Main Menu
             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
             System.out.println("1. Add Investment");
             System.out.println("2. Take Profit/Loss");
             System.out.println("3. Trade Stock");
             System.out.println("4. List Sectors");
-            System.out.println("5. Determine total Capital");
+            System.out.println("5. Determine Total Capital");
             System.out.println("6. End day");
-            System.out.println("Current Balance: " + moneyFormat.format(folio.getCashLeftover()));
+            System.out.println("7. View Profit");
+            System.out.println("8. Check Sector Volatility");
             System.out.println("0. Go back");
+            System.out.println("Current Balance: " + moneyFormat.format(folio.getCashLeftover()));
             System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
             basicMenuChoice = inputNum.nextInt();
 
@@ -2987,9 +2990,6 @@ public class Main {
 
                 }while(sectorChoice != 0);
 
-                //Update sectors so stock prices change
-                folio.updateSectors();
-                updatePrePopulatedSectors();
             }
             //Take Profit / Loss
             else if(basicMenuChoice == 2){
@@ -3114,9 +3114,7 @@ public class Main {
                         }
                     }
                 }while(sectorChoice !=0);
-                //Update sectors so stock prices change
-                folio.updateSectors();
-                updatePrePopulatedSectors();
+
             }
             //Trade Stock
             else if(basicMenuChoice == 3){
@@ -3598,9 +3596,6 @@ public class Main {
                     }
                 }while(sectorChoice != 0);
 
-                //Update sectors so stock prices change
-                folio.updateSectors();
-                updatePrePopulatedSectors();
             }
             //List Sectors
             else if(basicMenuChoice == 4){
@@ -3632,13 +3627,20 @@ public class Main {
             else if(basicMenuChoice == 5){
                 System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
                 System.out.println("Total Capital of " + folio.getName() + " " + moneyFormat.format(folio.getTotalCapital()));
-
+                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
 
             }
             //End Day
             else if(basicMenuChoice == 6){
+                endDay();
+            }
+            //View Profit
+            else if(basicMenuChoice == 7){
 
-                folio.updateSectorsDay();
+            }
+            //Check Sector Volatility
+            else if(basicMenuChoice == 8){
+
             }
             else{
                 System.out.println("Please enter a correct number.");
@@ -3656,6 +3658,58 @@ public class Main {
         aerospaceSector.updateAllSectorStocks();
         financialSector.updateAllSectorStocks();
         foodSector.updateAllSectorStocks();
+    }
+
+    public static void endDay(){
+        if(numPortfolios == 3){
+            System.out.println(portfolio1.getName() + " Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()));
+            System.out.println(portfolio2.getName() + " Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()));
+            System.out.println(portfolio3.getName() + " Daily Profit:" + moneyFormat.format(portfolio3.getDailyProfit()));
+
+            portfolio1.resetTrades();
+            portfolio2.resetTrades();
+            portfolio3.resetTrades();
+
+            portfolio1.activateRegion(false,(gen.nextInt(10) + 1));
+            portfolio2.activateRegion(false,(gen.nextInt(10) + 1));
+            portfolio3.activateRegion(false,(gen.nextInt(10) + 1));
+
+            portfolio1.updateSectors();
+            portfolio2.updateSectors();
+            portfolio3.updateSectors();
+
+            updatePrePopulatedSectors();
+
+        }
+        else if(numPortfolios == 2){
+            System.out.println(portfolio1.getName() + " Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()));
+            System.out.println(portfolio2.getName() + " Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()));
+
+            portfolio1.resetTrades();
+            portfolio2.resetTrades();
+
+            portfolio1.activateRegion(false,(gen.nextInt(10) + 1));
+            portfolio2.activateRegion(false,(gen.nextInt(10) + 1));
+
+            portfolio1.updateSectors();
+            portfolio2.updateSectors();
+
+            updatePrePopulatedSectors();
+        }
+        else if(numPortfolios == 1){
+            System.out.println(portfolio1.getName() + " Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()));
+
+            portfolio1.resetTrades();
+
+            portfolio1.activateRegion(false,(gen.nextInt(10) + 1));
+
+            portfolio1.updateSectors();
+
+            updatePrePopulatedSectors();
+
+        }
+
+
     }
 
 

@@ -66,6 +66,9 @@ public class Stock  {
     {
         return (currentPrice - priceWhenBought) * sharesOwned;
     }
+    public boolean getActive(){
+        return active;
+    }
 
     public void setName(String nm)
     {
@@ -82,6 +85,9 @@ public class Stock  {
     public void setVolatility(double risk)
     {
         volatility = risk;
+    }
+    public void setActive(boolean bool){
+        active = bool;
     }
 
     public void updateDays()
