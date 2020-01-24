@@ -148,13 +148,13 @@ public class Main {
     private static Stock userPortfolio3Sector7Stock5 = new Stock();
 
     //All Technology Sector Stocks
-    private static Stock intelStock = new Stock("Intel", 'N', 60.54, 0.7, true);
-    private static Stock appleStock = new Stock("Apple", 'N', 316.75, 0.8, true);
-    private static Stock alphabetStock = new Stock("Alphabet", 'N', 1482.98, 0.9, true);
-    private static Stock samsungStock = new Stock("Samsung", 'A', 218.32, 0.7, true);
-    private static Stock microsoftStock = new Stock("Microsoft", 'N', 166.25, 0.8, true);
+    private static Stock intelStock = new Stock("Intel", 'N', 60.54, 0.07, true);
+    private static Stock appleStock = new Stock("Apple", 'N', 316.75, 0.08, true);
+    private static Stock alphabetStock = new Stock("Alphabet", 'N', 1482.98, 0.09, true);
+    private static Stock samsungStock = new Stock("Samsung", 'A', 218.32, 0.07, true);
+    private static Stock microsoftStock = new Stock("Microsoft", 'N', 166.25, 0.08, true);
     private static Stock nvidiaStock = new Stock("Nvidia", 'A', 247.95, 0.1, true);
-    private static Stock nintendoStock = new Stock("Nintendo", 'A', 53.26, 0.7, true);
+    private static Stock nintendoStock = new Stock("Nintendo", 'A', 53.26, 0.07, true);
     private static Stock amdStock = new Stock("AMD", 'A', 51.05, 0.1, true);
 
     //Array of all technology stocks
@@ -232,7 +232,7 @@ public class Main {
     private static Stock cibcStock = new Stock("CIBC", 'N', 108.14, 0.07, true);
     private static Stock bankOfAmericaStock = new Stock("Bank of America", 'N', 34.26, 0.03, true);
     private static Stock bmoStock = new Stock("BMO", 'N', 104.34, 0.04, true);
-    private static Stock hAndRBlockStock = new Stock("H and R Block", 'E', 53.63, 8.8, true);
+    private static Stock hAndRBlockStock = new Stock("H and R Block", 'E', 53.63, 0.04, true);
     private static Stock tdStock = new Stock("TD", 'N', 73.96, 0.05, true);
     private static Stock rbcStock = new Stock("RBC", 'N', 106.79, 0.02, true);
     private static Stock tangerineStock = new Stock("Tangerine", 'O', 163.76, 0.06, true);
@@ -2684,6 +2684,7 @@ public class Main {
         do {
             //Update Sector Stock prices
             folio.updateSectors();
+            updatePrePopulatedSectors();
             //Print out Main Menu
             System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
             System.out.println("1. Add Investment");
@@ -2988,6 +2989,7 @@ public class Main {
 
                 //Update sectors so stock prices change
                 folio.updateSectors();
+                updatePrePopulatedSectors();
             }
             //Take Profit / Loss
             else if(basicMenuChoice == 2){
@@ -3114,6 +3116,7 @@ public class Main {
                 }while(sectorChoice !=0);
                 //Update sectors so stock prices change
                 folio.updateSectors();
+                updatePrePopulatedSectors();
             }
             //Trade Stock
             else if(basicMenuChoice == 3){
@@ -3597,6 +3600,7 @@ public class Main {
 
                 //Update sectors so stock prices change
                 folio.updateSectors();
+                updatePrePopulatedSectors();
             }
             //List Sectors
             else if(basicMenuChoice == 4){
@@ -3643,7 +3647,16 @@ public class Main {
         }while(basicMenuChoice != 0);
     }
 
+    private static void updatePrePopulatedSectors(){
 
+        technologySector.updateAllSectorStocks();
+        cryptoCurrencySector.updateAllSectorStocks();
+        retailSector.updateAllSectorStocks();
+        autoSector.updateAllSectorStocks();
+        aerospaceSector.updateAllSectorStocks();
+        financialSector.updateAllSectorStocks();
+        foodSector.updateAllSectorStocks();
+    }
 
 
 }
