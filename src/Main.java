@@ -298,8 +298,6 @@ public class Main {
     private static Sector userFinancial3 = new Sector("Financial");
     private static Sector userFood3 = new Sector("Food");
 
-    private static Portfolio[] portfolios = {portfolio1, portfolio2, portfolio3};
-
     private static int numPortfolios = 0;
 
     //User menu selection
@@ -309,12 +307,29 @@ public class Main {
     private static Boolean[] chosenStock = {true, true, true, true, true, true, true, true};
     //Temp stock array to fill sectors
     private static Stock[] tempStocks1 = new Stock[5];
-    private static Stock[] tempStocks2= new Stock[5];
+    private static Stock[] tempStocks2 = new Stock[5];
     private static Stock[] tempStocks3 = new Stock[5];
     private static Stock[] tempStocks4 = new Stock[5];
     private static Stock[] tempStocks5 = new Stock[5];
     private static Stock[] tempStocks6 = new Stock[5];
     private static Stock[] tempStocks7 = new Stock[5];
+
+    private static Stock[] temp2Stocks1 = new Stock[5];
+    private static Stock[] temp2Stocks2 = new Stock[5];
+    private static Stock[] temp2Stocks3 = new Stock[5];
+    private static Stock[] temp2Stocks4 = new Stock[5];
+    private static Stock[] temp2Stocks5 = new Stock[5];
+    private static Stock[] temp2Stocks6 = new Stock[5];
+    private static Stock[] temp2Stocks7 = new Stock[5];
+
+    private static Stock[] temp3Stocks1 = new Stock[5];
+    private static Stock[] temp3Stocks2 = new Stock[5];
+    private static Stock[] temp3Stocks3 = new Stock[5];
+    private static Stock[] temp3Stocks4 = new Stock[5];
+    private static Stock[] temp3Stocks5 = new Stock[5];
+    private static Stock[] temp3Stocks6 = new Stock[5];
+    private static Stock[] temp3Stocks7 = new Stock[5];
+
     //user stock choice
     private static int stockChoice;
     private static double currentPriceTemp;
@@ -417,7 +432,7 @@ public class Main {
                                 if (gameChoice == 1)
                                     basicMenu(portfolio1);
                                 else if (gameChoice == 2)
-                                    basicMenu((portfolio2));
+                                    basicMenu(portfolio2);
                                 else if (gameChoice==0)
                                     System.out.println("Exiting menu.");
                                 else
@@ -631,16 +646,10 @@ public class Main {
         }
         else if(numPortfolios == 2){
 
-
-
         }
         else if(numPortfolios == 3){
 
-
-
         }
-
-
 
     }
 
@@ -2683,6 +2692,7 @@ public class Main {
         }
     }
 
+
     private static void basicMenu(Portfolio folio){
         do {
             //Update Sector Stock prices
@@ -2985,7 +2995,7 @@ public class Main {
                                     }
                                     taken = false;
                                 }
-                               // break;
+                                // break;
                             }
                             else{
                                 if(i == 4)
@@ -2993,7 +3003,7 @@ public class Main {
                             }
                         }
 
-                      }
+                    }
 
                 }while(sectorChoice != 0 && folio.getTrades() > 0);
 
@@ -3832,6 +3842,5 @@ public class Main {
 
 
     }
-
 
 }
