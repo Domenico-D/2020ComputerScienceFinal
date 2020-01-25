@@ -16,7 +16,6 @@ public class Main {
     private static Scanner inputNum = new Scanner(System.in);
     private static Scanner inputChr = new Scanner(System.in);
     private static NumberFormat moneyFormat = NumberFormat.getCurrencyInstance();
-    
 
     //Initialize Stocks for the user to fill in portfolio 1
     private static Stock userPortfolio1Sector1Stock1 = new Stock();
@@ -5067,7 +5066,6 @@ public class Main {
 
         }
     }
-
 
     private static void fillPortfolioThreeSectorOne(){
         //Fill Stocks with user choices in Sector 1
