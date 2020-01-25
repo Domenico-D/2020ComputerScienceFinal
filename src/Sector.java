@@ -11,7 +11,7 @@ public class Sector {
     private String name;
     private double sectorProfitLoss;
     private char sectorVolatality;
-    public  Stock[] instruments;
+    private  Stock[] instruments;
 
     public Sector(String nm){
         name = nm;
@@ -154,5 +154,8 @@ public class Sector {
         }
     }
 
+    public Stock[] getInstruments(){
+        return instruments;
+    }
 
 }
