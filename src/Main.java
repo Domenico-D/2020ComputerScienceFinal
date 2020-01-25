@@ -6,6 +6,7 @@
  * create artificial stocks, and trade with fake money.
  */
 
+
 import java.text.NumberFormat;
 import java.util.*;
 import java.lang.*;
