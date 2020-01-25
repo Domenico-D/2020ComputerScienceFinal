@@ -442,7 +442,8 @@ public class Main {
                                 System.out.println("1. " + portfolio1.getName());
                                 System.out.println("2. " + portfolio2.getName());
                                 System.out.println("0. Go Back");
-                                System.out.println("\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\n");                                gameChoice = inputNum.nextInt();
+                                System.out.println("\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\n");
+                                gameChoice = inputNum.nextInt();
 
                                 if (gameChoice == 1)
                                     basicMenu(portfolio1);
@@ -456,10 +457,12 @@ public class Main {
                             }while(gameChoice != 0);
                         }else{
                             do {
-                                System.out.println("\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\n");                                System.out.println("Which portfolio would you like to access");
+                                System.out.println("\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\n");
+                                System.out.println("Which portfolio would you like to access");
                                 System.out.println("1. " + portfolio1.getName());
                                 System.out.println("0. Go Back");
-                                System.out.println("\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\n");                                gameChoice = inputNum.nextInt();
+                                System.out.println("\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\uD83D\uDCB0\n");
+                                gameChoice = inputNum.nextInt();
 
                                 if (gameChoice == 1)
                                     basicMenu(portfolio1);
