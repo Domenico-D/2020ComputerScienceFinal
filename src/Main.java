@@ -854,7 +854,7 @@ public class Main {
                     //User chooses technology sector and stocks within.
                     if (choice == 1 && chosen3[0]) {
                         //Set the chosen sector
-                        userSectors3[i] = userTechnology2;
+                        userSectors3[i] = userTechnology3;
 
                         //Fills Sector One stocks
                         fillPortfolioThreeSectorOne();
@@ -872,13 +872,13 @@ public class Main {
                     }
                     //User chooses Crypto sector and stocks within.
                     else if (choice == 2 && chosen3[1]) {
-                        userSectors3[i] = userCrypto2;
+                        userSectors3[i] = userCrypto3;
 
                         //Prevents user from adding the same sector twice
                         chosen3[1] = false;
 
                         fillPortfolioThreeSectorTwo();
-                        userSectors3[i].setInstruments(temp3Stocks2);
+                        userSectors3[i].setInstruments(temp3Stocks3);
 
                         //clears double stock check
                         for(int u = 0; u < chosenStock3.length; u++){
@@ -888,7 +888,7 @@ public class Main {
                     }
                     //User chooses Retail sector and stocks within.
                     else if (choice == 3 && chosen3[2]) {
-                        userSectors3[i] = userRetail2;
+                        userSectors3[i] = userRetail3;
 
                         //Prevents user from adding the same sector twice
                         chosen3[2] = false;
@@ -906,7 +906,7 @@ public class Main {
                     }
                     //User chooses Auto sector and stocks within.
                     else if (choice == 4 && chosen3[3]) {
-                        userSectors3[i] = userAuto2;
+                        userSectors3[i] = userAuto3;
 
                         //Prevents user from adding the same sector twice
                         chosen3[3] = false;
@@ -924,7 +924,7 @@ public class Main {
                     }
                     //User chooses Aerospace sector and stocks within.
                     else if (choice == 5 && chosen3[4]) {
-                        userSectors3[i] = userAerospace2;
+                        userSectors3[i] = userAerospace3;
 
                         //Prevents user from adding the same sector twice
                         chosen3[4] = false;
@@ -943,7 +943,7 @@ public class Main {
                     }
                     //User chooses Financial sector and stocks within.
                     else if (choice == 6 && chosen3[5]) {
-                        userSectors3[i] = userFinancial2;
+                        userSectors3[i] = userFinancial3;
 
                         //Prevents user from adding the same sector twice
                         chosen3[5] = false;
@@ -962,7 +962,7 @@ public class Main {
                     }
                     //User chooses Food sector and stocks within.
                     else if (choice == 7 && chosen3[6]) {
-                        userSectors3[i] = userFood2;
+                        userSectors3[i] = userFood3;
 
                         //Prevents user from adding the same sector twice
                         chosen3[6] = false;
