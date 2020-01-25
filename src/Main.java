@@ -5068,6 +5068,7 @@ public class Main {
         }
     }
 
+
     private static void fillPortfolioThreeSectorOne(){
         //Fill Stocks with user choices in Sector 1
         for(int o = 0; o < temp3Stocks1.length; o++){
