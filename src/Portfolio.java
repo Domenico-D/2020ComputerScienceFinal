@@ -120,47 +120,47 @@ public class Portfolio {
 
         //Reset all stocks to active
         for (int i = 0; i < chosenDivisions.length ; i++) {
-            for (int j = 0; j < chosenDivisions[i].instruments.length ; j++) {
-                if(chosenDivisions[i].instruments[j] != null)
-                    chosenDivisions[i].instruments[j].setActive(true);
+            for (int j = 0; j < chosenDivisions[i].getInstruments().length ; j++) {
+                if(chosenDivisions[i].getInstruments()[j] != null)
+                    chosenDivisions[i].getInstruments()[j].setActive(true);
             }
 
         }
 
         for (int i = 0; i < chosenDivisions.length ; i++) {
 
-            for (int j = 0; j < chosenDivisions[i].instruments.length ; j++) {
-                if(chosenDivisions[i].instruments[j] != null)
+            for (int j = 0; j < chosenDivisions[i].getInstruments().length ; j++) {
+                if(chosenDivisions[i].getInstruments()[j] != null)
                 {
                     if (rnd == 1)
                     {
-                        if (chosenDivisions[i].instruments[j].getRegion() == 'N')
+                        if (chosenDivisions[i].getInstruments()[j].getRegion() == 'N')
                         {
-                            chosenDivisions[i].instruments[j].setActive(active);
+                            chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
                     } else if (rnd == 3)
                     {
-                        if (chosenDivisions[i].instruments[j].getRegion() == 'E')
+                        if (chosenDivisions[i].getInstruments()[j].getRegion() == 'E')
                         {
-                            chosenDivisions[i].instruments[j].setActive(active);
+                            chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
                     } else if (rnd == 5)
                     {
-                        if (chosenDivisions[i].instruments[j].getRegion() == 'A')
+                        if (chosenDivisions[i].getInstruments()[j].getRegion() == 'A')
                         {
-                            chosenDivisions[i].instruments[j].setActive(active);
+                            chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
                     } else if (rnd == 7)
                     {
-                        if (chosenDivisions[i].instruments[j].getRegion() == 'F')
+                        if (chosenDivisions[i].getInstruments()[j].getRegion() == 'F')
                         {
-                            chosenDivisions[i].instruments[j].setActive(active);
+                            chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
                     } else if (rnd == 9)
                     {
-                        if (chosenDivisions[i].instruments[j].getRegion() == 'O')
+                        if (chosenDivisions[i].getInstruments()[j].getRegion() == 'O')
                         {
-                            chosenDivisions[i].instruments[j].setActive(active);
+                            chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
                     }
                 }
@@ -172,6 +172,10 @@ public class Portfolio {
 
     public void resetTrades(){
         trades = 8;
+    }
+
+    public Sector[] getChosenDivisions(){
+        return chosenDivisions;
     }
 
 }
