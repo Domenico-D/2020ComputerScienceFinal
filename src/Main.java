@@ -1295,7 +1295,6 @@ public class Main
                             System.out.print("\t\tStock price (between $1 - $1000): ");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio1Sector1Stock2.setCurrentPrice(currentPriceTemp);
-
                         } while (!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do
@@ -5307,6 +5306,7 @@ public class Main
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio2Sector6Stock5.setCurrentPrice(currentPriceTemp);
 
+
                         } while (!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do
@@ -7849,6 +7849,7 @@ public class Main
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio3Sector7Stock4.setCurrentPrice(currentPriceTemp);
 
+
                         } while (!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
                         do
@@ -7892,6 +7893,7 @@ public class Main
                             System.out.print("\t\tStock price (between $1 - $1000): ");
                             currentPriceTemp = inputNum.nextDouble();
                             userPortfolio3Sector7Stock5.setCurrentPrice(currentPriceTemp);
+
 
                         } while (!(currentPriceTemp > 0 && currentPriceTemp <= 1000));
 
