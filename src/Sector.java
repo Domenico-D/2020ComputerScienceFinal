@@ -46,7 +46,7 @@ public class Sector {
         double sectorCapital;
         for(int i = 0; i < instruments.length; i++ ){
             if(instruments[i] != null)
-                capital += (instruments[i].getProfitLoss()+(instruments[i].getPriceWhenBought()*instruments[i].getSharesOwned()));
+                capital += (instruments[i].getCurrentPrice() * instruments[i].getSharesOwned());
         }
 
         sectorCapital = capital;
