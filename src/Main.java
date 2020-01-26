@@ -8414,7 +8414,7 @@ public class Main
                         {
                             if (portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                                 portfolio1.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio1.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
@@ -8454,7 +8454,7 @@ public class Main
                         {
                             if (portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                                 portfolio1.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio1.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
@@ -8494,7 +8494,7 @@ public class Main
                         {
                             if (portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                                 portfolio1.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio1.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
@@ -8534,7 +8534,7 @@ public class Main
                         {
                             if (portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                                 portfolio1.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio1.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
@@ -9726,7 +9726,7 @@ public class Main
                         {
                             if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                                 portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
@@ -9760,7 +9760,7 @@ public class Main
 
                         if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                         {
-                            portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                            portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                             portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                             for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
                             {
@@ -9793,7 +9793,7 @@ public class Main
 
                         if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                         {
-                            portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                            portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                             portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                             for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
                             {
@@ -9826,7 +9826,7 @@ public class Main
 
                         if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                         {
-                            portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                            portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                             portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                             for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
                             {
@@ -9859,7 +9859,7 @@ public class Main
 
                         if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                         {
-                            portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                            portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                             portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                             for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
                             {
@@ -11033,7 +11033,7 @@ public class Main
                         {
                             if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                                 portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
@@ -11074,7 +11074,7 @@ public class Main
                         {
                             if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                                 portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
@@ -11114,7 +11114,7 @@ public class Main
                         {
                             if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                                 portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
@@ -11154,7 +11154,7 @@ public class Main
                         {
                             if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                                 portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
@@ -11194,7 +11194,7 @@ public class Main
                         {
                             if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
                                 portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
