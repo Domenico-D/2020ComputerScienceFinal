@@ -46,7 +46,7 @@ public class Sector {
         double sectorCapital;
         for(int i = 0; i < instruments.length; i++ ){
             if(instruments[i] != null)
-                capital += instruments[i].takeProfitLoss();
+                capital += (instruments[i].getProfitLoss()+(instruments[i].getPriceWhenBought()*instruments[i].getSharesOwned()));
         }
 
         sectorCapital = capital;
@@ -66,7 +66,8 @@ public class Sector {
 
         for(int i = 0; i < instruments.length; i++){
 
-            volatilityTotal += instruments[i].getVolatility();
+            if(instruments[i]!=null)
+                volatilityTotal += instruments[i].getVolatility();
 
         }
 

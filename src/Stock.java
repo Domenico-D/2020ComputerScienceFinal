@@ -34,6 +34,7 @@ public class Stock
         currentPrice = goingPrice;
         volatility = risk;
         active = openMarket;
+        beginDayPrice = goingPrice;
     }
 
 
@@ -97,6 +98,10 @@ public class Stock
         daysOwned++;
     }
 
+    public double getSharesOwned()
+    {
+        return sharesOwned;
+    }
     public void buyShares()
     {
         sharesOwned = 1000 / currentPrice;
@@ -117,6 +122,10 @@ public class Stock
         dayProfit += (currentPrice - beginDayPrice) * sharesOwned;
 
         return dayProfit;
+    }
+    public double getPriceWhenBought()
+    {
+        return priceWhenBought;
     }
 
     public String toString()
@@ -183,7 +192,7 @@ public class Stock
     public double takeProfitLoss()
     {
 
-        return currentPrice * sharesOwned;
+        return (currentPrice-priceWhenBought) * sharesOwned;
     }
 
 
