@@ -359,8 +359,6 @@ public class Main
 
     private static Random gen = new Random();
 
-    private static int day = 0;
-
     public static void main(String[] args)
     {
 
