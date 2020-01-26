@@ -137,10 +137,18 @@ public class Sector {
     public String toString(){
         String str = "";
 
+
+        str+="\t\t[━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━▼━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━]\n";
+
+        //Spacing to mimic a center align within the border.
+        str+=String.format("\t\t   %-10s %-25s %-8s %-15s %10s %10s","Number","Name","Region","Price","Volatility","Active" + "\n");
+
         for(int i=0;i<instruments.length;i++)
         {
-            str += (i + 1) + " " + instruments[i].toString();
+            str += "\t\t   " + (i + 1) + instruments[i].toString();
         }
+
+        str+="\t\t[━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━▲━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━]";
 
         return str;
     }
