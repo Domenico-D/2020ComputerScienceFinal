@@ -3385,7 +3385,7 @@ public class Main
     }
 
 
-    //Portfolio2
+
     private static void fillPortfolioTwoSectorOne()
     {
         //Fill Stocks with user choices in Sector 1
@@ -8026,7 +8026,6 @@ public class Main
                                         portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = technologyArray[stockChoice - 1];
                                         portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio1.cashLeftover -= 1000;
-
                                         portfolio1.updateTrades();
                                         break;
                                     }
@@ -8366,11 +8365,11 @@ public class Main
                         }
                         else
                         {
-                            if (portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            if (portfolio1.getChosenDivisions()[1].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
-                                portfolio1.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                                for (int i = 0; i < portfolio1.getChosenDivisions()[0].getInstruments().length; i++)
+                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[1].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio1.getChosenDivisions()[1].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio1.getChosenDivisions()[1].getInstruments().length; i++)
                                 {
                                     portfolio1.getChosenDivisions()[i].toString();
                                 }
@@ -8399,11 +8398,11 @@ public class Main
                         }
                         else
                         {
-                            if (portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            if (portfolio1.getChosenDivisions()[2].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
-                                portfolio1.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                                for (int i = 0; i < portfolio1.getChosenDivisions()[0].getInstruments().length; i++)
+                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[2].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio1.getChosenDivisions()[2].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio1.getChosenDivisions()[2].getInstruments().length; i++)
                                 {
                                     portfolio1.getChosenDivisions()[i].toString();
                                 }
@@ -8432,11 +8431,11 @@ public class Main
                         }
                         else
                         {
-                            if (portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            if (portfolio1.getChosenDivisions()[3].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
-                                portfolio1.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                                for (int i = 0; i < portfolio1.getChosenDivisions()[0].getInstruments().length; i++)
+                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[3].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio1.getChosenDivisions()[3].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio1.getChosenDivisions()[3].getInstruments().length; i++)
                                 {
                                     portfolio1.getChosenDivisions()[i].toString();
                                 }
@@ -8465,11 +8464,11 @@ public class Main
                         }
                         else
                         {
-                            if (portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            if (portfolio1.getChosenDivisions()[4].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
-                                portfolio1.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                                for (int i = 0; i < portfolio1.getChosenDivisions()[0].getInstruments().length; i++)
+                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[4].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio1.getChosenDivisions()[4].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio1.getChosenDivisions()[4].getInstruments().length; i++)
                                 {
                                     portfolio1.getChosenDivisions()[i].toString();
                                 }
@@ -9728,11 +9727,11 @@ public class Main
                         }
                         else
                         {
-                            if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            if (portfolio2.getChosenDivisions()[1].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
-                                portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                                for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
+                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[1].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio2.getChosenDivisions()[1].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio2.getChosenDivisions()[1].getInstruments().length; i++)
                                 {
                                     portfolio2.getChosenDivisions()[i].toString();
                                 }
@@ -9761,11 +9760,11 @@ public class Main
                         }
                         else
                         {
-                            if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            if (portfolio2.getChosenDivisions()[2].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
-                                portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                                for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
+                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[2].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio2.getChosenDivisions()[2].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio2.getChosenDivisions()[2].getInstruments().length; i++)
                                 {
                                     portfolio2.getChosenDivisions()[i].toString();
                                 }
@@ -9794,11 +9793,11 @@ public class Main
                         }
                         else
                         {
-                            if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            if (portfolio2.getChosenDivisions()[3].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
-                                portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                                for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
+                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[3].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio2.getChosenDivisions()[3].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio2.getChosenDivisions()[3].getInstruments().length; i++)
                                 {
                                     portfolio2.getChosenDivisions()[i].toString();
                                 }
@@ -9827,11 +9826,11 @@ public class Main
                         }
                         else
                         {
-                            if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            if (portfolio2.getChosenDivisions()[4].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
-                                portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                                for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
+                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[4].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio2.getChosenDivisions()[4].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio2.getChosenDivisions()[4].getInstruments().length; i++)
                                 {
                                     portfolio2.getChosenDivisions()[i].toString();
                                 }
@@ -11090,11 +11089,11 @@ public class Main
                         }
                         else
                         {
-                            if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            if (portfolio3.getChosenDivisions()[1].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
-                                portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                                for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[1].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio3.getChosenDivisions()[1].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio3.getChosenDivisions()[1].getInstruments().length; i++)
                                 {
                                     portfolio3.getChosenDivisions()[i].toString();
                                 }
@@ -11123,11 +11122,11 @@ public class Main
                         }
                         else
                         {
-                            if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            if (portfolio3.getChosenDivisions()[2].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
-                                portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                                for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[2].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio3.getChosenDivisions()[2].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio3.getChosenDivisions()[2].getInstruments().length; i++)
                                 {
                                     portfolio3.getChosenDivisions()[i].toString();
                                 }
@@ -11156,11 +11155,11 @@ public class Main
                         }
                         else
                         {
-                            if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            if (portfolio3.getChosenDivisions()[3].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
-                                portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                                for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[3].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio3.getChosenDivisions()[3].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio3.getChosenDivisions()[3].getInstruments().length; i++)
                                 {
                                     portfolio3.getChosenDivisions()[i].toString();
                                 }
@@ -11189,11 +11188,11 @@ public class Main
                         }
                         else
                         {
-                            if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            if (portfolio3.getChosenDivisions()[4].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
-                                portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                                for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[4].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio3.getChosenDivisions()[4].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio3.getChosenDivisions()[4].getInstruments().length; i++)
                                 {
                                     portfolio3.getChosenDivisions()[i].toString();
                                 }
