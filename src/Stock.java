@@ -123,6 +123,19 @@ public class Stock
 
         return dayProfit;
     }
+    public double takeProfitLoss()
+    {
+
+        return (currentPrice-priceWhenBought) * sharesOwned;
+    }
+
+    public double getTotal()
+    {
+        double total = (getPriceWhenBought()*sharesOwned) + getProfitLoss();
+
+        return total;
+    }
+
     public double getPriceWhenBought()
     {
         return priceWhenBought;
@@ -187,12 +200,6 @@ public class Stock
             }
         }
 
-    }
-
-    public double takeProfitLoss()
-    {
-
-        return (currentPrice-priceWhenBought) * sharesOwned;
     }
 
 

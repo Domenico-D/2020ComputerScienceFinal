@@ -8378,7 +8378,7 @@ public class Main
                         {
                             if (portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].takeProfitLoss();
+                                portfolio1.cashLeftover += portfolio1.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
                                 portfolio1.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio1.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
