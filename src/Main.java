@@ -1451,22 +1451,28 @@ public class Main
 
             do
             {
-                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                System.out.println("Please choose or create the stocks you want in this sector");
-                System.out.println("1. Choose Stock");
-                System.out.println("2. Create Stock");
-                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                System.out.println("\t「Crypto Currency Sector」");
+                System.out.println("\t\tPlease choose or create the stocks you want in this sector.");
+                System.out.println("\t\t┏ ━━┅━━━┅━━━┅━━━┅━━ ┓");
+                System.out.println("\t\t   1. Choose Stock");
+                System.out.println("\t\t┗ ━━┅━━━┅━━━┅━━━┅━━ ┛");
+                System.out.println("\t\t┏ ━━┅━━━┅━━━┅━━━┅━━ ┓");
+                System.out.println("\t\t   2. Create Stock");
+                System.out.println("\t\t┗ ━━┅━━━┅━━━┅━━━┅━━ ┛");
+
+                System.out.print("\t\tEnter your choice: ");
                 choice = inputNum.nextInt();
 
                 //Check if they want to create or choose a stock
                 if (choice == 1)
                 {
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                    System.out.println("\n\t\t|Stocks List|");
                     System.out.println(cryptoCurrencySector.toString());
-                    System.out.print("Which stock would you like to add?\n");
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+
+                    System.out.print("\t\tEnter the number for the stock you want to add: ");
                     stockChoice = inputNum.nextInt();
+                    //LINEBREAK PRINT
+                    System.out.println(" ");
 
                     if (stockChoice == 1 && chosenStock[0])
                     {
@@ -1522,7 +1528,7 @@ public class Main
                     }
                     else
                     {
-                        System.out.println("\nStock already selected. Pick something else.");
+                        System.out.println("\t\t⚠ Stock already selected. Pick something else. ⚠\n");
                     }
 
                 }
@@ -1777,22 +1783,28 @@ public class Main
 
             do
             {
-                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                System.out.println("Please choose or create the stocks you want in this sector");
-                System.out.println("1. Choose Stock");
-                System.out.println("2. Create Stock");
-                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                System.out.println("\t「Retail Sector」");
+                System.out.println("\t\tPlease choose or create the stocks you want in this sector.");
+                System.out.println("\t\t┏ ━━┅━━━┅━━━┅━━━┅━━ ┓");
+                System.out.println("\t\t   1. Choose Stock");
+                System.out.println("\t\t┗ ━━┅━━━┅━━━┅━━━┅━━ ┛");
+                System.out.println("\t\t┏ ━━┅━━━┅━━━┅━━━┅━━ ┓");
+                System.out.println("\t\t   2. Create Stock");
+                System.out.println("\t\t┗ ━━┅━━━┅━━━┅━━━┅━━ ┛");
+
+                System.out.print("\t\tEnter your choice: ");
                 choice = inputNum.nextInt();
 
                 //Check if they want to create or choose a stock
                 if (choice == 1)
                 {
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                    System.out.println("\n\t\t|Stocks List|");
                     System.out.println(retailSector.toString());
-                    System.out.print("Which stock would you like to add?\n");
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+
+                    System.out.print("\t\tEnter the number for the stock you want to add: ");
                     stockChoice = inputNum.nextInt();
+                    //LINEBREAK PRINT
+                    System.out.println(" ");
 
                     if (stockChoice == 1 && chosenStock[0])
                     {
@@ -1848,8 +1860,9 @@ public class Main
                     }
                     else
                     {
-                        System.out.println("\nStock already selected. Pick something else.");
+                        System.out.println("\t\t⚠ Stock already selected. Pick something else. ⚠\n");
                     }
+
 
                 }
                 //Create stocks
@@ -2103,22 +2116,29 @@ public class Main
 
             do
             {
-                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                System.out.println("Please choose or create the stocks you want in this sector");
-                System.out.println("1. Choose Stock");
-                System.out.println("2. Create Stock");
-                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                System.out.println("\t「Auto Sector」");
+                System.out.println("\t\tPlease choose or create the stocks you want in this sector.");
+                System.out.println("\t\t┏ ━━┅━━━┅━━━┅━━━┅━━ ┓");
+                System.out.println("\t\t   1. Choose Stock");
+                System.out.println("\t\t┗ ━━┅━━━┅━━━┅━━━┅━━ ┛");
+                System.out.println("\t\t┏ ━━┅━━━┅━━━┅━━━┅━━ ┓");
+                System.out.println("\t\t   2. Create Stock");
+                System.out.println("\t\t┗ ━━┅━━━┅━━━┅━━━┅━━ ┛");
+
+                System.out.print("\t\tEnter your choice: ");
                 choice = inputNum.nextInt();
+
 
                 //Check if they want to create or choose a stock
                 if (choice == 1)
                 {
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                    System.out.println("\n\t\t|Stocks List|");
                     System.out.println(autoSector.toString());
-                    System.out.print("Which stock would you like to add?\n");
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+
+                    System.out.print("\t\tEnter the number for the stock you want to add: ");
                     stockChoice = inputNum.nextInt();
+                    //LINEBREAK PRINT
+                    System.out.println(" ");
 
                     if (stockChoice == 1 && chosenStock[0])
                     {

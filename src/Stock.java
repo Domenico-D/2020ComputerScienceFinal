@@ -123,11 +123,6 @@ public class Stock
 
         return dayProfit;
     }
-    public double takeProfitLoss()
-    {
-
-        return (currentPrice-priceWhenBought) * sharesOwned;
-    }
 
     public double getTotal()
     {
