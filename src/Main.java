@@ -8695,7 +8695,7 @@ public class Main
                             //print available stocks for purchase in crypto sector
                             System.out.println("\t\t|Stocks List|");
                             taken = false;
-                            //print available stocks for purchase in technology sector
+                            //print available stocks for purchase in sector
                             System.out.println(cryptoCurrencySector.toString());
                             System.out.print("\t\tWhich stock would you like to add?\n");
                             System.out.print("\t\tEnter your choice: ");
@@ -8771,7 +8771,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
                             }
                         }
@@ -8779,11 +8779,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in retail sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(retailSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -8795,7 +8797,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (retailArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -8855,7 +8857,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
                             }
@@ -8864,11 +8866,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in auto sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(autoSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -8880,7 +8884,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (autoArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -8940,7 +8944,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
                             }
@@ -8949,11 +8953,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in aerospace sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(aerospaceSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -8965,7 +8971,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (aeroArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -9025,7 +9031,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
                             }
@@ -9034,11 +9040,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in financial sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(financialSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -9050,7 +9058,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (financialArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -9110,7 +9118,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
 
@@ -9120,11 +9128,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in food sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(foodSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -9136,7 +9146,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (foodArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -9197,7 +9207,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
                             }
                         }
@@ -9935,7 +9945,7 @@ public class Main
                             }
                             else
                             {
-                                System.out.println("Please enter a valid stock");
+                                System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                             }
                         } while (true);
 
@@ -10019,7 +10029,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
 
@@ -10105,7 +10115,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
                             }
                         }
@@ -10189,7 +10199,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
                             }
@@ -10274,7 +10284,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
                             }
@@ -10359,7 +10369,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
                             }
@@ -10444,7 +10454,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
 
@@ -10531,7 +10541,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
                             }
                         }
@@ -11271,7 +11281,7 @@ public class Main
                             }
                             else
                             {
-                                System.out.println("Please enter a valid stock");
+                                System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                             }
                         } while (true);
 
@@ -11355,7 +11365,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
 
@@ -11441,7 +11451,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
                             }
                         }
@@ -11525,7 +11535,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
                             }
@@ -11610,7 +11620,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
                             }
@@ -11695,7 +11705,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
                             }
@@ -11780,7 +11790,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
 
 
@@ -11867,7 +11877,7 @@ public class Main
                                 }
                                 else
                                 {
-                                    System.out.println("Please enter a valid stock");
+                                    System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
                                 }
                             }
                         }
