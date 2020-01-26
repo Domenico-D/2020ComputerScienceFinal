@@ -3,8 +3,6 @@
  * Defines what a sector is, holding stocks that are then placed within a portfolio.
  */
 
-import java.util.Arrays;
-import java.util.Collections;
 
 public class Sector {
 

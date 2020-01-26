@@ -357,6 +357,8 @@ public class Main {
 
     private static Random gen = new Random();
 
+    private static int day = 0;
+
     public static void main(String[]args){
 
 
@@ -367,7 +369,6 @@ public class Main {
          * 3. update new price;
          * 4. set beginDayPrice.
          */
-
 
         System.out.println("┍━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\uD83D\uDCB5\uD83D\uDCB5\uD83D\uDCB5━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑");
         System.out.println("\n\t      ::::::::    :::::::::::        ::::::::        ::::    :::        :::    :::        :::::::: \n" +
@@ -421,7 +422,6 @@ public class Main {
                     else if(gameChoice == 1){
                         numPortfolios++;
                         createPortfolio();
-                        endDay();
                     }
                     //Continue with the rest of the game
                     else if(gameChoice == 2){
@@ -865,7 +865,7 @@ public class Main {
                     //User chooses technology sector and stocks within.
                     if (choice == 1 && chosen3[0]) {
                         //Set the chosen sector
-                        userSectors3[i] = userTechnology2;
+                        userSectors3[i] = userTechnology3;
 
                         //Fills Sector One stocks
                         fillPortfolioThreeSectorOne();
@@ -883,13 +883,13 @@ public class Main {
                     }
                     //User chooses Crypto sector and stocks within.
                     else if (choice == 2 && chosen3[1]) {
-                        userSectors3[i] = userCrypto2;
+                        userSectors3[i] = userCrypto3;
 
                         //Prevents user from adding the same sector twice
                         chosen3[1] = false;
 
                         fillPortfolioThreeSectorTwo();
-                        userSectors3[i].setInstruments(temp3Stocks2);
+                        userSectors3[i].setInstruments(temp3Stocks3);
 
                         //clears double stock check
                         for(int u = 0; u < chosenStock3.length; u++){
@@ -899,7 +899,7 @@ public class Main {
                     }
                     //User chooses Retail sector and stocks within.
                     else if (choice == 3 && chosen3[2]) {
-                        userSectors3[i] = userRetail2;
+                        userSectors3[i] = userRetail3;
 
                         //Prevents user from adding the same sector twice
                         chosen3[2] = false;
@@ -917,7 +917,7 @@ public class Main {
                     }
                     //User chooses Auto sector and stocks within.
                     else if (choice == 4 && chosen3[3]) {
-                        userSectors3[i] = userAuto2;
+                        userSectors3[i] = userAuto3;
 
                         //Prevents user from adding the same sector twice
                         chosen3[3] = false;
@@ -935,7 +935,7 @@ public class Main {
                     }
                     //User chooses Aerospace sector and stocks within.
                     else if (choice == 5 && chosen3[4]) {
-                        userSectors3[i] = userAerospace2;
+                        userSectors3[i] = userAerospace3;
 
                         //Prevents user from adding the same sector twice
                         chosen3[4] = false;
@@ -954,7 +954,7 @@ public class Main {
                     }
                     //User chooses Financial sector and stocks within.
                     else if (choice == 6 && chosen3[5]) {
-                        userSectors3[i] = userFinancial2;
+                        userSectors3[i] = userFinancial3;
 
                         //Prevents user from adding the same sector twice
                         chosen3[5] = false;
@@ -973,7 +973,7 @@ public class Main {
                     }
                     //User chooses Food sector and stocks within.
                     else if (choice == 7 && chosen3[6]) {
-                        userSectors3[i] = userFood2;
+                        userSectors3[i] = userFood3;
 
                         //Prevents user from adding the same sector twice
                         chosen3[6] = false;
@@ -1011,6 +1011,7 @@ public class Main {
 
     }
 
+    //Portfolio 1 Creation
     private static void fillPortfolioOneSectorOne(){
         //Fill Stocks with user choices in Sector 1
         for(int o = 0; o < tempStocks1.length; o++){
@@ -5097,6 +5098,8 @@ public class Main {
         }
     }
 
+
+    //Portfolio 3 Creation
     private static void fillPortfolioThreeSectorOne(){
         //Fill Stocks with user choices in Sector 1
         for(int o = 0; o < temp3Stocks1.length; o++){
@@ -7136,6 +7139,7 @@ public class Main {
         }
     }
 
+    //Menus for all 3 portfolios
     private static void basicMenu1(){
         do {
             //Update Sector Stock prices
@@ -7615,7 +7619,7 @@ public class Main {
 
                 do
                 {
-                    //Print out portportfolio1 sectors
+                    //Print out portfolio1 sectors
                     System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
                     System.out.println(portfolio1.getSectors());
                     System.out.println("0. to go back");
@@ -8242,10 +8246,18 @@ public class Main {
                 }while(sectorChoice != 0);
             }
             //End Day
-            else if(basicMenuChoice == 8 || portfolio1.getTrades() == 0){
+            else if(basicMenuChoice == 8){
                 endDay();
+            } else if (basicMenuChoice == 0){
+                System.out.println("Going back");
             }
-            else{
+            else
+            {
+                if (portfolio1.getTrades() == 0)
+                {
+                    System.out.println("You are out of trades");
+                }
+                System.out.println("Please enter a correct number.");
                 System.out.println("Please enter a correct number.");
             }
 
@@ -9337,10 +9349,17 @@ public class Main {
                 }while(sectorChoice != 0);
             }
             //End Day
-            else if(basicMenuChoice == 8 || portfolio2.getTrades() == 0){
+            else if(basicMenuChoice == 8){
                 endDay();
             }
+            else if (basicMenuChoice == 0){
+                System.out.println("Going Back");
+            }
             else{
+                if(portfolio2.getTrades() == 0){
+                    System.out.println("You are out of trades");
+                }
+                System.out.println("Please enter a correct number.");
                 System.out.println("Please enter a correct number.");
             }
 
@@ -10448,16 +10467,23 @@ public class Main {
                 }while(sectorChoice != 0);
             }
             //End Day
-            else if(basicMenuChoice == 8 || portfolio3.getTrades() == 0){
+            else if(basicMenuChoice == 8){
                 endDay();
             }
+            else if(basicMenuChoice == 0){
+                System.out.println("Going back");
+            }
             else{
+                if(portfolio3.getTrades() == 0){
+                    System.out.println("You are out of trades");
+                }
                 System.out.println("Please enter a correct number.");
             }
 
         }while(basicMenuChoice != 0);
     }
 
+    //Updates prepopulated Sectors and Stocks
     private static void updatePrePopulatedSectors(){
 
         technologySector.updateAllSectorStocks();
@@ -10469,15 +10495,27 @@ public class Main {
         foodSector.updateAllSectorStocks();
     }
 
+    //Begins a new day and updates all stocks
     public static void endDay(){
         if(numPortfolios == 3){
-            System.out.println(portfolio1.getName()+ "\n" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()));
-            System.out.println(portfolio2.getName()+ "\n" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()));
-            System.out.println(portfolio3.getName()+ "\n" + "Daily Profit:" + moneyFormat.format(portfolio3.getDailyProfit()));
+
+            portfolio1.updateDaysOpened();
+            portfolio2.updateDaysOpened();
+            portfolio3.updateDaysOpened();
+
+            System.out.println(portfolio1.getName()+ "\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\tDays Owned: " + portfolio1.getDaysOpened());
+            System.out.println(portfolio2.getName()+ "\t" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()) + "\tDays Owned: " + portfolio2.getDaysOpened());
+            System.out.println(portfolio3.getName()+ "\t" + "Daily Profit:" + moneyFormat.format(portfolio3.getDailyProfit()) + "\tDays Owned: " + portfolio3.getDaysOpened());
 
             portfolio1.resetTrades();
             portfolio2.resetTrades();
             portfolio3.resetTrades();
+
+            portfolio1.updateSectors();
+            portfolio2.updateSectors();
+            portfolio3.updateSectors();
+
+            updatePrePopulatedSectors();
 
             portfolio1.activateRegion(false,(gen.nextInt(10) + 1));
             portfolio2.activateRegion(false,(gen.nextInt(10) + 1));
@@ -10485,15 +10523,15 @@ public class Main {
 
             activatePreSetRegions(defaultSectors, false, (gen.nextInt(10) + 1));
 
-            portfolio1.updateSectors();
-            portfolio2.updateSectors();
-            portfolio3.updateSectors();
 
-            updatePrePopulatedSectors();
         }
         else if(numPortfolios == 2){
-            System.out.println(portfolio1.getName()+ "\n" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()));
-            System.out.println(portfolio2.getName()+ "\n" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()));
+
+            portfolio1.updateDaysOpened();
+            portfolio2.updateDaysOpened();
+
+            System.out.println(portfolio1.getName()+ "\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\tDays Owned: " + portfolio1.getDaysOpened());
+            System.out.println(portfolio2.getName()+ "\t" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()) + "\tDays Owned: " + portfolio2.getDaysOpened());
 
             portfolio1.resetTrades();
             portfolio2.resetTrades();
@@ -10510,7 +10548,9 @@ public class Main {
 
         }
         else{
-            System.out.println(portfolio1.getName()+ "\n" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()));
+            portfolio1.updateDaysOpened();
+
+            System.out.println(portfolio1.getName()+ "\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\tDays Owned: " + portfolio1.getDaysOpened());
 
             portfolio1.resetTrades();
 
@@ -10521,6 +10561,7 @@ public class Main {
             activatePreSetRegions(defaultSectors, false, (gen.nextInt(10) + 1));
 
             updatePrePopulatedSectors();
+
         }
 
 
