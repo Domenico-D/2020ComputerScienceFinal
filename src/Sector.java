@@ -143,7 +143,10 @@ public class Sector {
 
         for(int i=0;i<instruments.length;i++)
         {
-            str += "\t\t   " + (i + 1) + instruments[i].toString();
+            if(instruments[i]!=null)
+                str += "\t\t   " + (i + 1) + instruments[i].toString();
+            else
+                str += "\t\t   " + (i + 1) + "          EMPTY SLOT.\n";
         }
 
         str+="\t\t[━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━▲━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━]";

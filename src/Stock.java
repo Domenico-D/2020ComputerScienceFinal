@@ -6,9 +6,10 @@
 import java.text.NumberFormat;
 import java.util.Random;
 
-public class Stock  {
+public class Stock
+{
 
-    private Random random =  new Random();
+    private Random random = new Random();
     private String name;
     private char region;
     private int daysOwned;
@@ -21,11 +22,13 @@ public class Stock  {
     private boolean active;
 
     //track daily price profit with a variable at the start of each day.
-    public Stock(){
+    public Stock()
+    {
 
     }
 
-    public Stock(String nm, char location, double goingPrice, double risk, boolean openMarket) {
+    public Stock(String nm, char location, double goingPrice, double risk, boolean openMarket)
+    {
         name = nm;
         region = location;
         currentPrice = goingPrice;
@@ -38,43 +41,54 @@ public class Stock  {
     {
         return name;
     }
-    public char getRegion()
-    {
-        return region;
-    }
-    public double getCurrentPrice()
-    {
-        return currentPrice;
-    }
-    public double getVolatility()
-    {
-        return volatility;
-    }
-    public double getProfitLoss()
-    {
-        return (currentPrice - priceWhenBought) * sharesOwned;
-    }
-    public boolean getActive(){
-        return active;
-    }
 
     public void setName(String nm)
     {
         name = nm;
     }
+
+    public char getRegion()
+    {
+        return region;
+    }
+
     public void setRegion(char location)
     {
         region = location;
     }
+
+    public double getCurrentPrice()
+    {
+        return currentPrice;
+    }
+
     public void setCurrentPrice(double goingPrice)
     {
         currentPrice = goingPrice;
     }
+
+    public double getVolatility()
+    {
+        return volatility;
+    }
+
     public void setVolatility(double risk)
     {
         volatility = risk;
     }
-    public void setActive(boolean bool){
+
+    public double getProfitLoss()
+    {
+        return (currentPrice - priceWhenBought) * sharesOwned;
+    }
+
+    public boolean getActive()
+    {
+        return active;
+    }
+
+    public void setActive(boolean bool)
+    {
         active = bool;
     }
 
@@ -83,26 +97,30 @@ public class Stock  {
         daysOwned++;
     }
 
-    public void buyShares() {
+    public void buyShares()
+    {
         sharesOwned = 1000 / currentPrice;
         priceWhenBought = currentPrice;
 
     }
 
-    public void buyShares(double shares, double newCurrentPrice){
+    public void buyShares(double shares, double newCurrentPrice)
+    {
         sharesOwned = shares;
         priceWhenBought = newCurrentPrice;
     }
 
-    public double getDayProfit() {
+    public double getDayProfit()
+    {
         double dayProfit = 0;
 
-        dayProfit += (currentPrice-beginDayPrice)*sharesOwned;
+        dayProfit += (currentPrice - beginDayPrice) * sharesOwned;
 
         return dayProfit;
     }
 
-    public String toString() {
+    public String toString()
+    {
 
         String str;
 
@@ -110,51 +128,63 @@ public class Stock  {
         NumberFormat nfRound = NumberFormat.getInstance();
 
         //price, risk, open market
-        str = String.format("%-25s %4s %8s %4s %6s %10s",name,region,nfMoney.format(currentPrice),nfRound.format(volatility),active, daysOwned+"\n");
+        str = String.format("%-25s %4s %8s %4s %6s %10s", name, region, nfMoney.format(currentPrice), nfRound.format(volatility), active, daysOwned + "\n");
         //%9s makes up for the number.
-        str = String.format("%9s %-25s %-8s %-15s %10s %10s","",name,region,nfMoney.format(currentPrice),nfRound.format(volatility),active+"\n");
+        str = String.format("%9s %-25s %-8s %-15s %10s %10s", "", name, region, nfMoney.format(currentPrice), nfRound.format(volatility), active + "\n");
 
         return str;
     }
 
-    public void updateStockPrice(){
+    public void updateStockPrice()
+    {
 
         double increase = currentPrice * volatility;
-        int chance =  random.nextInt(10) + 1;
+        int chance = random.nextInt(10) + 1;
 
-        if(volatility > 0.1 ){
+        if (volatility > 0.1)
+        {
             //Run if volatility is high
-            if(chance > 4){
+            if (chance > 4)
+            {
                 currentPrice += increase;
-            }else{
+            }
+            else
+            {
                 currentPrice -= increase;
             }
         }
-        else if(volatility > 0.06){
+        else if (volatility > 0.06)
+        {
             //Run if volatility is medium
-            if(chance > 2){
+            if (chance > 2)
+            {
                 currentPrice += increase;
-            }else{
+            }
+            else
+            {
                 currentPrice -= increase;
             }
         }
-        else{
+        else
+        {
             //Run if volatility is low
-            if(chance > 1){
+            if (chance > 1)
+            {
                 currentPrice += increase;
-            }else{
+            }
+            else
+            {
                 currentPrice -= increase;
             }
         }
 
     }
 
-    public double takeProfitLoss(){
+    public double takeProfitLoss()
+    {
 
         return currentPrice * sharesOwned;
     }
-
-
 
 
 }

@@ -3,21 +3,22 @@
  * A class that defines what a portfolio is and how it works.
  */
 
-public class Portfolio {
+public class Portfolio
+{
 
+    public double cashLeftover = 25000;     //cold hard cash. changed in main.
+    public Sector[] chosenDivisions; //chosen in main file, taken from a temp array that stores all possible choices.
     private String name;
     private int daysOpened;
     private double totalProfitLoss;
     private double moneyInvested;
-    public double cashLeftover = 25000;     //cold hard cash. changed in main.
     private double capital;
     private int trades;
     private double totalCapital;
-
-    public Sector[] chosenDivisions; //chosen in main file, taken from a temp array that stores all possible choices.
     // the number of elements is open to change.
 
-    public Portfolio(String nm, Sector[]chosen) {
+    public Portfolio(String nm, Sector[] chosen)
+    {
         name = nm;
         chosenDivisions = chosen;
         totalProfitLoss = 0;
@@ -26,27 +27,37 @@ public class Portfolio {
         trades = 8;
     }
 
-    public void setSectors(Sector[] sectorArray){
-        chosenDivisions = sectorArray;
-    }
-
-    public String getSectors(){
+    public String getSectors()
+    {
         String str = "";
 
-        for(int i = 0; i < chosenDivisions.length; i++){
-            str += (i + 1) + " " + chosenDivisions[i].getName() + "\n";
+        for (int i = 0; i < chosenDivisions.length; i++)
+        {
+            str +="\t" + (i + 1) + ". " + "「" + chosenDivisions[i].getName()+ "」" + "\n";
         }
 
         return str;
     }
 
-    public String getName() {
+    public void setSectors(Sector[] sectorArray)
+    {
+        chosenDivisions = sectorArray;
+    }
+
+    public String getName()
+    {
         return name;
     }
 
-    public double getTotalProfitLoss() {
-        double tempTotalProfit=0;
-        for(int i=0; i<chosenDivisions.length; i++)
+    public void setName(String nm)
+    {
+        name = nm;
+    }
+
+    public double getTotalProfitLoss()
+    {
+        double tempTotalProfit = 0;
+        for (int i = 0; i < chosenDivisions.length; i++)
         {
             tempTotalProfit += chosenDivisions[i].getSectorProfitLoss();
         }
@@ -54,11 +65,12 @@ public class Portfolio {
         return totalProfitLoss;
     }
 
-    public double getDailyProfit() {
+    public double getDailyProfit()
+    {
         //printed at the end of each day.
         double dailyProfit = 0;
 
-        for(int i = 0; i<chosenDivisions.length; i++)
+        for (int i = 0; i < chosenDivisions.length; i++)
         {
             dailyProfit += chosenDivisions[i].getDailyProfit();
         }
@@ -66,70 +78,82 @@ public class Portfolio {
         return dailyProfit;
     }
 
-    public double getMoneyInvested() {
+    public double getMoneyInvested()
+    {
 
-        for(int i = 0; i < chosenDivisions.length; i++){
+        for (int i = 0; i < chosenDivisions.length; i++)
+        {
             moneyInvested += chosenDivisions[i].getSectorCapital();
         }
 
         return moneyInvested;
     }
 
-    public double getCashLeftover() {
+    public double getCashLeftover()
+    {
         return cashLeftover;
     }
 
-    public int getTrades() {
+    public int getTrades()
+    {
         return trades;
     }
 
-    public void updateTrades(){
+    public void updateTrades()
+    {
         trades--;
     }
 
-    public void setName(String nm) {
-        name = nm;
-    }
+    public String toString()
+    {
+        String str = "";
 
-    public String toString() {
-        String str="";
-
-        for(int i = 0; i<chosenDivisions.length;i++)
+        for (int i = 0; i < chosenDivisions.length; i++)
         {
-            str+= (i + 1) + " " + chosenDivisions[i].toString();
+            str += (i + 1) + " " + chosenDivisions[i].toString();
         }
 
         return str;
 
     }
 
-    public double getTotalCapital(){
+    public double getTotalCapital()
+    {
 
         totalCapital = getCashLeftover() + getMoneyInvested();
 
         return totalCapital;
     }
 
-    public void updateSectors(){
-        for(int i = 0; i < chosenDivisions.length; i++){
+    public void updateSectors()
+    {
+        for (int i = 0; i < chosenDivisions.length; i++)
+        {
             chosenDivisions[i].updateAllSectorStocks();
         }
     }
 
-    public void activateRegion(boolean active, int rnd){
+    public void activateRegion(boolean active, int rnd)
+    {
 
         //Reset all stocks to active
-        for (int i = 0; i < chosenDivisions.length ; i++) {
-            for (int j = 0; j < chosenDivisions[i].getInstruments().length ; j++) {
-                if(chosenDivisions[i].getInstruments()[j] != null)
+        for (int i = 0; i < chosenDivisions.length; i++)
+        {
+            for (int j = 0; j < chosenDivisions[i].getInstruments().length; j++)
+            {
+                if (chosenDivisions[i].getInstruments()[j] != null)
+                {
                     chosenDivisions[i].getInstruments()[j].setActive(true);
+                }
             }
 
         }
 
-        for (int i = 0; i < chosenDivisions.length; i++) {
-            for (int j = 0; j < chosenDivisions[i].getInstruments().length ; j++) {
-                if(chosenDivisions[i].getInstruments()[j] != null)
+        for (int i = 0; i < chosenDivisions.length; i++)
+        {
+            for (int j = 0; j < chosenDivisions[i].getInstruments().length; j++)
+            {
+                if (chosenDivisions[i].getInstruments()[j] != null)
                 {
                     if (rnd == 1 || rnd == 2)
                     {
@@ -137,25 +161,29 @@ public class Portfolio {
                         {
                             chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
-                    } else if (rnd == 3 || rnd == 4)
+                    }
+                    else if (rnd == 3 || rnd == 4)
                     {
                         if (chosenDivisions[i].getInstruments()[j].getRegion() == 'E')
                         {
                             chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
-                    } else if (rnd == 5 || rnd == 6)
+                    }
+                    else if (rnd == 5 || rnd == 6)
                     {
                         if (chosenDivisions[i].getInstruments()[j].getRegion() == 'A')
                         {
                             chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
-                    } else if (rnd == 7 || rnd == 8)
+                    }
+                    else if (rnd == 7 || rnd == 8)
                     {
                         if (chosenDivisions[i].getInstruments()[j].getRegion() == 'F')
                         {
                             chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
-                    } else if (rnd == 9 || rnd == 10)
+                    }
+                    else if (rnd == 9 || rnd == 10)
                     {
                         if (chosenDivisions[i].getInstruments()[j].getRegion() == 'O')
                         {
@@ -169,26 +197,33 @@ public class Portfolio {
 
     }
 
-    public void resetTrades(){
+    public void resetTrades()
+    {
         trades = 8;
     }
 
-    public Sector[] getChosenDivisions(){
+    public Sector[] getChosenDivisions()
+    {
         return chosenDivisions;
     }
 
-    public void updateDaysOpened(){
+    public void updateDaysOpened()
+    {
         daysOpened++;
-        for(int i = 0; i < chosenDivisions.length; i++){
-            for(int u = 0; u < chosenDivisions[i].getInstruments().length; u++){
-                if(chosenDivisions[i].getInstruments()[u] != null){
+        for (int i = 0; i < chosenDivisions.length; i++)
+        {
+            for (int u = 0; u < chosenDivisions[i].getInstruments().length; u++)
+            {
+                if (chosenDivisions[i].getInstruments()[u] != null)
+                {
                     chosenDivisions[i].getInstruments()[u].updateDays();
                 }
             }
         }
     }
 
-    public int getDaysOpened(){
+    public int getDaysOpened()
+    {
         return daysOpened;
     }
 
