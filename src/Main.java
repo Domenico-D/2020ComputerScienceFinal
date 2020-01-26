@@ -348,6 +348,7 @@ public class Main {
     //Menu navigator
     private static int gameChoice;
     private static int basicMenuChoice;
+    private static int menuChoice;
     private static int sectorChoice;
     private static boolean taken = false;
 
@@ -427,7 +428,7 @@ public class Main {
                     else if(gameChoice == 2){
                         if(numPortfolios == 3){
                             do {
-                                System.out.println("\t★ Porfolio Selection ★");
+                                System.out.println("\t★ Portfolio Selection ★");
                                 System.out.println("\t---------------------------");
                                 System.out.println("\t\tWhich portfolio would you like to access?");
                                 System.out.println("\t\t1. " + portfolio1.getName());
@@ -435,60 +436,60 @@ public class Main {
                                 System.out.println("\t\t3. " + portfolio3.getName());
                                 System.out.println("\t\tEnter 0 to go back.");
                                 System.out.print("\t\tYour choice: ");
-                                gameChoice = inputNum.nextInt();
+                                menuChoice = inputNum.nextInt();
 
-                                if (gameChoice == 1)                        //Portfolio 1
+                                if (menuChoice == 1)                        //Portfolio 1
                                     basicMenu1();
-                                else if (gameChoice == 2)                   //Portfolio 2
+                                else if (menuChoice == 2)                   //Portfolio 2
                                     basicMenu2();
-                                else if (gameChoice == 3)                   //Portfolio 3
+                                else if (menuChoice == 3)                   //Portfolio 3
                                     basicMenu3();
-                                else if (gameChoice==0)                     //Exit
+                                else if (menuChoice==0)                     //Exit
                                     System.out.println("\t\tExiting menu.");
                                 else
                                     System.out.println("\t\tPlease enter a correct number");
 
-                            }while(gameChoice != 0);
+                            }while(menuChoice != 0);
 
                         }else if (numPortfolios==2){
                             do {
-                                System.out.println("\t★ Porfolio Selection ★");
+                                System.out.println("\t★ Portfolio Selection ★");
                                 System.out.println("\t---------------------------");
                                 System.out.println("\t\tWhich portfolio would you like to access?");
                                 System.out.println("\t\t1. " + portfolio1.getName());
                                 System.out.println("\t\t2. " + portfolio2.getName());
                                 System.out.println("\t\tEnter 0 to go back.");
                                 System.out.print("\t\tYour choice: ");
-                                gameChoice = inputNum.nextInt();
+                                menuChoice = inputNum.nextInt();
 
-                                if (gameChoice == 1)
+                                if (menuChoice == 1)
                                     basicMenu1();
-                                else if (gameChoice == 2)
+                                else if (menuChoice == 2)
                                     basicMenu2();
-                                else if (gameChoice==0)
+                                else if (menuChoice==0)
                                     System.out.println("\t\tExiting menu.");
                                 else
                                     System.out.println("\t\tPlease enter a correct number.");
 
-                            }while(gameChoice != 0);
+                            }while(menuChoice != 0);
                         }else{
                             do {
-                                System.out.println("\t★ Porfolio Selection ★");
+                                System.out.println("\t★ Portfolio Selection ★");
                                 System.out.println("\t---------------------------");
                                 System.out.println("\t\tWhich portfolio would you like to access?");
                                 System.out.println("\t\t1. " + portfolio1.getName());
                                 System.out.println("\t\tEnter 0 to go back.");
                                 System.out.print("\t\tYour choice: ");
-                                gameChoice = inputNum.nextInt();
+                                menuChoice = inputNum.nextInt();
 
-                                if (gameChoice == 1)
+                                if (menuChoice == 1)
                                     basicMenu1();
-                                else if (gameChoice==0)
+                                else if (menuChoice==0)
                                     System.out.println("\t\tExiting menu.");
                                 else
                                     System.out.println("\t\tPlease enter a correct number.");
 
-                            }while(gameChoice != 0);
+                            }while(menuChoice != 0);
                         }
                     }
                 }while(gameChoice != 0);
