@@ -144,10 +144,8 @@ public class Stock
         NumberFormat nfMoney = NumberFormat.getCurrencyInstance();
         NumberFormat nfRound = NumberFormat.getInstance();
 
-        //price, risk, open market
-        str = String.format("%-25s %4s %8s %4s %6s %10s", name, region, nfMoney.format(currentPrice), nfRound.format(volatility), active, daysOwned + "\n");
-        //%9s makes up for the number.
-        str = String.format("%9s %-25s %-8s %-15s %10s %10s", "", name, region, nfMoney.format(currentPrice), nfRound.format(volatility), active + "\n");
+
+        str = String.format("%9s %-25s %-8s %-15s %10s %10s %15s", "", name, region, nfMoney.format(currentPrice), nfRound.format(volatility), active, daysOwned + "\n");
 
         return str;
     }

@@ -137,10 +137,10 @@ public class Sector {
         String str = "";
 
 
-        str+="\t\t[━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━▼━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━]\n";
+        str+="\t\t[━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━▼━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━]\n";
 
         //Spacing to mimic a center align within the border.
-        str+=String.format("\t\t   %-10s %-25s %-8s %-15s %10s %10s","Number","Name","Region","Price","Volatility","Active" + "\n");
+        str+=String.format("\t\t   %-10s %-25s %-8s %-15s %10s %10s %15s","Number","Name","Region","Price","Volatility","Active","Days Owned" + "\n");
 
         for(int i=0;i<instruments.length;i++)
         {
@@ -150,7 +150,7 @@ public class Sector {
                 str += "\t\t   " + (i + 1) + "          EMPTY SLOT.\n";
         }
 
-        str+="\t\t[━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━▲━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━]";
+        str+="\t\t[━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━▲━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━]";
 
         return str;
     }

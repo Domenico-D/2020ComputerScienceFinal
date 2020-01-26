@@ -414,6 +414,7 @@ public class Main
                         System.out.println("◈◈ Create || Select ◈◈");
                         System.out.println("\t 1. Create a Portfolio (max of three)");
                         System.out.println("\t 2. Select Portfolio");
+                        System.out.println("\t Enter 0 to go back.");
                         System.out.print("\t Enter your choice: ");
                         gameChoice = inputNum.nextInt();
                         //Line Break
