@@ -110,7 +110,7 @@ public class Stock  {
         NumberFormat nfRound = NumberFormat.getInstance();
 
         //price, risk, open market
-        str = String.format("%-25s %4s %8s %4s %6s",name,region,nfMoney.format(currentPrice),nfRound.format(volatility),active+"\n");
+        str = String.format("%-25s %4s %8s %4s %6s %10s",name,region,nfMoney.format(currentPrice),nfRound.format(volatility),active, daysOwned+"\n");
 
         return str;
     }
