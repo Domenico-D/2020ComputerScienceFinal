@@ -12019,9 +12019,9 @@ public class Main
 
             activatePreSetRegions(defaultSectors, false, (gen.nextInt(10) + 1));
 
-            System.out.println("◤"+ portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\t\nDays Owned: " + portfolio1.getDaysOpened());
-            System.out.println("◤"+ portfolio2.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()) + "\t\nDays Owned: " + portfolio2.getDaysOpened());
-            System.out.println("◤"+ portfolio3.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio3.getDailyProfit()) + "\t\nDays Owned: " + portfolio3.getDaysOpened());
+            System.out.println("◤"+ portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\n\tDays Owned: " + portfolio1.getDaysOpened());
+            System.out.println("◤"+ portfolio2.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()) + "\n\tDays Owned: " + portfolio2.getDaysOpened());
+            System.out.println("◤"+ portfolio3.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio3.getDailyProfit()) + "\n\tDays Owned: " + portfolio3.getDaysOpened());
 
 
         }
@@ -12045,8 +12045,8 @@ public class Main
 
             updatePrePopulatedSectors();
 
-            System.out.println("◤"+ portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\t\nDays Owned: " + portfolio1.getDaysOpened());
-            System.out.println("◤"+ portfolio2.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()) + "\t\nDays Owned: " + portfolio2.getDaysOpened());
+            System.out.println("◤"+ portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\n\tDays Owned: " + portfolio1.getDaysOpened());
+            System.out.println("◤"+ portfolio2.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()) + "\n\tDays Owned: " + portfolio2.getDaysOpened());
         }
         else
         {
@@ -12063,7 +12063,7 @@ public class Main
 
             updatePrePopulatedSectors();
 
-            System.out.println("◤"+ portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\t\nDays Owned: " + portfolio1.getDaysOpened());
+            System.out.println("◤"+ portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\n\tDays Owned: " + portfolio1.getDaysOpened());
         }
 
 
