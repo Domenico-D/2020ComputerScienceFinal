@@ -6,6 +6,7 @@
 public class Portfolio {
 
     private String name;
+    private int daysOpened;
     private double totalProfitLoss;
     private double moneyInvested;
     public double cashLeftover = 25000;     //cold hard cash. changed in main.
@@ -115,7 +116,6 @@ public class Portfolio {
         }
     }
 
-
     public void activateRegion(boolean active, int rnd){
 
         //Reset all stocks to active
@@ -127,36 +127,35 @@ public class Portfolio {
 
         }
 
-        for (int i = 0; i < chosenDivisions.length ; i++) {
-
+        for (int i = 0; i < chosenDivisions.length; i++) {
             for (int j = 0; j < chosenDivisions[i].getInstruments().length ; j++) {
                 if(chosenDivisions[i].getInstruments()[j] != null)
                 {
-                    if (rnd == 1)
+                    if (rnd == 1 || rnd == 2)
                     {
                         if (chosenDivisions[i].getInstruments()[j].getRegion() == 'N')
                         {
                             chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
-                    } else if (rnd == 3)
+                    } else if (rnd == 3 || rnd == 4)
                     {
                         if (chosenDivisions[i].getInstruments()[j].getRegion() == 'E')
                         {
                             chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
-                    } else if (rnd == 5)
+                    } else if (rnd == 5 || rnd == 6)
                     {
                         if (chosenDivisions[i].getInstruments()[j].getRegion() == 'A')
                         {
                             chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
-                    } else if (rnd == 7)
+                    } else if (rnd == 7 || rnd == 8)
                     {
                         if (chosenDivisions[i].getInstruments()[j].getRegion() == 'F')
                         {
                             chosenDivisions[i].getInstruments()[j].setActive(active);
                         }
-                    } else if (rnd == 9)
+                    } else if (rnd == 9 || rnd == 10)
                     {
                         if (chosenDivisions[i].getInstruments()[j].getRegion() == 'O')
                         {
@@ -176,6 +175,21 @@ public class Portfolio {
 
     public Sector[] getChosenDivisions(){
         return chosenDivisions;
+    }
+
+    public void updateDaysOpened(){
+        daysOpened++;
+        for(int i = 0; i < chosenDivisions.length; i++){
+            for(int u = 0; u < chosenDivisions[i].getInstruments().length; u++){
+                if(chosenDivisions[i].getInstruments()[u] != null){
+                    chosenDivisions[i].getInstruments()[u].updateDays();
+                }
+            }
+        }
+    }
+
+    public int getDaysOpened(){
+        return daysOpened;
     }
 
 }
