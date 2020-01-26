@@ -9283,63 +9283,83 @@ public class Main
         {
             //Update Sector Stock prices
             //Print out Main Menu
-            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-            System.out.println("1. Add Investment");
-            System.out.println("2. Take Profit/Loss");
-            System.out.println("3. Trade Stock");
-            System.out.println("4. List Sectors");
-            System.out.println("5. Determine Total Capital");
-            System.out.println("6. View Profit");
-            System.out.println("7. Check Sector Volatility");
-            System.out.println("8. End day");
-            System.out.println("0. Go back");
-            System.out.println("Current Balance: " + moneyFormat.format(portfolio2.getCashLeftover()));
-            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+            System.out.println("\n-----------------------------------------------------------");
+            System.out.println("\uD83D\uDCB0 Main Menu \uD83D\uDCB0");
+            System.out.println("-----------------------------------------------------------");
+            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t1. Add Investment");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t2. Take Profit/Loss");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t3. Trade Stock");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t4. List Sectors");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t5. Determine Total Capital");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t6. View Profit");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t7. Check Sector Volatility");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t8. End day");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\tEnter 0 to go back.");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+
+            System.out.println("\t\t\uD83D\uDCB0\uD83D\uDCB0 Current Balance: " + moneyFormat.format(portfolio2.getCashLeftover()) + " \uD83D\uDCB0\uD83D\uDCB0");
+            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+            System.out.print("Enter your choice: ");
             basicMenuChoice = inputNum.nextInt();
+            System.out.println(" ");
 
             //Add Investment
             if (basicMenuChoice == 1 && portfolio2.getTrades() > 0)
             {
                 do
                 {
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("◈◈ Add Investment ◈◈");
                     System.out.println(portfolio2.getSectors());
-                    System.out.println("0. to go back");
-                    System.out.println("Which Sector would you like to access?");
-                    System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("\tEnter 0 to go back.");
+
+                    System.out.print("\n\tEnter the number of the sector you want to add to: ");
                     sectorChoice = inputNum.nextInt();
 
                     //Opens the sector of user choice
                     if (sectorChoice > 5 || sectorChoice < 1)
                     {
-                        System.out.println("Please enter one of the available sectors.");
+                        System.out.println("\t⚠ Please enter one of the available sectors. ⚠");
                     }
                     else
                     {
-                        //Prints out all the getInstruments() in that sector
                         for (int i = 0; i < portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
                         {
-                            if (portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
-                        }
-                        //Check if there are any open slots in that sector
-                        for (int i = 0; i < portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                        {
+                            //Prints out stocks if there is an open slot.
                             if (portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] == null)
                             {
+                                System.out.println("\t\t|Owned List|");
+                                System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                                System.out.println(" ");
 
+                                System.out.println("\t\t|Stocks List|");
                                 //Checks which Sector the user is in (example technology or retail) to know which stocks to allow them to buy
                                 if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("technology"))
                                 {
                                     taken = false;
                                     //print available stocks for purchase in technology sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+
                                     System.out.println(technologySector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
+
                                     stockChoice = inputNum.nextInt();
 
                                     //Checks to see if user is trying to buy a duplicate stock
@@ -9351,12 +9371,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (technologyArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -9364,7 +9388,7 @@ public class Main
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = technologyArray[stockChoice - 1];
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio2.cashLeftover -= 1000;
-                                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
+
                                         portfolio2.updateTrades();
                                         break;
                                     }
@@ -9375,11 +9399,10 @@ public class Main
                                 {
                                     taken = false;
                                     //print available stocks for purchase in crypto sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
                                     System.out.println(cryptoCurrencySector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
+
                                     stockChoice = inputNum.nextInt();
 
 
@@ -9392,12 +9415,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (cryptoArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -9405,7 +9432,6 @@ public class Main
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = cryptoArray[stockChoice - 1];
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio2.cashLeftover -= 1000;
-                                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
                                         portfolio2.updateTrades();
                                         break;
                                     }
@@ -9416,11 +9442,10 @@ public class Main
                                 {
                                     taken = false;
                                     //print available stocks for purchase in retail sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
                                     System.out.println(retailSector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
+
                                     stockChoice = inputNum.nextInt();
 
 
@@ -9433,12 +9458,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (retailArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t:warning: Sorry, you already own this stock choose another one. :warning:\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -9446,7 +9475,6 @@ public class Main
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = retailArray[stockChoice - 1];
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio2.cashLeftover -= 1000;
-                                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
                                         portfolio2.updateTrades();
                                         break;
                                     }
@@ -9457,11 +9485,10 @@ public class Main
                                 {
                                     taken = false;
                                     //print available stocks for purchase in auto sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
                                     System.out.println(autoSector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
+
                                     stockChoice = inputNum.nextInt();
 
 
@@ -9474,12 +9501,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (autoArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t:warning: Sorry, you already own this stock choose another one. :warning:\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -9487,7 +9518,6 @@ public class Main
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = autoArray[stockChoice - 1];
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio2.cashLeftover -= 1000;
-                                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
                                         portfolio2.updateTrades();
                                         break;
                                     }
@@ -9498,11 +9528,10 @@ public class Main
                                 {
                                     taken = false;
                                     //print available stocks for purchase in aero sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
                                     System.out.println(aerospaceSector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
+
                                     stockChoice = inputNum.nextInt();
 
 
@@ -9515,12 +9544,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (aeroArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t:warning: Sorry, you already own this stock choose another one. :warning:\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -9528,7 +9561,6 @@ public class Main
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = aeroArray[stockChoice - 1];
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio2.cashLeftover -= 1000;
-                                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
                                         portfolio2.updateTrades();
                                         break;
                                     }
@@ -9539,13 +9571,11 @@ public class Main
                                 {
                                     taken = false;
                                     //print available stocks for purchase in financial sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
-                                    System.out.println(financialSector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
-                                    stockChoice = inputNum.nextInt();
+                                    System.out.println(technologySector.toString());
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
 
+                                    stockChoice = inputNum.nextInt();
 
                                     //Checks to see if user is trying to buy a duplicate stock
                                     for (int u = 0; u < portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments().length; u++)
@@ -9556,12 +9586,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (financialArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t:warning: Sorry, you already own this stock choose another one. :warning:\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -9569,7 +9603,6 @@ public class Main
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = financialArray[stockChoice - 1];
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio2.cashLeftover -= 1000;
-                                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
                                         portfolio2.updateTrades();
                                         break;
                                     }
@@ -9580,13 +9613,11 @@ public class Main
                                 {
                                     taken = false;
                                     //print available stocks for purchase in food sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
-                                    System.out.println(foodSector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
-                                    stockChoice = inputNum.nextInt();
+                                    System.out.println(technologySector.toString());
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
 
+                                    stockChoice = inputNum.nextInt();
 
                                     //Checks to see if user is trying to buy a duplicate stock
                                     for (int u = 0; u < portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments().length; u++)
@@ -9597,12 +9628,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (foodArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t:warning: Sorry, you already own this stock choose another one. :warning:\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -9610,21 +9645,16 @@ public class Main
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = foodArray[stockChoice - 1];
                                         portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio2.cashLeftover -= 1000;
-                                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                                        taken = false;
                                         portfolio2.updateTrades();
                                         break;
                                     }
                                     taken = false;
                                 }
-                                // break;
                             }
                             else
                             {
-                                if (i == 4)
-                                {
-                                    System.out.println("Remember you cannot add stocks to a full Sector");
-                                }
+                                if (i==4)
+                                    System.out.println("\n\t\t⚠⚠ You cannot add stocks to a full sector. ⚠⚠\n");
                             }
                         }
 
@@ -9639,182 +9669,178 @@ public class Main
                 do
                 {
                     //Print out sectors. for the user to choose
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("◈◈ Take Profit/Loss ◈◈");
                     System.out.println(portfolio2.getSectors());
-                    System.out.println("0. to go back");
-                    System.out.println("Which Sector would you like to access?");
-                    System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("\tEnter 0 to go back.");
+                    System.out.print("\n\tEnter the number of the sector you want to take profit/loss from: ");
                     sectorChoice = inputNum.nextInt();
+                    System.out.println(" ");
 
                     //Print out stocks within chosen Sector
-                    if (sectorChoice == 1)
+                    if(sectorChoice<0 || sectorChoice>5)
+                        System.out.println("\t⚠ Please enter one of the available sectors. ⚠");
+                    else if (sectorChoice == 1)
                     {
-                        for (int i = 0; i < portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                        {
-                            if (portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
-                        }
-                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        System.out.println("Which stock would you like to take profit/loss");
-                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                        System.out.println("\t\t|Owned List|");
+                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(" ");
+
+                        System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
                         sectorChoice = inputNum.nextInt();
-                        if (sectorChoice - 1 < 0 || sectorChoice - 1 > 4)
+                        System.out.println(" ");
+
+                        if ((sectorChoice - 1) < 0 || (sectorChoice - 1) > 4)
                         {
-                            System.out.println("Please enter a correct Stock");
+                            System.out.println("\t\t⚠ Please enter one of the available stocks. ⚠\n");
                         }
                         else
                         {
                             if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
+                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
                                 portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
-                                    if (portfolio2.getChosenDivisions()[0].getInstruments()[i] != null)
-                                    {
-                                        System.out.println(portfolio2.getChosenDivisions()[0].getInstruments()[i].toString());
-                                    }
+                                    portfolio2.getChosenDivisions()[i].toString();
                                 }
                                 portfolio2.updateTrades();
                             }
                             else
                             {
-                                System.out.println("Please choose a different stock");
+                                System.out.println("\t\t⚠ This slot is empty. ⚠\n");
                             }
                         }
                     }
                     //Sector 2
                     else if (sectorChoice == 2)
                     {
-                        for (int i = 0; i < portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                        {
-                            if (portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
-                        }
-                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        System.out.println("Which stock would you like to take profit/loss");
-                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        sectorChoice = inputNum.nextInt();
+                        System.out.println("\t\t|Owned List|");
+                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(" ");
 
-                        if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                        System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
+                        sectorChoice = inputNum.nextInt();
+                        System.out.println(" ");
+
+                        if ((sectorChoice - 1) < 0 || (sectorChoice - 1) > 4)
                         {
-                            portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
-                            portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                            for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
-                            {
-                                if (portfolio2.getChosenDivisions()[0].getInstruments()[i] != null)
-                                {
-                                    System.out.println(portfolio2.getChosenDivisions()[0].getInstruments()[i].toString());
-                                }
-                            }
-                            portfolio2.updateTrades();
+                            System.out.println("\t\t⚠ Please enter one of the available stocks. ⚠\n");
                         }
                         else
                         {
-                            System.out.println("Please choose a different stock");
+                            if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            {
+                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
+                                {
+                                    portfolio2.getChosenDivisions()[i].toString();
+                                }
+                                portfolio2.updateTrades();
+                            }
+                            else
+                            {
+                                System.out.println("\t\t⚠ This slot is empty. ⚠\n");
+                            }
                         }
                     }
                     //Sector 3
                     else if (sectorChoice == 3)
                     {
-                        for (int i = 0; i < portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                        {
-                            if (portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
-                        }
-                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        System.out.println("Which stock would you like to take profit/loss");
-                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        sectorChoice = inputNum.nextInt();
+                        System.out.println("\t\t|Owned List|");
+                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(" ");
 
-                        if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                        System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
+                        sectorChoice = inputNum.nextInt();
+                        System.out.println(" ");
+
+                        if ((sectorChoice - 1) < 0 || (sectorChoice - 1) > 4)
                         {
-                            portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
-                            portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                            for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
-                            {
-                                if (portfolio2.getChosenDivisions()[0].getInstruments()[i] != null)
-                                {
-                                    System.out.println(portfolio2.getChosenDivisions()[0].getInstruments()[i].toString());
-                                }
-                            }
-                            portfolio2.updateTrades();
+                            System.out.println("\t\t⚠ Please enter one of the available stocks. ⚠\n");
                         }
                         else
                         {
-                            System.out.println("Please choose a different stock");
+                            if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            {
+                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
+                                {
+                                    portfolio2.getChosenDivisions()[i].toString();
+                                }
+                                portfolio2.updateTrades();
+                            }
+                            else
+                            {
+                                System.out.println("\t\t⚠ This slot is empty. ⚠\n");
+                            }
                         }
                     }
                     //Sector 4
                     else if (sectorChoice == 4)
                     {
-                        for (int i = 0; i < portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                        {
-                            if (portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
-                        }
-                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        System.out.println("Which stock would you like to take profit/loss");
-                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        sectorChoice = inputNum.nextInt();
+                        System.out.println("\t\t|Owned List|");
+                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(" ");
 
-                        if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                        System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
+                        sectorChoice = inputNum.nextInt();
+                        System.out.println(" ");
+
+                        if ((sectorChoice - 1) < 0 || (sectorChoice - 1) > 4)
                         {
-                            portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
-                            portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                            for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
-                            {
-                                if (portfolio2.getChosenDivisions()[0].getInstruments()[i] != null)
-                                {
-                                    System.out.println(portfolio2.getChosenDivisions()[0].getInstruments()[i].toString());
-                                }
-                            }
-                            portfolio2.updateTrades();
+                            System.out.println("\t\t⚠ Please enter one of the available stocks. ⚠\n");
                         }
                         else
                         {
-                            System.out.println("Please choose a different stock");
+                            if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            {
+                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
+                                {
+                                    portfolio2.getChosenDivisions()[i].toString();
+                                }
+                                portfolio2.updateTrades();
+                            }
+                            else
+                            {
+                                System.out.println("\t\t⚠ This slot is empty. ⚠\n");
+                            }
                         }
                     }
                     //Sector 5
                     else if (sectorChoice == 5)
                     {
-                        for (int i = 0; i < portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                        {
-                            if (portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
-                        }
-                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        System.out.println("Which stock would you like to take profit/loss");
-                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        sectorChoice = inputNum.nextInt();
+                        System.out.println("\t\t|Owned List|");
+                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(" ");
 
-                        if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                        System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
+                        sectorChoice = inputNum.nextInt();
+                        System.out.println(" ");
+
+                        if ((sectorChoice - 1) < 0 || (sectorChoice - 1) > 4)
                         {
-                            portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
-                            portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
-                            for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
-                            {
-                                if (portfolio2.getChosenDivisions()[0].getInstruments()[i] != null)
-                                {
-                                    System.out.println(portfolio2.getChosenDivisions()[0].getInstruments()[i].toString());
-                                }
-                            }
-                            portfolio2.updateTrades();
+                            System.out.println("\t\t⚠ Please enter one of the available stocks. ⚠\n");
                         }
                         else
                         {
-                            System.out.println("Please choose a different stock");
+                            if (portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
+                            {
+                                portfolio2.cashLeftover += portfolio2.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
+                                portfolio2.getChosenDivisions()[0].removeStock(sectorChoice - 1);
+                                for (int i = 0; i < portfolio2.getChosenDivisions()[0].getInstruments().length; i++)
+                                {
+                                    portfolio2.getChosenDivisions()[i].toString();
+                                }
+                                portfolio2.updateTrades();
+                            }
+                            else
+                            {
+                                System.out.println("\t\t⚠ This slot is empty. ⚠\n");
+                            }
                         }
                     }
                 } while (sectorChoice != 0 && portfolio2.getTrades() > 0);
@@ -9826,18 +9852,17 @@ public class Main
 
                 do
                 {
-                    //Print out portportfolio2 sectors.
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    //Print out portfolio 1 sectors.
+                    System.out.println("◈◈ Trade Stocks ◈◈");
                     System.out.println(portfolio2.getSectors());
-                    System.out.println("0. to go back");
-                    System.out.println("Which Sector would you like to access?");
-                    System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("\tEnter 0 to go back.");
+                    System.out.print("\n\tEnter the number of the sector you want to access: ");
                     sectorChoice = inputNum.nextInt();
 
                     //Checks for proper input
                     if (sectorChoice > 5 || sectorChoice < 1)
                     {
-                        System.out.println("Please enter one of the available sectors.");
+                        System.out.println("\t⚠ Please enter one of the available sectors. ⚠");
                     }
                     //Opens the sector of user choice
                     else
@@ -9845,19 +9870,10 @@ public class Main
                         do
                         {
                             //Prints out all the getInstruments() in that sector
-                            for (int i = 0; i < portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                            {
+                            System.out.println("\t\t|Owned List|");
+                            System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
 
-                                if (portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                                {
-                                    System.out.println((i + 1) + ". " + portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                                }
-
-                            }
-
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.println("Which stock would you like to trade?");
-                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                            System.out.print("\t\t Enter the stock you would like to trade: ");
                             stockChoice = inputNum.nextInt();
                             //Asks user to choose one of their current stocks to trade with another
                             //Stores the stock of choice into currentStock
@@ -9888,19 +9904,19 @@ public class Main
                             }
                             else
                             {
-                                System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
+                                System.out.println("\n\t⚠ Please enter one of the available stocks. ⚠\n");
                             }
                         } while (true);
 
                         if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("technology"))
                         {
+                            System.out.println("\t\t|Stocks List|");
                             taken = false;
                             //print available stocks for purchase in technology sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
                             System.out.println(technologySector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -9912,7 +9928,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (technologyArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -9982,11 +9998,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in crypto sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(cryptoCurrencySector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -9998,7 +10016,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (cryptoArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -10066,11 +10084,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in retail sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(retailSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -10082,7 +10102,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (retailArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -10151,11 +10171,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in auto sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(autoSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -10167,7 +10189,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (autoArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -10236,11 +10258,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in aerospace sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(aerospaceSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -10252,7 +10276,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (aeroArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -10321,11 +10345,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in financial sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(financialSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -10337,7 +10363,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (financialArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -10407,11 +10433,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in food sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(foodSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -10423,7 +10451,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (foodArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -10494,17 +10522,18 @@ public class Main
                 } while (sectorChoice != 0 && portfolio2.getTrades() > 0);
 
             }
-            //List sectors.
+            //List Sectors
             else if (basicMenuChoice == 4)
             {
                 do
                 {
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("◈◈ List Sectors ◈◈");
                     System.out.println(portfolio2.getSectors());
-                    System.out.println("0. to go back");
-                    System.out.println("Which Sector would you like to access?");
-                    System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("\tEnter 0 to go back.");
+
+                    System.out.print("\n\tEnter the number of the sector you want to list: ");
                     sectorChoice = inputNum.nextInt();
+
 
                     //Opens the sector of user choice
                     if (sectorChoice > 5 || sectorChoice < 1)
@@ -10514,50 +10543,77 @@ public class Main
                     else
                     {
                         //Prints out all the getInstruments() in that sector
-                        for (int i = 0; i < portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
+                        System.out.println("\t\t|Owned List|");
+                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(" ");
+                        System.out.println("\t\t|Stocks List|");
+                        if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("technology"))
                         {
-                            if (portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
+                            System.out.println(technologySector.toString());
                         }
+                        else if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Crypto Currency"))
+                        {
+                            System.out.println(cryptoCurrencySector.toString());
+                        }
+                        else if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Retail"))
+                        {
+                            System.out.println(retailSector.toString());
+                        }
+                        else if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Auto"))
+                        {
+                            System.out.println(autoSector.toString());
+                        }
+                        else if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Aerospace"))
+                        {
+                            System.out.println(aerospaceSector.toString());
+                        }
+                        else if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Financial"))
+                        {
+                            System.out.println(financialSector.toString());
+                        }
+                        else if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Food"))
+                        {
+                            System.out.println(foodSector.toString());
+                        }
+                        System.out.println(" ");
                     }
                 } while (sectorChoice != 0);
             }
             //Determine total Capital
             else if (basicMenuChoice == 5)
             {
-                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                System.out.println("Total Capital of " + portfolio2.getName() + " " + moneyFormat.format(portfolio2.getTotalCapital()));
-                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-
+                System.out.println("◈◈ Total Capital ◈◈");
+                System.out.println("\n\t \uD83D\uDCB0\uD83D\uDCB0Total Capital of " + portfolio2.getName() + ": " + moneyFormat.format(portfolio2.getTotalCapital())+ " \uD83D\uDCB0\uD83D\uDCB0\n");
             }
             //View Profit
             else if (basicMenuChoice == 6)
             {
-                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                System.out.println(portfolio2.getName() + " Total Profit/Loss: " + portfolio2.getTotalProfitLoss());
-                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                System.out.println("◈◈ View Profit ◈◈");
+                System.out.println("\t◖ " + portfolio2.getName()+" ◗");
+                System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio2.getTotalProfitLoss()));
+                System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio2.getDailyProfit()) +"\n");
+
             }
             //Check Sector Volatility
             else if (basicMenuChoice == 7)
             {
                 do
                 {
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("◈◈ Check Sector Volatility ◈◈");
                     System.out.println(portfolio2.getSectors());
-                    System.out.println("0. to go back");
-                    System.out.println("Which Sector Volatility would you like to access?");
-                    System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("\tEnter 0 to go back.");
+                    System.out.print("\n\tEnter the number of the sector you want to add to: ");
                     sectorChoice = inputNum.nextInt();
 
                     if (sectorChoice >= 1 && sectorChoice <= 5)
                     {
-                        portfolio2.getChosenDivisions()[sectorChoice - 1].getSectorVolatality();
+                        System.out.println("\n\t「"+portfolio2.getChosenDivisions()[sectorChoice - 1].getName()+"」");
+                        System.out.println("\t\t The volatility of the sector is: " +
+                                portfolio2.getChosenDivisions()[sectorChoice - 1].getSectorVolatality()+"\n");
                     }
                     else
                     {
-                        System.out.println("Please enter a correct sector");
+                        System.out.println("\n\t⚠ Please enter one of the available sectors. ⚠\n");
                     }
 
                 } while (sectorChoice != 0);
@@ -10569,16 +10625,15 @@ public class Main
             }
             else if (basicMenuChoice == 0)
             {
-                System.out.println("Going Back");
+                System.out.println("⬅ Going back.");
             }
             else
             {
                 if (portfolio2.getTrades() == 0)
                 {
-                    System.out.println("You are out of trades");
+                    System.out.println("⚠⚠ You are out of trades. ⚠⚠");
                 }
-                System.out.println("Please enter a correct number.");
-                System.out.println("Please enter a correct number.");
+                System.out.println("⚠ Please enter a correct number. ⚠");
             }
 
         } while (basicMenuChoice != 0);
@@ -10590,63 +10645,83 @@ public class Main
         {
             //Update Sector Stock prices
             //Print out Main Menu
-            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-            System.out.println("1. Add Investment");
-            System.out.println("2. Take Profit/Loss");
-            System.out.println("3. Trade Stock");
-            System.out.println("4. List Sectors");
-            System.out.println("5. Determine Total Capital");
-            System.out.println("6. View Profit");
-            System.out.println("7. Check Sector Volatility");
-            System.out.println("8. End day");
-            System.out.println("0. Go back");
-            System.out.println("Current Balance: " + moneyFormat.format(portfolio3.getCashLeftover()));
-            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+            System.out.println("\n-----------------------------------------------------------");
+            System.out.println("\uD83D\uDCB0 Main Menu \uD83D\uDCB0");
+            System.out.println("-----------------------------------------------------------");
+            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t1. Add Investment");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t2. Take Profit/Loss");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t3. Trade Stock");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t4. List Sectors");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t5. Determine Total Capital");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t6. View Profit");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t7. Check Sector Volatility");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\t8. End day");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+            System.out.println("     ┎┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┒");
+            System.out.println("\t\tEnter 0 to go back.");
+            System.out.println("     ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┚");
+
+            System.out.println("\t\t\uD83D\uDCB0\uD83D\uDCB0 Current Balance: " + moneyFormat.format(portfolio3.getCashLeftover()) + " \uD83D\uDCB0\uD83D\uDCB0");
+            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]\n");
+            System.out.print("Enter your choice: ");
             basicMenuChoice = inputNum.nextInt();
+            System.out.println(" ");
 
             //Add Investment
             if (basicMenuChoice == 1 && portfolio3.getTrades() > 0)
             {
                 do
                 {
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("◈◈ Add Investment ◈◈");
                     System.out.println(portfolio3.getSectors());
-                    System.out.println("0. to go back");
-                    System.out.println("Which Sector would you like to access?");
-                    System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("\tEnter 0 to go back.");
+
+                    System.out.print("\n\tEnter the number of the sector you want to add to: ");
                     sectorChoice = inputNum.nextInt();
 
                     //Opens the sector of user choice
                     if (sectorChoice > 5 || sectorChoice < 1)
                     {
-                        System.out.println("Please enter one of the available sectors.");
+                        System.out.println("\t⚠ Please enter one of the available sectors. ⚠");
                     }
                     else
                     {
-                        //Prints out all the getInstruments() in that sector
                         for (int i = 0; i < portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
                         {
-                            if (portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
-                        }
-                        //Check if there are any open slots in that sector
-                        for (int i = 0; i < portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                        {
+                            //Prints out stocks if there is an open slot.
                             if (portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] == null)
                             {
+                                System.out.println("\t\t|Owned List|");
+                                System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                                System.out.println(" ");
 
+                                System.out.println("\t\t|Stocks List|");
                                 //Checks which Sector the user is in (example technology or retail) to know which stocks to allow them to buy
                                 if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("technology"))
                                 {
                                     taken = false;
                                     //print available stocks for purchase in technology sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+
                                     System.out.println(technologySector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
+
                                     stockChoice = inputNum.nextInt();
 
                                     //Checks to see if user is trying to buy a duplicate stock
@@ -10658,12 +10733,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (technologyArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -10671,7 +10750,7 @@ public class Main
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = technologyArray[stockChoice - 1];
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio3.cashLeftover -= 1000;
-                                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
+
                                         portfolio3.updateTrades();
                                         break;
                                     }
@@ -10682,11 +10761,10 @@ public class Main
                                 {
                                     taken = false;
                                     //print available stocks for purchase in crypto sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
                                     System.out.println(cryptoCurrencySector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
+
                                     stockChoice = inputNum.nextInt();
 
 
@@ -10699,12 +10777,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (cryptoArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -10712,7 +10794,6 @@ public class Main
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = cryptoArray[stockChoice - 1];
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio3.cashLeftover -= 1000;
-                                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
                                         portfolio3.updateTrades();
                                         break;
                                     }
@@ -10723,11 +10804,10 @@ public class Main
                                 {
                                     taken = false;
                                     //print available stocks for purchase in retail sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
                                     System.out.println(retailSector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
+
                                     stockChoice = inputNum.nextInt();
 
 
@@ -10740,12 +10820,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (retailArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t:warning: Sorry, you already own this stock choose another one. :warning:\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -10753,7 +10837,6 @@ public class Main
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = retailArray[stockChoice - 1];
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio3.cashLeftover -= 1000;
-                                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
                                         portfolio3.updateTrades();
                                         break;
                                     }
@@ -10764,11 +10847,10 @@ public class Main
                                 {
                                     taken = false;
                                     //print available stocks for purchase in auto sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
                                     System.out.println(autoSector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
+
                                     stockChoice = inputNum.nextInt();
 
 
@@ -10781,12 +10863,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (autoArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t:warning: Sorry, you already own this stock choose another one. :warning:\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -10794,7 +10880,6 @@ public class Main
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = autoArray[stockChoice - 1];
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio3.cashLeftover -= 1000;
-                                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
                                         portfolio3.updateTrades();
                                         break;
                                     }
@@ -10805,11 +10890,10 @@ public class Main
                                 {
                                     taken = false;
                                     //print available stocks for purchase in aero sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
                                     System.out.println(aerospaceSector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
+
                                     stockChoice = inputNum.nextInt();
 
 
@@ -10822,12 +10906,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (aeroArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t:warning: Sorry, you already own this stock choose another one. :warning:\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -10835,7 +10923,6 @@ public class Main
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = aeroArray[stockChoice - 1];
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio3.cashLeftover -= 1000;
-                                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
                                         portfolio3.updateTrades();
                                         break;
                                     }
@@ -10846,13 +10933,11 @@ public class Main
                                 {
                                     taken = false;
                                     //print available stocks for purchase in financial sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
-                                    System.out.println(financialSector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
-                                    stockChoice = inputNum.nextInt();
+                                    System.out.println(technologySector.toString());
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
 
+                                    stockChoice = inputNum.nextInt();
 
                                     //Checks to see if user is trying to buy a duplicate stock
                                     for (int u = 0; u < portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments().length; u++)
@@ -10863,12 +10948,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (financialArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t:warning: Sorry, you already own this stock choose another one. :warning:\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -10876,7 +10965,6 @@ public class Main
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = financialArray[stockChoice - 1];
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio3.cashLeftover -= 1000;
-                                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
                                         portfolio3.updateTrades();
                                         break;
                                     }
@@ -10887,13 +10975,11 @@ public class Main
                                 {
                                     taken = false;
                                     //print available stocks for purchase in food sector
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                                    System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
-                                    System.out.println(foodSector.toString());
-                                    System.out.print("Which stock would you like to add?\n");
-                                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
-                                    stockChoice = inputNum.nextInt();
+                                    System.out.println(technologySector.toString());
+                                    System.out.print("\t\tWhich stock would you like to add?\n");
+                                    System.out.print("\t\tEnter your choice: ");
 
+                                    stockChoice = inputNum.nextInt();
 
                                     //Checks to see if user is trying to buy a duplicate stock
                                     for (int u = 0; u < portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments().length; u++)
@@ -10904,12 +10990,16 @@ public class Main
                                             //If duplicate then break loop and say choose another stock
                                             if (foodArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                             {
-                                                System.out.println("Sorry you already have this stock choose another one.");
+                                                System.out.println("\t\t:warning: Sorry, you already own this stock choose another one. :warning:\n");
                                                 //if stock chosen is a duplicate than ask them to choose another
                                                 taken = true;
                                                 break;
                                             }
                                         }
+                                    }
+                                    if(taken)
+                                    {
+                                        break;
                                     }
                                     //Checks if the stock is taken
                                     if (!taken)
@@ -10917,21 +11007,16 @@ public class Main
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = foodArray[stockChoice - 1];
                                         portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
                                         portfolio3.cashLeftover -= 1000;
-                                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                                        taken = false;
                                         portfolio3.updateTrades();
                                         break;
                                     }
                                     taken = false;
                                 }
-                                // break;
                             }
                             else
                             {
-                                if (i == 4)
-                                {
-                                    System.out.println("Remember you cannot add stocks to a full Sector");
-                                }
+                                if (i==4)
+                                    System.out.println("\n\t\t⚠⚠ You cannot add stocks to a full sector. ⚠⚠\n");
                             }
                         }
 
@@ -10945,211 +11030,178 @@ public class Main
             {
                 do
                 {
-                    //Print out sectors for the user to choose
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    //Print out sectors. for the user to choose
+                    System.out.println("◈◈ Take Profit/Loss ◈◈");
                     System.out.println(portfolio3.getSectors());
-                    System.out.println("0. to go back");
-                    System.out.println("Which Sector would you like to access?");
-                    System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("\tEnter 0 to go back.");
+                    System.out.print("\n\tEnter the number of the sector you want to take profit/loss from: ");
                     sectorChoice = inputNum.nextInt();
+                    System.out.println(" ");
 
                     //Print out stocks within chosen Sector
-                    if (sectorChoice == 1)
+                    if(sectorChoice<0 || sectorChoice>5)
+                        System.out.println("\t⚠ Please enter one of the available sectors. ⚠");
+                    else if (sectorChoice == 1)
                     {
-                        for (int i = 0; i < portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                        {
-                            if (portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
-                        }
-                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        System.out.println("Which stock would you like to take profit/loss");
-                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                        System.out.println("\t\t|Owned List|");
+                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(" ");
+
+                        System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
                         sectorChoice = inputNum.nextInt();
-                        if (sectorChoice - 1 < 0 || sectorChoice - 1 > 4)
+                        System.out.println(" ");
+
+                        if ((sectorChoice - 1) < 0 || (sectorChoice - 1) > 4)
                         {
-                            System.out.println("Please enter a correct Stock");
+                            System.out.println("\t\t⚠ Please enter one of the available stocks. ⚠\n");
                         }
                         else
                         {
                             if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
                                 portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
-                                    if (portfolio3.getChosenDivisions()[0].getInstruments()[i] != null)
-                                    {
-                                        System.out.println(portfolio3.getChosenDivisions()[0].getInstruments()[i].toString());
-                                    }
+                                    portfolio3.getChosenDivisions()[i].toString();
                                 }
                                 portfolio3.updateTrades();
                             }
                             else
                             {
-                                System.out.println("Please choose a different stock");
+                                System.out.println("\t\t⚠ This slot is empty. ⚠\n");
                             }
                         }
-
                     }
                     //Sector 2
                     else if (sectorChoice == 2)
                     {
-                        for (int i = 0; i < portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                        {
-                            if (portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
-                        }
-                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        System.out.println("Which stock would you like to take profit/loss");
-                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        sectorChoice = inputNum.nextInt();
+                        System.out.println("\t\t|Owned List|");
+                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(" ");
 
-                        if (sectorChoice - 1 < 0 || sectorChoice - 1 > 4)
+                        System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
+                        sectorChoice = inputNum.nextInt();
+                        System.out.println(" ");
+
+                        if ((sectorChoice - 1) < 0 || (sectorChoice - 1) > 4)
                         {
-                            System.out.println("Please enter a correct Stock");
+                            System.out.println("\t\t⚠ Please enter one of the available stocks. ⚠\n");
                         }
                         else
                         {
                             if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
                                 portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
-                                    if (portfolio3.getChosenDivisions()[0].getInstruments()[i] != null)
-                                    {
-                                        System.out.println(portfolio3.getChosenDivisions()[0].getInstruments()[i].toString());
-                                    }
+                                    portfolio3.getChosenDivisions()[i].toString();
                                 }
                                 portfolio3.updateTrades();
                             }
                             else
                             {
-                                System.out.println("Please choose a different stock");
+                                System.out.println("\t\t⚠ This slot is empty. ⚠\n");
                             }
                         }
                     }
                     //Sector 3
                     else if (sectorChoice == 3)
                     {
-                        for (int i = 0; i < portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                        {
-                            if (portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
-                        }
-                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        System.out.println("Which stock would you like to take profit/loss");
-                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        sectorChoice = inputNum.nextInt();
+                        System.out.println("\t\t|Owned List|");
+                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(" ");
 
-                        if (sectorChoice - 1 < 0 || sectorChoice - 1 > 4)
+                        System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
+                        sectorChoice = inputNum.nextInt();
+                        System.out.println(" ");
+
+                        if ((sectorChoice - 1) < 0 || (sectorChoice - 1) > 4)
                         {
-                            System.out.println("Please enter a correct Stock");
+                            System.out.println("\t\t⚠ Please enter one of the available stocks. ⚠\n");
                         }
                         else
                         {
                             if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
                                 portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
-                                    if (portfolio3.getChosenDivisions()[0].getInstruments()[i] != null)
-                                    {
-                                        System.out.println(portfolio3.getChosenDivisions()[0].getInstruments()[i].toString());
-                                    }
+                                    portfolio3.getChosenDivisions()[i].toString();
                                 }
                                 portfolio3.updateTrades();
                             }
                             else
                             {
-                                System.out.println("Please choose a different stock");
+                                System.out.println("\t\t⚠ This slot is empty. ⚠\n");
                             }
                         }
                     }
                     //Sector 4
                     else if (sectorChoice == 4)
                     {
-                        for (int i = 0; i < portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                        {
-                            if (portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
-                        }
-                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        System.out.println("Which stock would you like to take profit/loss");
-                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        sectorChoice = inputNum.nextInt();
+                        System.out.println("\t\t|Owned List|");
+                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(" ");
 
-                        if (sectorChoice - 1 < 0 || sectorChoice - 1 > 4)
+                        System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
+                        sectorChoice = inputNum.nextInt();
+                        System.out.println(" ");
+
+                        if ((sectorChoice - 1) < 0 || (sectorChoice - 1) > 4)
                         {
-                            System.out.println("Please enter a correct Stock");
+                            System.out.println("\t\t⚠ Please enter one of the available stocks. ⚠\n");
                         }
                         else
                         {
                             if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
                                 portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
-                                    if (portfolio3.getChosenDivisions()[0].getInstruments()[i] != null)
-                                    {
-                                        System.out.println(portfolio3.getChosenDivisions()[0].getInstruments()[i].toString());
-                                    }
+                                    portfolio3.getChosenDivisions()[i].toString();
                                 }
                                 portfolio3.updateTrades();
                             }
                             else
                             {
-                                System.out.println("Please choose a different stock");
+                                System.out.println("\t\t⚠ This slot is empty. ⚠\n");
                             }
                         }
                     }
                     //Sector 5
                     else if (sectorChoice == 5)
                     {
-                        for (int i = 0; i < portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                        {
-                            if (portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
-                        }
-                        System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        System.out.println("Which stock would you like to take profit/loss");
-                        System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                        sectorChoice = inputNum.nextInt();
+                        System.out.println("\t\t|Owned List|");
+                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(" ");
 
-                        if (sectorChoice - 1 < 0 || sectorChoice - 1 > 4)
+                        System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
+                        sectorChoice = inputNum.nextInt();
+                        System.out.println(" ");
+
+                        if ((sectorChoice - 1) < 0 || (sectorChoice - 1) > 4)
                         {
-                            System.out.println("Please enter a correct Stock");
+                            System.out.println("\t\t⚠ Please enter one of the available stocks. ⚠\n");
                         }
                         else
                         {
                             if (portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1] != null)
                             {
-                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getProfitLoss();
+                                portfolio3.cashLeftover += portfolio3.getChosenDivisions()[0].getInstruments()[sectorChoice - 1].getTotal();
                                 portfolio3.getChosenDivisions()[0].removeStock(sectorChoice - 1);
                                 for (int i = 0; i < portfolio3.getChosenDivisions()[0].getInstruments().length; i++)
                                 {
-                                    if (portfolio3.getChosenDivisions()[0].getInstruments()[i] != null)
-                                    {
-                                        System.out.println(portfolio3.getChosenDivisions()[0].getInstruments()[i].toString());
-                                    }
+                                    portfolio3.getChosenDivisions()[i].toString();
                                 }
                                 portfolio3.updateTrades();
                             }
                             else
                             {
-                                System.out.println("Please choose a different stock");
+                                System.out.println("\t\t⚠ This slot is empty. ⚠\n");
                             }
                         }
                     }
@@ -11162,18 +11214,17 @@ public class Main
 
                 do
                 {
-                    //Print out portportfolio3 sectors
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    //Print out portfolio 1 sectors.
+                    System.out.println("◈◈ Trade Stocks ◈◈");
                     System.out.println(portfolio3.getSectors());
-                    System.out.println("0. to go back");
-                    System.out.println("Which Sector would you like to access?");
-                    System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("\tEnter 0 to go back.");
+                    System.out.print("\n\tEnter the number of the sector you want to access: ");
                     sectorChoice = inputNum.nextInt();
 
                     //Checks for proper input
                     if (sectorChoice > 5 || sectorChoice < 1)
                     {
-                        System.out.println("Please enter one of the available sectors.");
+                        System.out.println("\t⚠ Please enter one of the available sectors. ⚠");
                     }
                     //Opens the sector of user choice
                     else
@@ -11181,19 +11232,10 @@ public class Main
                         do
                         {
                             //Prints out all the getInstruments() in that sector
-                            for (int i = 0; i < portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
-                            {
+                            System.out.println("\t\t|Owned List|");
+                            System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
 
-                                if (portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                                {
-                                    System.out.println((i + 1) + ". " + portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                                }
-
-                            }
-
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.println("Which stock would you like to trade?");
-                            System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                            System.out.print("\t\t Enter the stock you would like to trade: ");
                             stockChoice = inputNum.nextInt();
                             //Asks user to choose one of their current stocks to trade with another
                             //Stores the stock of choice into currentStock
@@ -11224,19 +11266,19 @@ public class Main
                             }
                             else
                             {
-                                System.out.println("\t\t ⚠ Please enter a valid stock. ⚠");
+                                System.out.println("\n\t⚠ Please enter one of the available stocks. ⚠\n");
                             }
                         } while (true);
 
                         if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("technology"))
                         {
+                            System.out.println("\t\t|Stocks List|");
                             taken = false;
                             //print available stocks for purchase in technology sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
                             System.out.println(technologySector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -11248,7 +11290,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (technologyArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -11318,11 +11360,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in crypto sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(cryptoCurrencySector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -11334,7 +11378,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (cryptoArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -11402,11 +11446,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in retail sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(retailSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -11418,7 +11464,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (retailArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -11487,11 +11533,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in auto sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(autoSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -11503,7 +11551,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (autoArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -11572,11 +11620,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in aerospace sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(aerospaceSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -11588,7 +11638,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (aeroArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -11657,11 +11707,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in financial sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(financialSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -11673,7 +11725,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (financialArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -11743,11 +11795,13 @@ public class Main
                         {
                             taken = false;
                             //print available stocks for purchase in food sector
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                            System.out.format("%-25s %4s %8s %4s %6s %10s", "Name", "Region", "Price", "Volatility", "Active", "Days Owned" + "\n");
+                            System.out.println("\t\t|Stocks List|");
+                            taken = false;
+                            //print available stocks for purchase in sector
                             System.out.println(foodSector.toString());
-                            System.out.print("Which stock would you like to add?\n");
-                            System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]");
+                            System.out.print("\t\tWhich stock would you like to add?\n");
+                            System.out.print("\t\tEnter your choice: ");
+
                             stockChoice = inputNum.nextInt();
 
                             //Checks to see if user is trying to trade for a duplicate stock
@@ -11759,7 +11813,7 @@ public class Main
                                     //If duplicate then break loop and say choose another stock
                                     if (foodArray[stockChoice - 1].getName().equalsIgnoreCase(portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[u].getName()))
                                     {
-                                        System.out.println("Sorry you already have this stock choose another one.");
+                                        System.out.println("\t\t⚠ Sorry, you already own this stock choose another one. ⚠");
                                         //if stock chosen is a duplicate than ask them to choose another
                                         taken = true;
                                         break;
@@ -11830,17 +11884,18 @@ public class Main
                 } while (sectorChoice != 0 && portfolio3.getTrades() > 0);
 
             }
-            //List sectors.
+            //List Sectors
             else if (basicMenuChoice == 4)
             {
                 do
                 {
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("◈◈ List Sectors ◈◈");
                     System.out.println(portfolio3.getSectors());
-                    System.out.println("0. to go back");
-                    System.out.println("Which Sector would you like to access?");
-                    System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("\tEnter 0 to go back.");
+
+                    System.out.print("\n\tEnter the number of the sector you want to list: ");
                     sectorChoice = inputNum.nextInt();
+
 
                     //Opens the sector of user choice
                     if (sectorChoice > 5 || sectorChoice < 1)
@@ -11850,50 +11905,77 @@ public class Main
                     else
                     {
                         //Prints out all the getInstruments() in that sector
-                        for (int i = 0; i < portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments().length; i++)
+                        System.out.println("\t\t|Owned List|");
+                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(" ");
+                        System.out.println("\t\t|Stocks List|");
+                        if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("technology"))
                         {
-                            if (portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] != null)
-                            {
-                                System.out.println((i + 1) + ". " + portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].toString());
-                            }
+                            System.out.println(technologySector.toString());
                         }
+                        else if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Crypto Currency"))
+                        {
+                            System.out.println(cryptoCurrencySector.toString());
+                        }
+                        else if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Retail"))
+                        {
+                            System.out.println(retailSector.toString());
+                        }
+                        else if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Auto"))
+                        {
+                            System.out.println(autoSector.toString());
+                        }
+                        else if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Aerospace"))
+                        {
+                            System.out.println(aerospaceSector.toString());
+                        }
+                        else if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Financial"))
+                        {
+                            System.out.println(financialSector.toString());
+                        }
+                        else if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Food"))
+                        {
+                            System.out.println(foodSector.toString());
+                        }
+                        System.out.println(" ");
                     }
                 } while (sectorChoice != 0);
             }
             //Determine total Capital
             else if (basicMenuChoice == 5)
             {
-                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                System.out.println("Total Capital of " + portfolio3.getName() + " " + moneyFormat.format(portfolio3.getTotalCapital()));
-                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-
+                System.out.println("◈◈ Total Capital ◈◈");
+                System.out.println("\n\t \uD83D\uDCB0\uD83D\uDCB0Total Capital of " + portfolio3.getName() + ": " + moneyFormat.format(portfolio3.getTotalCapital())+ " \uD83D\uDCB0\uD83D\uDCB0\n");
             }
             //View Profit
             else if (basicMenuChoice == 6)
             {
-                System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
-                System.out.println(portfolio3.getName() + " Total Profit/Loss: " + portfolio3.getTotalProfitLoss());
-                System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                System.out.println("◈◈ View Profit ◈◈");
+                System.out.println("\t◖ " + portfolio3.getName()+" ◗");
+                System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio3.getTotalProfitLoss()));
+                System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio3.getDailyProfit()) +"\n");
+
             }
             //Check Sector Volatility
             else if (basicMenuChoice == 7)
             {
                 do
                 {
-                    System.out.println("[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("◈◈ Check Sector Volatility ◈◈");
                     System.out.println(portfolio3.getSectors());
-                    System.out.println("0. to go back");
-                    System.out.println("Which Sector Volatility would you like to access?");
-                    System.out.println("\n[̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅][̲̅$̲̅(̲̅ιοο̲̅)̲̅$̲̅]̅]\n");
+                    System.out.println("\tEnter 0 to go back.");
+                    System.out.print("\n\tEnter the number of the sector you want to add to: ");
                     sectorChoice = inputNum.nextInt();
 
                     if (sectorChoice >= 1 && sectorChoice <= 5)
                     {
-                        portfolio3.getChosenDivisions()[sectorChoice - 1].getSectorVolatality();
+                        System.out.println("\n\t「"+portfolio3.getChosenDivisions()[sectorChoice - 1].getName()+"」");
+                        System.out.println("\t\t The volatility of the sector is: " +
+                                portfolio3.getChosenDivisions()[sectorChoice - 1].getSectorVolatality()+"\n");
                     }
                     else
                     {
-                        System.out.println("Please enter a correct sector");
+                        System.out.println("\n\t⚠ Please enter one of the available sectors. ⚠\n");
                     }
 
                 } while (sectorChoice != 0);
@@ -11905,19 +11987,20 @@ public class Main
             }
             else if (basicMenuChoice == 0)
             {
-                System.out.println("Going back");
+                System.out.println("⬅ Going back.");
             }
             else
             {
                 if (portfolio3.getTrades() == 0)
                 {
-                    System.out.println("You are out of trades");
+                    System.out.println("⚠⚠ You are out of trades. ⚠⚠");
                 }
-                System.out.println("Please enter a correct number.");
+                System.out.println("⚠ Please enter a correct number. ⚠");
             }
 
         } while (basicMenuChoice != 0);
     }
+
 
     //Updates prepopulated Sectors and Stocks
     private static void updatePrePopulatedSectors()
