@@ -10483,7 +10483,7 @@ public class Main
                                     newStock = foodArray[stockChoice - 1];
                                     portfolio2.getChosenDivisions()[sectorChoice - 1].tradeStock(newStock, currentStock);
                                     portfolio2.updateTrades();
-                                    ;
+
                                 }
                                 else if (stockChoice == 5)
                                 {
