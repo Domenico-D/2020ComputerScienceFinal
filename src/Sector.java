@@ -7,7 +7,6 @@
 public class Sector {
 
     private String name;
-    private double sectorProfitLoss;
     private char sectorVolatality;
     private  Stock[] instruments;
 
@@ -24,21 +23,6 @@ public class Sector {
 
     public void setInstruments(Stock[] stocks){
         instruments = stocks;
-    }
-
-    //Add up profit from each of the Stocks and return
-    public double getSectorProfitLoss() {
-
-        double profitLoss = 0;
-
-        for(int i = 0; i < instruments.length; i++ ){
-            if(instruments[i] != null)
-                profitLoss += instruments[i].getProfitLoss();
-        }
-
-        sectorProfitLoss = profitLoss;
-
-        return sectorProfitLoss;
     }
 
     public double getSectorCapital(){
@@ -162,6 +146,14 @@ public class Sector {
             if(instruments[i] != null){
                 if(instruments[i].getActive())
                     instruments[i].updateStockPrice();
+            }
+        }
+    }
+
+    public void updateBeginDayPrice(){
+        for(int i = 0; i < instruments.length; i++){
+            if(instruments[i] != null){
+                instruments[i].updateBeginDayPrice();
             }
         }
     }

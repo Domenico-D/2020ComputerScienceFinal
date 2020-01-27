@@ -196,5 +196,9 @@ public class Stock
 
     }
 
+    public void updateBeginDayPrice(){
+        beginDayPrice = currentPrice;
+    }
+
 
 }

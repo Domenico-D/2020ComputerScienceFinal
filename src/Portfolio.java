@@ -13,6 +13,7 @@ public class Portfolio
     private double totalProfitLoss;
     private double moneyInvested;
     private int trades;
+    private double dailyProfit;
 
     // the number of elements is open to change.
 
@@ -42,19 +43,11 @@ public class Portfolio
         return name;
     }
 
-    public double getTotalProfitLossCalculation()
+    public void totalProfitLossCalculation()
     {
 
-        double profitLoss=0;
+        totalProfitLoss += dailyProfit;
 
-        for (int i = 0; i < chosenDivisions.length; i++)
-        {
-            profitLoss += chosenDivisions[i].getSectorProfitLoss();
-        }
-
-        totalProfitLoss += profitLoss;
-
-        return totalProfitLoss;
     }
 
     public double getTotalProfitLoss(){
@@ -64,13 +57,18 @@ public class Portfolio
     public double getDailyProfit()
     {
         //printed at the end of each day.
-        double dailyProfit = 0;
+        double daily = 0;
 
         for (int i = 0; i < chosenDivisions.length; i++)
         {
-            dailyProfit += chosenDivisions[i].getDailyProfit();
+            daily += chosenDivisions[i].getDailyProfit();
         }
 
+        dailyProfit = daily;
+        return daily;
+    }
+
+    public double getDailyProfitSaved(){
         return dailyProfit;
     }
 
@@ -235,6 +233,13 @@ public class Portfolio
             }
         }
     }
+
+    public void updateAllBeginDayPrice(){
+        for(int i = 0; i < chosenDivisions.length; i++){
+            chosenDivisions[i].updateBeginDayPrice();
+        }
+    }
+
 
 
 
