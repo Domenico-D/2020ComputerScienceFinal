@@ -17,14 +17,20 @@ public class Stock
     private double beginDayPrice;
     private double currentPrice;
     private double priceWhenBought;
-    //max volatility of 0.15
+    //max volatility of 0.2
     private double volatility;
     private boolean active;
 
     //track daily price profit with a variable at the start of each day.
     public Stock()
     {
-
+        name = " ";
+        region=' ';
+        currentPrice=0;
+        volatility = 0.0;
+        active = false;
+        priceWhenBought = 0;
+        beginDayPrice = 0;
     }
 
     public Stock(String nm, char location, double goingPrice, double risk, boolean openMarket)
@@ -34,6 +40,7 @@ public class Stock
         currentPrice = goingPrice;
         volatility = risk;
         active = openMarket;
+        priceWhenBought = goingPrice;
         beginDayPrice = goingPrice;
     }
 
@@ -66,6 +73,8 @@ public class Stock
     public void setCurrentPrice(double goingPrice)
     {
         currentPrice = goingPrice;
+        priceWhenBought = goingPrice;
+        beginDayPrice = goingPrice;
     }
 
     public double getVolatility()
@@ -102,6 +111,7 @@ public class Stock
     {
         return sharesOwned;
     }
+
     public void buyShares()
     {
         sharesOwned = 1000 / currentPrice;

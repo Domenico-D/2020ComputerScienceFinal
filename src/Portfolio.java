@@ -57,10 +57,14 @@ public class Portfolio
     public double getTotalProfitLoss()
     {
 
+        double profitLoss=0;
+
         for (int i = 0; i < chosenDivisions.length; i++)
         {
-            totalProfitLoss += chosenDivisions[i].getSectorProfitLoss();
+            profitLoss += chosenDivisions[i].getSectorProfitLoss();
         }
+
+        totalProfitLoss = profitLoss;
 
         return totalProfitLoss;
     }
