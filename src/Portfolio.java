@@ -42,7 +42,7 @@ public class Portfolio
         return name;
     }
 
-    public double getTotalProfitLoss()
+    public double getTotalProfitLossCalculation()
     {
 
         double profitLoss=0;
@@ -52,8 +52,12 @@ public class Portfolio
             profitLoss += chosenDivisions[i].getSectorProfitLoss();
         }
 
-        totalProfitLoss = profitLoss;
+        totalProfitLoss += profitLoss;
 
+        return totalProfitLoss;
+    }
+
+    public double getTotalProfitLoss(){
         return totalProfitLoss;
     }
 

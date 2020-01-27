@@ -350,6 +350,9 @@ public class Main
     private static int basicMenuChoice;
     private static int sectorChoice;
     private static boolean taken = false;
+    private static int profitCounter1 = 0;
+    private static int profitCounter2 = 0;
+    private static int profitCounter3 = 0;
 
     //Trade Stocks temporary objects
     private static Stock currentStock;
@@ -9170,10 +9173,19 @@ public class Main
             //View Profit
             else if (basicMenuChoice == 6)
             {
-                System.out.println("◈◈ View Profit ◈◈");
-                System.out.println("\t◖ " + portfolio1.getName()+" ◗");
-                System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio1.getTotalProfitLoss()));
-                System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio1.getDailyProfit()) +"\n");
+
+                if(profitCounter1 == 0){
+                    System.out.println("◈◈ View Profit ◈◈");
+                    System.out.println("\t◖ " + portfolio1.getName()+" ◗");
+                    System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio1.getTotalProfitLossCalculation()));
+                    System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio1.getDailyProfit()) +"\n");
+                    profitCounter1++;
+                }else{
+                    System.out.println("◈◈ View Profit ◈◈");
+                    System.out.println("\t◖ " + portfolio1.getName()+" ◗");
+                    System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio1.getTotalProfitLoss()));
+                    System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio1.getDailyProfit()) +"\n");
+                }
 
             }
             //Check Sector Volatility
@@ -10484,11 +10496,19 @@ public class Main
             //View Profit
             else if (basicMenuChoice == 6)
             {
-                System.out.println("◈◈ View Profit ◈◈");
-                System.out.println("\t◖ " + portfolio2.getName()+" ◗");
-                System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio2.getTotalProfitLoss()));
-                System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio2.getDailyProfit()) +"\n");
+                if(profitCounter2 == 0){
+                    System.out.println("◈◈ View Profit ◈◈");
+                    System.out.println("\t◖ " + portfolio2.getName()+" ◗");
+                    System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio2.getTotalProfitLossCalculation()));
+                    System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio2.getDailyProfit()) +"\n");
+                    profitCounter2++;
+                }else{
+                    System.out.println("◈◈ View Profit ◈◈");
+                    System.out.println("\t◖ " + portfolio2.getName()+" ◗");
+                    System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio2.getTotalProfitLoss()));
+                    System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio2.getDailyProfit()) +"\n");
 
+                }
             }
             //Check Sector Volatility
             else if (basicMenuChoice == 7)
@@ -11798,11 +11818,19 @@ public class Main
             //View Profit
             else if (basicMenuChoice == 6)
             {
-                System.out.println("◈◈ View Profit ◈◈");
-                System.out.println("\t◖ " + portfolio3.getName()+" ◗");
-                System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio3.getTotalProfitLoss()));
-                System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio3.getDailyProfit()) +"\n");
+                if(profitCounter3 == 0){
+                    System.out.println("◈◈ View Profit ◈◈");
+                    System.out.println("\t◖ " + portfolio3.getName()+" ◗");
+                    System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio3.getTotalProfitLossCalculation()));
+                    System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio3.getDailyProfit()) +"\n");
+                    profitCounter3++;
+                }else{
+                    System.out.println("◈◈ View Profit ◈◈");
+                    System.out.println("\t◖ " + portfolio3.getName()+" ◗");
+                    System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio3.getTotalProfitLoss()));
+                    System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio3.getDailyProfit()) +"\n");
 
+                }
             }
             //Check Sector Volatility
             else if (basicMenuChoice == 7)
@@ -11895,8 +11923,9 @@ public class Main
             System.out.println("◤"+ portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\n\tDays Owned: " + portfolio1.getDaysOpened());
             System.out.println("◤"+ portfolio2.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()) + "\n\tDays Owned: " + portfolio2.getDaysOpened());
             System.out.println("◤"+ portfolio3.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio3.getDailyProfit()) + "\n\tDays Owned: " + portfolio3.getDaysOpened());
-
-
+            profitCounter1 = 0;
+            profitCounter2 = 0;
+            profitCounter3 = 0;
         }
         else if (numPortfolios == 2)
         {
@@ -11920,6 +11949,10 @@ public class Main
 
             System.out.println("◤"+ portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\n\tDays Owned: " + portfolio1.getDaysOpened());
             System.out.println("◤"+ portfolio2.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()) + "\n\tDays Owned: " + portfolio2.getDaysOpened());
+
+            profitCounter1 = 0;
+            profitCounter2 = 0;
+
         }
         else
         {
@@ -11937,6 +11970,9 @@ public class Main
             updatePrePopulatedSectors();
 
             System.out.println("◤"+ portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\n\tDays Owned: " + portfolio1.getDaysOpened());
+
+            profitCounter1 = 0;
+
         }
 
 

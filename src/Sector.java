@@ -43,15 +43,13 @@ public class Sector {
 
     public double getSectorCapital(){
         double capital = 0;
-        double sectorCapital;
         for(int i = 0; i < instruments.length; i++ ){
             if(instruments[i] != null)
                 capital += (instruments[i].getCurrentPrice() * instruments[i].getSharesOwned());
         }
 
-        sectorCapital = capital;
 
-        return sectorCapital;
+        return capital;
     }
 
     public String getName(){
