@@ -49,27 +49,68 @@ public class Stock
     {
         return name;
     }
+    public char getRegion()
+    {
+        return region;
+    }
+    public double getCurrentPrice()
+    {
+        return currentPrice;
+    }
+    public double getVolatility()
+    {
+        return volatility;
+    }
+    public double getProfitLoss()
+    {
+        return (currentPrice - priceWhenBought) * sharesOwned;
+    }
+    public double getSharesOwned()
+    {
+        return sharesOwned;
+    }
+    public double getPriceWhenBought()
+    {
+        return priceWhenBought;
+    }
+    public boolean getActive()
+    {
+        return active;
+    }
+
+    public double getTotal()
+    {
+        double total = (getPriceWhenBought()*sharesOwned) + getProfitLoss();
+
+        return total;
+    }
+
+    public double getDayProfit()
+    {
+        double dayProfit = 0;
+
+        dayProfit += (currentPrice - beginDayPrice) * sharesOwned;
+
+        return dayProfit;
+    }
+
 
     public void setName(String nm)
     {
         name = nm;
     }
-
-    public char getRegion()
-    {
-        return region;
-    }
-
     public void setRegion(char location)
     {
         region = location;
     }
-
-    public double getCurrentPrice()
+    public void setVolatility(double risk)
     {
-        return currentPrice;
+        volatility = risk;
     }
-
+    public void setActive(boolean bool)
+    {
+        active = bool;
+    }
     public void setCurrentPrice(double goingPrice)
     {
         currentPrice = goingPrice;
@@ -77,39 +118,10 @@ public class Stock
         beginDayPrice = goingPrice;
     }
 
-    public double getVolatility()
-    {
-        return volatility;
-    }
-
-    public void setVolatility(double risk)
-    {
-        volatility = risk;
-    }
-
-    public double getProfitLoss()
-    {
-        return (currentPrice - priceWhenBought) * sharesOwned;
-    }
-
-    public boolean getActive()
-    {
-        return active;
-    }
-
-    public void setActive(boolean bool)
-    {
-        active = bool;
-    }
 
     public void updateDays()
     {
         daysOwned++;
-    }
-
-    public double getSharesOwned()
-    {
-        return sharesOwned;
     }
 
     public void buyShares()
@@ -123,27 +135,6 @@ public class Stock
     {
         sharesOwned = shares;
         priceWhenBought = newCurrentPrice;
-    }
-
-    public double getDayProfit()
-    {
-        double dayProfit = 0;
-
-        dayProfit += (currentPrice - beginDayPrice) * sharesOwned;
-
-        return dayProfit;
-    }
-
-    public double getTotal()
-    {
-        double total = (getPriceWhenBought()*sharesOwned) + getProfitLoss();
-
-        return total;
-    }
-
-    public double getPriceWhenBought()
-    {
-        return priceWhenBought;
     }
 
     public String toString()

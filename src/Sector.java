@@ -54,6 +54,10 @@ public class Sector {
         return sectorCapital;
     }
 
+    public String getName(){
+        return name;
+    }
+
     //Gets the total Sector Volatility as a char to show the user the level of volatility
     public char getSectorVolatality() {
 
@@ -88,13 +92,6 @@ public class Sector {
         return sectorVolatality;
     }
 
-    //Removes a stock and reorganizez the array
-    public void removeStock(int choice){
-
-        instruments[choice] = null;
-
-    }
-
     public double getDailyProfit(){
         double dailyProfit = 0;
 
@@ -104,6 +101,17 @@ public class Sector {
                 dailyProfit += instruments[i].getDayProfit();
         }
         return dailyProfit;
+    }
+
+    public Stock[] getInstruments(){
+        return instruments;
+    }
+
+    //Removes a stock
+    public void removeStock(int choice){
+
+        instruments[choice] = null;
+
     }
 
     public void tradeStock(Stock newStock, Stock oldStock){
@@ -127,10 +135,6 @@ public class Sector {
                 instruments[i].buyShares(newShares, newStockPrice);
             }
         }
-    }
-
-    public String getName(){
-        return name;
     }
 
     public String toString(){
@@ -164,8 +168,6 @@ public class Sector {
         }
     }
 
-    public Stock[] getInstruments(){
-        return instruments;
-    }
+
 
 }

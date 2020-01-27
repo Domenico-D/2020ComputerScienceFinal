@@ -12,9 +12,8 @@ public class Portfolio
     private int daysOpened;
     private double totalProfitLoss;
     private double moneyInvested;
-    private double capital;
     private int trades;
-    private double totalCapital;
+
     // the number of elements is open to change.
 
     public Portfolio(String nm, Sector[] chosen)
@@ -23,10 +22,10 @@ public class Portfolio
         chosenDivisions = chosen;
         totalProfitLoss = 0;
         moneyInvested = 0;
-        capital = moneyInvested + cashLeftover;
         trades = 8;
     }
 
+    //Accessors
     public String getSectors()
     {
         String str = "";
@@ -38,20 +37,9 @@ public class Portfolio
 
         return str;
     }
-
-    public void setSectors(Sector[] sectorArray)
-    {
-        chosenDivisions = sectorArray;
-    }
-
     public String getName()
     {
         return name;
-    }
-
-    public void setName(String nm)
-    {
-        name = nm;
     }
 
     public double getTotalProfitLoss()
@@ -104,6 +92,36 @@ public class Portfolio
         return trades;
     }
 
+    public double getTotalCapital()
+    {
+
+        double totalCapital = getCashLeftover() + getMoneyInvested();
+
+        return totalCapital;
+    }
+
+    public Sector[] getChosenDivisions()
+    {
+        return chosenDivisions;
+    }
+
+    public int getDaysOpened()
+    {
+        return daysOpened;
+    }
+
+    //Mutators
+    public void setSectors(Sector[] sectorArray)
+    {
+        chosenDivisions = sectorArray;
+    }
+
+    public void setName(String nm)
+    {
+        name = nm;
+    }
+
+
     public void updateTrades()
     {
         trades--;
@@ -120,14 +138,6 @@ public class Portfolio
 
         return str;
 
-    }
-
-    public double getTotalCapital()
-    {
-
-        totalCapital = getCashLeftover() + getMoneyInvested();
-
-        return totalCapital;
     }
 
     public void updateSectors()
@@ -207,11 +217,6 @@ public class Portfolio
         trades = 8;
     }
 
-    public Sector[] getChosenDivisions()
-    {
-        return chosenDivisions;
-    }
-
     public void updateDaysOpened()
     {
         daysOpened++;
@@ -227,9 +232,6 @@ public class Portfolio
         }
     }
 
-    public int getDaysOpened()
-    {
-        return daysOpened;
-    }
+
 
 }

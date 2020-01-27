@@ -8014,15 +8014,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = technologyArray[stockChoice - 1];
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio1.cashLeftover -= 1000;
-                                        portfolio1.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = technologyArray[stockChoice - 1];
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio1.cashLeftover -= 1000;
+                                    portfolio1.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in crypto sector
                                 else if (portfolio1.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Crypto Currency"))
@@ -8057,15 +8053,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = cryptoArray[stockChoice - 1];
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio1.cashLeftover -= 1000;
-                                        portfolio1.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = cryptoArray[stockChoice - 1];
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio1.cashLeftover -= 1000;
+                                    portfolio1.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in retail sector
                                 else if (portfolio1.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Retail"))
@@ -8100,15 +8092,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = retailArray[stockChoice - 1];
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio1.cashLeftover -= 1000;
-                                        portfolio1.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = retailArray[stockChoice - 1];
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio1.cashLeftover -= 1000;
+                                    portfolio1.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in auto sector
                                 else if (portfolio1.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Auto"))
@@ -8143,15 +8131,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = autoArray[stockChoice - 1];
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio1.cashLeftover -= 1000;
-                                        portfolio1.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = autoArray[stockChoice - 1];
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio1.cashLeftover -= 1000;
+                                    portfolio1.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in aerospace sector
                                 else if (portfolio1.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Aerospace"))
@@ -8186,15 +8170,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = aeroArray[stockChoice - 1];
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio1.cashLeftover -= 1000;
-                                        portfolio1.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = aeroArray[stockChoice - 1];
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio1.cashLeftover -= 1000;
+                                    portfolio1.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in financial sector
                                 else if (portfolio1.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Financial"))
@@ -8228,15 +8208,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = financialArray[stockChoice - 1];
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio1.cashLeftover -= 1000;
-                                        portfolio1.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = financialArray[stockChoice - 1];
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio1.cashLeftover -= 1000;
+                                    portfolio1.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in food sector
                                 else if (portfolio1.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Food"))
@@ -8270,15 +8246,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = foodArray[stockChoice - 1];
-                                        portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio1.cashLeftover -= 1000;
-                                        portfolio1.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = foodArray[stockChoice - 1];
+                                    portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio1.cashLeftover -= 1000;
+                                    portfolio1.updateTrades();
+                                    break;
                                 }
                             }
                             else
@@ -9094,7 +9066,7 @@ public class Main
                                     newStock = foodArray[stockChoice - 1];
                                     portfolio1.getChosenDivisions()[sectorChoice - 1].tradeStock(newStock, currentStock);
                                     portfolio1.updateTrades();
-                                    ;
+
                                 }
                                 else if (stockChoice == 5)
                                 {
@@ -9355,16 +9327,12 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = technologyArray[stockChoice - 1];
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio2.cashLeftover -= 1000;
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = technologyArray[stockChoice - 1];
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio2.cashLeftover -= 1000;
 
-                                        portfolio2.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio2.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in crypto sector
                                 else if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Crypto Currency"))
@@ -9399,15 +9367,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = cryptoArray[stockChoice - 1];
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio2.cashLeftover -= 1000;
-                                        portfolio2.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = cryptoArray[stockChoice - 1];
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio2.cashLeftover -= 1000;
+                                    portfolio2.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in retail sector
                                 else if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Retail"))
@@ -9442,15 +9406,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = retailArray[stockChoice - 1];
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio2.cashLeftover -= 1000;
-                                        portfolio2.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = retailArray[stockChoice - 1];
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio2.cashLeftover -= 1000;
+                                    portfolio2.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in auto sector
                                 else if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Auto"))
@@ -9485,15 +9445,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = autoArray[stockChoice - 1];
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio2.cashLeftover -= 1000;
-                                        portfolio2.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = autoArray[stockChoice - 1];
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio2.cashLeftover -= 1000;
+                                    portfolio2.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in aerospace sector
                                 else if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Aerospace"))
@@ -9528,15 +9484,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = aeroArray[stockChoice - 1];
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio2.cashLeftover -= 1000;
-                                        portfolio2.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = aeroArray[stockChoice - 1];
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio2.cashLeftover -= 1000;
+                                    portfolio2.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in financial sector
                                 else if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Financial"))
@@ -9570,15 +9522,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = financialArray[stockChoice - 1];
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio2.cashLeftover -= 1000;
-                                        portfolio2.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = financialArray[stockChoice - 1];
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio2.cashLeftover -= 1000;
+                                    portfolio2.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in food sector
                                 else if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Food"))
@@ -9612,15 +9560,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = foodArray[stockChoice - 1];
-                                        portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio2.cashLeftover -= 1000;
-                                        portfolio2.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = foodArray[stockChoice - 1];
+                                    portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio2.cashLeftover -= 1000;
+                                    portfolio2.updateTrades();
+                                    break;
                                 }
                             }
                             else
@@ -10697,16 +10641,12 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = technologyArray[stockChoice - 1];
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio3.cashLeftover -= 1000;
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = technologyArray[stockChoice - 1];
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio3.cashLeftover -= 1000;
 
-                                        portfolio3.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio3.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in crypto sector
                                 else if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Crypto Currency"))
@@ -10741,15 +10681,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = cryptoArray[stockChoice - 1];
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio3.cashLeftover -= 1000;
-                                        portfolio3.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = cryptoArray[stockChoice - 1];
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio3.cashLeftover -= 1000;
+                                    portfolio3.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in retail sector
                                 else if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Retail"))
@@ -10784,15 +10720,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = retailArray[stockChoice - 1];
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio3.cashLeftover -= 1000;
-                                        portfolio3.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = retailArray[stockChoice - 1];
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio3.cashLeftover -= 1000;
+                                    portfolio3.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in auto sector
                                 else if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Auto"))
@@ -10827,15 +10759,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = autoArray[stockChoice - 1];
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio3.cashLeftover -= 1000;
-                                        portfolio3.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = autoArray[stockChoice - 1];
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio3.cashLeftover -= 1000;
+                                    portfolio3.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in aerospace sector
                                 else if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Aerospace"))
@@ -10870,15 +10798,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = aeroArray[stockChoice - 1];
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio3.cashLeftover -= 1000;
-                                        portfolio3.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = aeroArray[stockChoice - 1];
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio3.cashLeftover -= 1000;
+                                    portfolio3.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in financial sector
                                 else if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Financial"))
@@ -10912,15 +10836,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = financialArray[stockChoice - 1];
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio3.cashLeftover -= 1000;
-                                        portfolio3.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = financialArray[stockChoice - 1];
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio3.cashLeftover -= 1000;
+                                    portfolio3.updateTrades();
+                                    break;
                                 }
                                 //Checks if user is in food sector
                                 else if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("Food"))
@@ -10954,15 +10874,11 @@ public class Main
                                         break;
                                     }
                                     //Checks if the stock is taken
-                                    if (!taken)
-                                    {
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = foodArray[stockChoice - 1];
-                                        portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
-                                        portfolio3.cashLeftover -= 1000;
-                                        portfolio3.updateTrades();
-                                        break;
-                                    }
-                                    taken = false;
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] = foodArray[stockChoice - 1];
+                                    portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i].buyShares();
+                                    portfolio3.cashLeftover -= 1000;
+                                    portfolio3.updateTrades();
+                                    break;
                                 }
                             }
                             else
