@@ -527,11 +527,104 @@ public class Main
             }
             else if (gameChoice == 2)
             {
-                System.out.println("test 2");
+                System.out.println("Our names are Domenico Didiano and Jimmy Huynh and we are two grade 12 Chaminade ");
+                System.out.println("College School students on a journey to become software engineers. We are the original ");
+                System.out.println("developers of Kingdom of Knowledge and Kingdom of Knowledge V2, and we are proud to bring ");
+                System.out.println("you Stonks the free realistic stock managing game. The idea to create Stonks was inspired by ");
+                System.out.println("our time in highschool when we and a group of friends decided to venture into a fantasy finance ");
+                System.out.println("leauge. The issue was the game was pay to win, so as the amazing game developers we are ");
+                System.out.println("decided to create Stonks a game where anyone with any budget can manage and create their ");
+                System.out.println("own stocks. We hope you enjoy and be on the lookout for Kingdom of Knowledge V3. \n\n");
+
             }
             else if (gameChoice == -1)
             {
-                System.out.println("Exiting. Have a good day.");
+                System.out.println("Exiting. Have a good day. \n\n\n\n");
+
+                System.out.println("                                     ...");
+                System.out.println("                                        `.");
+                System.out.println("                                  ..");
+                System.out.println("                                    `.");
+                System.out.println("                            `.        `.");
+                System.out.println("                         ___`.\\.//");
+                System.out.println("                            `---.---");
+                System.out.println("                           /     \\.--");
+                System.out.println("                          /       \\-");
+                System.out.println("                         |   /\\    \\");
+                System.out.println("                         |\\==/\\==/  |");
+                System.out.println("                         | `@'`@'  .--.");
+                System.out.println("                  .--------.           )");
+                System.out.println("                .'             .   `._/");
+                System.out.println("               /               |     \\");
+                System.out.println("              .               /       |");
+                System.out.println("              |              /        |");
+                System.out.println("              |            .'         |   .--.");
+                System.out.println("             .'`.        .'_          |  /    \\");
+                System.out.println("         .'            .|    \\\\     |_/        |");
+                System.out.println("       .'            .' |     \\\\               |");
+                System.out.println("     .-`.           /   |      .      __       |");
+                System.out.println("   .'    `.     \\   |   `           .'  )      \\");
+                System.out.println("  /        \\   / \\  |            .-'   /       |");
+                System.out.println(" (  /       \\ /   \\ |                 |        |");
+                System.out.println("  \\/         (     \\/                 |        |");
+                System.out.println("  (  /        )    /                 /   _.----|");
+                System.out.println("   \\/   //   /   .'                  |.-'       `");
+                System.out.println("   (   /(   /   /                    /      `.   |");
+                System.out.println("    `.(  `-')  .---.                |    `.   `._/");
+                System.out.println("       `._.'  /     `.   .---.      |  .   `._.'");
+                System.out.println("              |       \\ /     `.     \\  `.___.'");
+                System.out.println("              |        Y        `.    `.___.'");
+                System.out.println("              |      . |          \\         \\");
+                System.out.println("              |       `|           \\         |");
+                System.out.println("              |        |       .    \\        |");
+                System.out.println("              |        |        \\    \\       |");
+                System.out.println("            .--.       |         \\           |");
+                System.out.println("           /    `.  .----.        \\          /");
+                System.out.println("          /       \\/      \\        \\        /");
+                System.out.println("          |       |        \\       |       /");
+                System.out.println("           \\      |    @    \\   `-. \\     /");
+                System.out.println("            \\      \\         \\     \\|.__.'");
+                System.out.println("             \\      \\         \\     |");
+                System.out.println("              \\      \\         \\    |");
+                System.out.println("               \\      \\         \\   |");
+                System.out.println("                \\    .'`.        \\  |");
+                System.out.println("                 `.-'    `.    _.'\\ |");
+                System.out.println("                   |       `.-'    ||");
+                System.out.println("              .     \\     . `.     ||   ");
+                System.out.println("               `.    `-.-'    `.__.'     .'");
+                System.out.println("                 `.                    .'");
+                System.out.println("             .                       .'");
+                System.out.println("              `.");
+                System.out.println("                                           .-'");
+                System.out.println("                                        .-'");
+                System.out.println();
+                System.out.println("      \\                 \\");
+                System.out.println("       \\         ..      \\");
+                System.out.println("        \\       /  `-.--.___ __.-.___");
+                System.out.println("`-.      \\     /  #   `-._.-'    \\   `--.__");
+                System.out.println("   `-.        /  ####    /   ###  \\        `.");
+                System.out.println("________     /  #### ############  |       _|           .'");
+                System.out.println("            |\\ #### ##############  \\__.--' |    /    .'");
+                System.out.println("            | ####################  |       |   /   .'");
+                System.out.println("            | #### ###############  |       |  /");
+                System.out.println("            | #### ###############  |      /|      ----");
+                System.out.println("          . | #### ###############  |    .'<    ____");
+                System.out.println("        .'  | ####################  | _.'-'\\|");
+                System.out.println("      .'    |   ##################  |       |");
+                System.out.println("             `.   ################  |       |");
+                System.out.println("               `.    ############   |       | ----");
+                System.out.println("              ___`.     #####     _..____.-'     .");
+                System.out.println("             |`-._ `-._       _.-'    \\\\\\         `.");
+                System.out.println("          .'`-._  `-._ `-._.-'`--.___.-' \\          `.");
+                System.out.println("        .' .. . `-._  `-._        ___.---'|   \\   \\");
+                System.out.println("      .' .. . .. .  `-._  `-.__.-'        |    \\   \\");
+                System.out.println("     |`-. . ..  . .. .  `-._|             |     \\   \\");
+                System.out.println("     |   `-._ . ..  . ..   .'            _|");
+                System.out.println("      `-._   `-._ . ..   .' |      __.--'");
+                System.out.println("          `-._   `-._  .' .'|__.--'");
+                System.out.println("              `-._   `' .'");
+                System.out.println("                  `-._.'");
+
             }
             else
             {
