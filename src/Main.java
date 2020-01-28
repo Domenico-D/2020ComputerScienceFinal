@@ -1337,7 +1337,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector1Stock1.setVolatility(volatilityTemp);
                             System.out.println(" ");
@@ -1383,7 +1383,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector1Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -1427,7 +1427,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector1Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -1472,7 +1472,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector1Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -1516,7 +1516,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector1Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -1663,7 +1663,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector2Stock1.setVolatility(volatilityTemp);
 
@@ -1709,7 +1709,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector2Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -1753,7 +1753,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector2Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -1797,7 +1797,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector2Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -1840,7 +1840,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector2Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -1985,7 +1985,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector3Stock1.setVolatility(volatilityTemp);
 
@@ -2031,7 +2031,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector3Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -2075,7 +2075,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector3Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -2119,7 +2119,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector3Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -2163,7 +2163,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector3Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -2308,7 +2308,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector4Stock1.setVolatility(volatilityTemp);
 
@@ -2354,7 +2354,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector4Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -2398,7 +2398,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector4Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -2442,7 +2442,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector4Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -2486,7 +2486,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector4Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -2630,7 +2630,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector5Stock1.setVolatility(volatilityTemp);
 
@@ -2676,7 +2676,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector5Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -2720,7 +2720,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector5Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -2764,7 +2764,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector5Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -2808,7 +2808,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector5Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -2952,7 +2952,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector6Stock1.setVolatility(volatilityTemp);
 
@@ -2998,7 +2998,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector6Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -3042,7 +3042,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector6Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -3086,7 +3086,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector6Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -3130,7 +3130,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector6Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -3274,7 +3274,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector7Stock1.setVolatility(volatilityTemp);
 
@@ -3320,7 +3320,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector7Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -3364,7 +3364,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector7Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -3408,7 +3408,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector7Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -3452,7 +3452,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio1Sector7Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -3600,7 +3600,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector1Stock1.setVolatility(volatilityTemp);
                             System.out.println(" ");
@@ -3647,7 +3647,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector1Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -3691,7 +3691,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector1Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -3736,7 +3736,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector1Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -3780,7 +3780,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector1Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -3927,7 +3927,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector2Stock1.setVolatility(volatilityTemp);
 
@@ -3973,7 +3973,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector2Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4017,7 +4017,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector2Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4061,7 +4061,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector2Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4104,7 +4104,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector2Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4249,7 +4249,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector3Stock1.setVolatility(volatilityTemp);
 
@@ -4295,7 +4295,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector3Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4339,7 +4339,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector3Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4383,7 +4383,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector3Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4427,7 +4427,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector3Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4572,7 +4572,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector4Stock1.setVolatility(volatilityTemp);
 
@@ -4618,7 +4618,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector4Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4662,7 +4662,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector4Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4706,7 +4706,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector4Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4750,7 +4750,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector4Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4894,7 +4894,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector5Stock1.setVolatility(volatilityTemp);
 
@@ -4940,7 +4940,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector5Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -4984,7 +4984,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector5Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -5028,7 +5028,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector5Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -5072,7 +5072,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector5Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -5216,7 +5216,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector6Stock1.setVolatility(volatilityTemp);
 
@@ -5262,7 +5262,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector6Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -5306,7 +5306,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector6Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -5350,7 +5350,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector6Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -5395,7 +5395,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector6Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -5539,7 +5539,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector7Stock1.setVolatility(volatilityTemp);
 
@@ -5585,7 +5585,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector7Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -5629,7 +5629,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector7Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -5673,7 +5673,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector7Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -5717,7 +5717,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio2Sector7Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -5865,7 +5865,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector1Stock1.setVolatility(volatilityTemp);
                             System.out.println(" ");
@@ -5912,7 +5912,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector1Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -5956,7 +5956,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector1Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6001,7 +6001,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector1Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6045,7 +6045,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector1Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6192,7 +6192,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector2Stock1.setVolatility(volatilityTemp);
 
@@ -6238,7 +6238,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector2Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6282,7 +6282,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector2Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6326,7 +6326,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector2Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6369,7 +6369,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector2Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6514,7 +6514,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector3Stock1.setVolatility(volatilityTemp);
 
@@ -6560,7 +6560,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector3Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6604,7 +6604,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector3Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6648,7 +6648,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector3Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6692,7 +6692,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector3Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6837,7 +6837,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector4Stock1.setVolatility(volatilityTemp);
 
@@ -6883,7 +6883,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector4Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6927,7 +6927,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector4Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -6971,7 +6971,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector4Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7015,7 +7015,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector4Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7159,7 +7159,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector5Stock1.setVolatility(volatilityTemp);
 
@@ -7205,7 +7205,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector5Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7249,7 +7249,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector5Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7293,7 +7293,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector5Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7337,7 +7337,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector5Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7481,7 +7481,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector6Stock1.setVolatility(volatilityTemp);
 
@@ -7527,7 +7527,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector6Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7571,7 +7571,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector6Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7615,7 +7615,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector6Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7659,7 +7659,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector6Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7803,7 +7803,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector7Stock1.setVolatility(volatilityTemp);
 
@@ -7849,7 +7849,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector7Stock2.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7893,7 +7893,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector7Stock3.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7938,7 +7938,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector7Stock4.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
@@ -7983,7 +7983,7 @@ public class Main
 
                         do
                         {
-                            System.out.print("\t\tStock volatility (greater than 0, less than 0.2): ");
+                            System.out.print("\t\tStock volatility (greater than 0, less than or equal to 0.2): ");
                             volatilityTemp = inputNum.nextDouble();
                             userPortfolio3Sector7Stock5.setVolatility(volatilityTemp);
                         } while (!(volatilityTemp > 0 && volatilityTemp <= 0.2));
