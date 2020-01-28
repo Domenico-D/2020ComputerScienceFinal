@@ -1,5 +1,4 @@
 /**
- * Last Updated: Jan 19, 2020
  * Defines what a stock is, and how it can be manipulated within a sector.
  */
 
@@ -17,7 +16,6 @@ public class Stock
     private double beginDayPrice;
     private double currentPrice;
     private double priceWhenBought;
-    //max volatility of 0.2
     private double volatility;
     private boolean active;
 
@@ -25,8 +23,8 @@ public class Stock
     public Stock()
     {
         name = " ";
-        region=' ';
-        currentPrice=0;
+        region = ' ';
+        currentPrice = 0;
         volatility = 0.0;
         active = false;
         priceWhenBought = 0;
@@ -49,38 +47,72 @@ public class Stock
     {
         return name;
     }
+
+    public void setName(String nm)
+    {
+        name = nm;
+    }
+
     public char getRegion()
     {
         return region;
     }
+
+    public void setRegion(char location)
+    {
+        region = location;
+    }
+
     public double getCurrentPrice()
     {
         return currentPrice;
     }
+
+    public void setCurrentPrice(double goingPrice)
+    {
+        currentPrice = goingPrice;
+        priceWhenBought = goingPrice;
+        beginDayPrice = goingPrice;
+    }
+
     public double getVolatility()
     {
         return volatility;
     }
+
+    public void setVolatility(double risk)
+    {
+        volatility = risk;
+    }
+
     public double getProfitLoss()
     {
         return (currentPrice - priceWhenBought) * sharesOwned;
     }
+
     public double getSharesOwned()
     {
         return sharesOwned;
     }
+
     public double getPriceWhenBought()
     {
         return priceWhenBought;
     }
+
     public boolean getActive()
     {
         return active;
     }
 
+    public void setActive(boolean bool)
+    {
+        active = bool;
+    }
+
     public double getTotal()
     {
-        double total = (getPriceWhenBought()*sharesOwned) + getProfitLoss();
+        double total = (getPriceWhenBought() * sharesOwned) + getProfitLoss();
 
         return total;
     }
@@ -93,31 +125,6 @@ public class Stock
 
         return dayProfit;
     }
-
-
-    public void setName(String nm)
-    {
-        name = nm;
-    }
-    public void setRegion(char location)
-    {
-        region = location;
-    }
-    public void setVolatility(double risk)
-    {
-        volatility = risk;
-    }
-    public void setActive(boolean bool)
-    {
-        active = bool;
-    }
-    public void setCurrentPrice(double goingPrice)
-    {
-        currentPrice = goingPrice;
-        priceWhenBought = goingPrice;
-        beginDayPrice = goingPrice;
-    }
-
 
     public void updateDays()
     {
@@ -196,7 +203,8 @@ public class Stock
 
     }
 
-    public void updateBeginDayPrice(){
+    public void updateBeginDayPrice()
+    {
         beginDayPrice = currentPrice;
     }
 

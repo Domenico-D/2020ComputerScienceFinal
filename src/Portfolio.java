@@ -1,6 +1,5 @@
 /**
- * Last Updated: January 20, 2020
- * A class that defines what a portfolio is and how it works.
+ * A class that defines what a portfolio is and how it works, including its starting amount of cash.
  */
 
 public class Portfolio
@@ -26,21 +25,32 @@ public class Portfolio
         trades = 8;
     }
 
-    //Accessors
+
     public String getSectors()
     {
         String str = "";
 
         for (int i = 0; i < chosenDivisions.length; i++)
         {
-            str +="\t" + (i + 1) + ". " + "「" + chosenDivisions[i].getName()+ "」" + "\n";
+            str += "\t" + (i + 1) + ". " + "「" + chosenDivisions[i].getName() + "」" + "\n";
         }
 
         return str;
     }
+
+    public void setSectors(Sector[] sectorArray)
+    {
+        chosenDivisions = sectorArray;
+    }
+
     public String getName()
     {
         return name;
+    }
+
+    public void setName(String nm)
+    {
+        name = nm;
     }
 
     public void totalProfitLossCalculation()
@@ -50,7 +60,8 @@ public class Portfolio
 
     }
 
-    public double getTotalProfitLoss(){
+    public double getTotalProfitLoss()
+    {
         return totalProfitLoss;
     }
 
@@ -68,7 +79,8 @@ public class Portfolio
         return daily;
     }
 
-    public double getDailyProfitSaved(){
+    public double getDailyProfitSaved()
+    {
         return dailyProfit;
     }
 
@@ -111,18 +123,6 @@ public class Portfolio
     {
         return daysOpened;
     }
-
-    //Mutators
-    public void setSectors(Sector[] sectorArray)
-    {
-        chosenDivisions = sectorArray;
-    }
-
-    public void setName(String nm)
-    {
-        name = nm;
-    }
-
 
     public void updateTrades()
     {
@@ -234,13 +234,13 @@ public class Portfolio
         }
     }
 
-    public void updateAllBeginDayPrice(){
-        for(int i = 0; i < chosenDivisions.length; i++){
+    public void updateAllBeginDayPrice()
+    {
+        for (int i = 0; i < chosenDivisions.length; i++)
+        {
             chosenDivisions[i].updateBeginDayPrice();
         }
     }
-
-
 
 
 }

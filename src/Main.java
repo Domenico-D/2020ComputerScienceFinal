@@ -3468,7 +3468,6 @@ public class Main
     }
 
 
-
     private static void fillPortfolioTwoSectorOne()
     {
         //Fill Stocks with user choices in Sector 1
@@ -7999,7 +7998,6 @@ public class Main
     }
 
 
-
     //Menus for all 3 portfolios
     private static void basicMenu1()
     {
@@ -8053,7 +8051,7 @@ public class Main
                     System.out.println("◈◈ Add Investment ◈◈");
                     System.out.println(portfolio1.getSectors());
                     System.out.println("\tEnter 0 to go back.");
-                    
+
                     System.out.print("\n\tEnter the number of the sector you want to add to: ");
                     sectorChoice = inputNum.nextInt();
 
@@ -8070,7 +8068,7 @@ public class Main
                             if (portfolio1.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] == null)
                             {
                                 System.out.println("\t\t|Owned List|");
-                                System.out.println(portfolio1.getChosenDivisions()[sectorChoice-1].toString());
+                                System.out.println(portfolio1.getChosenDivisions()[sectorChoice - 1].toString());
                                 System.out.println(" ");
 
                                 System.out.println("\t\t|Stocks List|");
@@ -8102,7 +8100,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -8141,7 +8139,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -8180,7 +8178,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -8219,7 +8217,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -8258,7 +8256,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -8296,7 +8294,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -8334,7 +8332,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -8348,8 +8346,10 @@ public class Main
                             }
                             else
                             {
-                                if (i==4)
-                                System.out.println("\n\t\t⚠⚠ You cannot add stocks to a full sector. ⚠⚠\n");
+                                if (i == 4)
+                                {
+                                    System.out.println("\n\t\t⚠⚠ You cannot add stocks to a full sector. ⚠⚠\n");
+                                }
                             }
                         }
 
@@ -8372,12 +8372,14 @@ public class Main
                     System.out.println(" ");
 
                     //Print out stocks within chosen Sector
-                    if(sectorChoice<0 || sectorChoice>5)
+                    if (sectorChoice < 0 || sectorChoice > 5)
+                    {
                         System.out.println("\t⚠ Please enter one of the available sectors. ⚠");
+                    }
                     else if (sectorChoice == 1)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio1.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio1.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -8406,7 +8408,7 @@ public class Main
                     else if (sectorChoice == 2)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio1.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio1.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -8435,7 +8437,7 @@ public class Main
                     else if (sectorChoice == 3)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio1.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio1.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -8464,7 +8466,7 @@ public class Main
                     else if (sectorChoice == 4)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio1.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio1.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -8493,7 +8495,7 @@ public class Main
                     else if (sectorChoice == 5)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio1.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio1.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -8546,7 +8548,7 @@ public class Main
                         {
                             //Prints out all the getInstruments() in that sector
                             System.out.println("\t\t|Owned List|");
-                            System.out.println(portfolio1.getChosenDivisions()[sectorChoice-1].toString());
+                            System.out.println(portfolio1.getChosenDivisions()[sectorChoice - 1].toString());
 
                             System.out.print("\t\t Enter the stock you would like to trade: ");
                             stockChoice = inputNum.nextInt();
@@ -9219,7 +9221,7 @@ public class Main
                     {
                         //Prints out all the getInstruments() in that sector
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio1.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio1.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
                         System.out.println("\t\t|Stocks List|");
                         if (portfolio1.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("technology"))
@@ -9258,16 +9260,16 @@ public class Main
             else if (basicMenuChoice == 5)
             {
                 System.out.println("◈◈ Total Capital ◈◈");
-                System.out.println("\n\t \uD83D\uDCB0\uD83D\uDCB0Total Capital of " + portfolio1.getName() + ": " + moneyFormat.format(portfolio1.getTotalCapital())+ " \uD83D\uDCB0\uD83D\uDCB0\n");
+                System.out.println("\n\t \uD83D\uDCB0\uD83D\uDCB0Total Capital of " + portfolio1.getName() + ": " + moneyFormat.format(portfolio1.getTotalCapital()) + " \uD83D\uDCB0\uD83D\uDCB0\n");
             }
             //View Profit
             else if (basicMenuChoice == 6)
             {
 
                 System.out.println("◈◈ View Profit ◈◈");
-                System.out.println("\t◖ " + portfolio1.getName()+" ◗");
+                System.out.println("\t◖ " + portfolio1.getName() + " ◗");
                 System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio1.getTotalProfitLoss()));
-                System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio1.getDailyProfitSaved()) +"\n");
+                System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio1.getDailyProfitSaved()) + "\n");
 
             }
             //Check Sector Volatility
@@ -9283,9 +9285,9 @@ public class Main
 
                     if (sectorChoice >= 1 && sectorChoice <= 5)
                     {
-                        System.out.println("\n\t「"+portfolio1.getChosenDivisions()[sectorChoice - 1].getName()+"」");
+                        System.out.println("\n\t「" + portfolio1.getChosenDivisions()[sectorChoice - 1].getName() + "」");
                         System.out.println("\t\t The volatility of the sector is: " +
-                        portfolio1.getChosenDivisions()[sectorChoice - 1].getSectorVolatality()+"\n");
+                                portfolio1.getChosenDivisions()[sectorChoice - 1].getSectorVolatality() + "\n");
                     }
                     else
                     {
@@ -9384,7 +9386,7 @@ public class Main
                             if (portfolio2.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] == null)
                             {
                                 System.out.println("\t\t|Owned List|");
-                                System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                                System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].toString());
                                 System.out.println(" ");
 
                                 System.out.println("\t\t|Stocks List|");
@@ -9416,7 +9418,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -9456,7 +9458,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -9495,7 +9497,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -9534,7 +9536,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -9573,7 +9575,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -9611,7 +9613,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -9649,7 +9651,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -9663,8 +9665,10 @@ public class Main
                             }
                             else
                             {
-                                if (i==4)
+                                if (i == 4)
+                                {
                                     System.out.println("\n\t\t⚠⚠ You cannot add stocks to a full sector. ⚠⚠\n");
+                                }
                             }
                         }
 
@@ -9687,12 +9691,14 @@ public class Main
                     System.out.println(" ");
 
                     //Print out stocks within chosen Sector
-                    if(sectorChoice<0 || sectorChoice>5)
+                    if (sectorChoice < 0 || sectorChoice > 5)
+                    {
                         System.out.println("\t⚠ Please enter one of the available sectors. ⚠");
+                    }
                     else if (sectorChoice == 1)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -9721,7 +9727,7 @@ public class Main
                     else if (sectorChoice == 2)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -9750,7 +9756,7 @@ public class Main
                     else if (sectorChoice == 3)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -9779,7 +9785,7 @@ public class Main
                     else if (sectorChoice == 4)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -9808,7 +9814,7 @@ public class Main
                     else if (sectorChoice == 5)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -9861,7 +9867,7 @@ public class Main
                         {
                             //Prints out all the getInstruments() in that sector
                             System.out.println("\t\t|Owned List|");
-                            System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                            System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].toString());
 
                             System.out.print("\t\t Enter the stock you would like to trade: ");
                             stockChoice = inputNum.nextInt();
@@ -10534,7 +10540,7 @@ public class Main
                     {
                         //Prints out all the getInstruments() in that sector
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio2.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
                         System.out.println("\t\t|Stocks List|");
                         if (portfolio2.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("technology"))
@@ -10573,16 +10579,16 @@ public class Main
             else if (basicMenuChoice == 5)
             {
                 System.out.println("◈◈ Total Capital ◈◈");
-                System.out.println("\n\t \uD83D\uDCB0\uD83D\uDCB0Total Capital of " + portfolio2.getName() + ": " + moneyFormat.format(portfolio2.getTotalCapital())+ " \uD83D\uDCB0\uD83D\uDCB0\n");
+                System.out.println("\n\t \uD83D\uDCB0\uD83D\uDCB0Total Capital of " + portfolio2.getName() + ": " + moneyFormat.format(portfolio2.getTotalCapital()) + " \uD83D\uDCB0\uD83D\uDCB0\n");
             }
             //View Profit
             else if (basicMenuChoice == 6)
             {
 
                 System.out.println("◈◈ View Profit ◈◈");
-                System.out.println("\t◖ " + portfolio2.getName()+" ◗");
+                System.out.println("\t◖ " + portfolio2.getName() + " ◗");
                 System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio2.getTotalProfitLoss()));
-                System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio2.getDailyProfitSaved()) +"\n");
+                System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio2.getDailyProfitSaved()) + "\n");
 
             }
             //Check Sector Volatility
@@ -10598,9 +10604,9 @@ public class Main
 
                     if (sectorChoice >= 1 && sectorChoice <= 5)
                     {
-                        System.out.println("\n\t「"+portfolio2.getChosenDivisions()[sectorChoice - 1].getName()+"」");
+                        System.out.println("\n\t「" + portfolio2.getChosenDivisions()[sectorChoice - 1].getName() + "」");
                         System.out.println("\t\t The volatility of the sector is: " +
-                                portfolio2.getChosenDivisions()[sectorChoice - 1].getSectorVolatality()+"\n");
+                                portfolio2.getChosenDivisions()[sectorChoice - 1].getSectorVolatality() + "\n");
                     }
                     else
                     {
@@ -10699,7 +10705,7 @@ public class Main
                             if (portfolio3.getChosenDivisions()[sectorChoice - 1].getInstruments()[i] == null)
                             {
                                 System.out.println("\t\t|Owned List|");
-                                System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                                System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].toString());
                                 System.out.println(" ");
 
                                 System.out.println("\t\t|Stocks List|");
@@ -10731,7 +10737,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -10771,7 +10777,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -10810,7 +10816,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -10849,7 +10855,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -10888,7 +10894,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -10926,7 +10932,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -10964,7 +10970,7 @@ public class Main
                                             }
                                         }
                                     }
-                                    if(taken)
+                                    if (taken)
                                     {
                                         break;
                                     }
@@ -10978,8 +10984,10 @@ public class Main
                             }
                             else
                             {
-                                if (i==4)
+                                if (i == 4)
+                                {
                                     System.out.println("\n\t\t⚠⚠ You cannot add stocks to a full sector. ⚠⚠\n");
+                                }
                             }
                         }
 
@@ -11002,12 +11010,14 @@ public class Main
                     System.out.println(" ");
 
                     //Print out stocks within chosen Sector
-                    if(sectorChoice<0 || sectorChoice>5)
+                    if (sectorChoice < 0 || sectorChoice > 5)
+                    {
                         System.out.println("\t⚠ Please enter one of the available sectors. ⚠");
+                    }
                     else if (sectorChoice == 1)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -11036,7 +11046,7 @@ public class Main
                     else if (sectorChoice == 2)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -11065,7 +11075,7 @@ public class Main
                     else if (sectorChoice == 3)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -11094,7 +11104,7 @@ public class Main
                     else if (sectorChoice == 4)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -11123,7 +11133,7 @@ public class Main
                     else if (sectorChoice == 5)
                     {
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
 
                         System.out.print("\t\tEnter the stock that you want to take profit/loss from: ");
@@ -11176,7 +11186,7 @@ public class Main
                         {
                             //Prints out all the getInstruments() in that sector
                             System.out.println("\t\t|Owned List|");
-                            System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                            System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].toString());
 
                             System.out.print("\t\t Enter the stock you would like to trade: ");
                             stockChoice = inputNum.nextInt();
@@ -11848,7 +11858,7 @@ public class Main
                     {
                         //Prints out all the getInstruments() in that sector
                         System.out.println("\t\t|Owned List|");
-                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice-1].toString());
+                        System.out.println(portfolio3.getChosenDivisions()[sectorChoice - 1].toString());
                         System.out.println(" ");
                         System.out.println("\t\t|Stocks List|");
                         if (portfolio3.getChosenDivisions()[sectorChoice - 1].getName().equalsIgnoreCase("technology"))
@@ -11887,15 +11897,15 @@ public class Main
             else if (basicMenuChoice == 5)
             {
                 System.out.println("◈◈ Total Capital ◈◈");
-                System.out.println("\n\t \uD83D\uDCB0\uD83D\uDCB0Total Capital of " + portfolio3.getName() + ": " + moneyFormat.format(portfolio3.getTotalCapital())+ " \uD83D\uDCB0\uD83D\uDCB0\n");
+                System.out.println("\n\t \uD83D\uDCB0\uD83D\uDCB0Total Capital of " + portfolio3.getName() + ": " + moneyFormat.format(portfolio3.getTotalCapital()) + " \uD83D\uDCB0\uD83D\uDCB0\n");
             }
             //View Profit
             else if (basicMenuChoice == 6)
             {
-                    System.out.println("◈◈ View Profit ◈◈");
-                    System.out.println("\t◖ " + portfolio3.getName()+" ◗");
-                    System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio3.getTotalProfitLoss()));
-                    System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio3.getDailyProfitSaved()) +"\n");
+                System.out.println("◈◈ View Profit ◈◈");
+                System.out.println("\t◖ " + portfolio3.getName() + " ◗");
+                System.out.println("\t\t Total Profit/Loss: " + moneyFormat.format(portfolio3.getTotalProfitLoss()));
+                System.out.println("\t\t Daily Profit/Loss: " + moneyFormat.format(portfolio3.getDailyProfitSaved()) + "\n");
             }
             //Check Sector Volatility
             else if (basicMenuChoice == 7)
@@ -11910,9 +11920,9 @@ public class Main
 
                     if (sectorChoice >= 1 && sectorChoice <= 5)
                     {
-                        System.out.println("\n\t「"+portfolio3.getChosenDivisions()[sectorChoice - 1].getName()+"」");
+                        System.out.println("\n\t「" + portfolio3.getChosenDivisions()[sectorChoice - 1].getName() + "」");
                         System.out.println("\t\t The volatility of the sector is: " +
-                                portfolio3.getChosenDivisions()[sectorChoice - 1].getSectorVolatality()+"\n");
+                                portfolio3.getChosenDivisions()[sectorChoice - 1].getSectorVolatality() + "\n");
                     }
                     else
                     {
@@ -11956,7 +11966,8 @@ public class Main
         foodSector.updateAllSectorStocks();
     }
 
-    private static void updatePrePopulatedBeginDayPrice(){
+    private static void updatePrePopulatedBeginDayPrice()
+    {
         technologySector.updateBeginDayPrice();
         cryptoCurrencySector.updateBeginDayPrice();
         retailSector.updateBeginDayPrice();
@@ -11994,9 +12005,9 @@ public class Main
 
             activatePreSetRegions(defaultSectors, false, (gen.nextInt(10) + 1));
 
-            System.out.println("◤"+ portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\n\tDays Owned: " + portfolio1.getDaysOpened());
-            System.out.println("◤"+ portfolio2.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()) + "\n\tDays Owned: " + portfolio2.getDaysOpened());
-            System.out.println("◤"+ portfolio3.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio3.getDailyProfit()) + "\n\tDays Owned: " + portfolio3.getDaysOpened());
+            System.out.println("◤" + portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\n\tDays Owned: " + portfolio1.getDaysOpened());
+            System.out.println("◤" + portfolio2.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()) + "\n\tDays Owned: " + portfolio2.getDaysOpened());
+            System.out.println("◤" + portfolio3.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio3.getDailyProfit()) + "\n\tDays Owned: " + portfolio3.getDaysOpened());
 
             portfolio1.updateAllBeginDayPrice();
             portfolio2.updateAllBeginDayPrice();
@@ -12028,8 +12039,8 @@ public class Main
 
             updatePrePopulatedSectors();
 
-            System.out.println("◤"+ portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\n\tDays Owned: " + portfolio1.getDaysOpened());
-            System.out.println("◤"+ portfolio2.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()) + "\n\tDays Owned: " + portfolio2.getDaysOpened());
+            System.out.println("◤" + portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\n\tDays Owned: " + portfolio1.getDaysOpened());
+            System.out.println("◤" + portfolio2.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio2.getDailyProfit()) + "\n\tDays Owned: " + portfolio2.getDaysOpened());
 
             portfolio1.updateAllBeginDayPrice();
             portfolio2.updateAllBeginDayPrice();
@@ -12054,7 +12065,7 @@ public class Main
 
             updatePrePopulatedSectors();
 
-            System.out.println("◤"+ portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\n\tDays Owned: " + portfolio1.getDaysOpened());
+            System.out.println("◤" + portfolio1.getName() + "◢\n\t" + "Daily Profit:" + moneyFormat.format(portfolio1.getDailyProfit()) + "\n\tDays Owned: " + portfolio1.getDaysOpened());
 
 
             portfolio1.updateAllBeginDayPrice();
@@ -12072,7 +12083,7 @@ public class Main
     {
 
         //Reset all stocks to active
-        for(int i = 0; i < chosenDivisions.length; i++)
+        for (int i = 0; i < chosenDivisions.length; i++)
         {
             for (int j = 0; j < chosenDivisions[i].getInstruments().length; j++)
             {
@@ -12084,7 +12095,7 @@ public class Main
 
         }
 
-        for(int i = 0; i < chosenDivisions.length; i++)
+        for (int i = 0; i < chosenDivisions.length; i++)
         {
 
             for (int j = 0; j < chosenDivisions[i].getInstruments().length; j++)
